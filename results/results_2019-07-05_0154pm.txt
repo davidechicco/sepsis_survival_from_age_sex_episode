@@ -1,0 +1,89 @@
+
+XgBoost regression prediction of length of stay (LOS)
+
+=== final results ===
+Number of executions = 100
+        RMSE   MAE   MSE SMAPE    R^2
+median 0.042 0.038 0.002 1.185 -1.697
+mean   0.042 0.038 0.002 1.185 -1.687
+
+
+XgBoost survival prediction of length of stay (LOS)
+binary classification
+
+
+=== final results ===
+Number of executions = 100
+         MCC F1_score accuracy TP_rate TN_rate PR_AUC ROC_AUC
+median 0.151    0.742    0.611   0.605   0.681  0.966   0.688
+mean   0.151    0.750    0.620   0.617   0.666  0.966   0.688
+
+~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+
+Quantitative characteristics
+
+
+// all patients //
+== binary features ==
+feature    	 value    #    %    
+hospital outcome 1alive 0dead 	0  	 8105  	 7.35  
+hospital outcome 1alive 0dead 	1  	 102099  	 92.65  
+sex 0male 1female 	0  	 57973  	 52.61  
+sex 0male 1female 	1  	 52231  	 47.39  
+
+
+== numeric features ==
+feature 	 median  	 mean 	 range 
+age years 	68.00 	62.74 	[0.00, 100.00]  
+episode number 	1.00 	1.35 	[1.00, 5.00]  
+length of stay days 	6.00 	9.35 	[0.00, 499.00]
+
+
+
+			>>> target YES=survival patients 
+== binary features ==
+feature    	 value                          #       %    
+sex 0male 1female 	0  	 4548  	 4.13  
+sex 0male 1female 	1  	 3557  	 3.23  
+
+
+== numeric features ==
+feature 	 median  	 mean 	 range 
+age years 	80.00 	77.30 	[0.00, 100.00]  
+episode number 	1.00 	1.37 	[1.00, 5.00]  
+
+			>>> target NO patients 
+== binary features ==
+feature    	 value                          #       %    
+sex 0male 1female 	0  	 53425  	 48.48  
+sex 0male 1female 	1  	 48674  	 44.17  
+
+
+== numeric features ==
+feature 	 median  	 mean 	 range 
+age years 	67.00 	61.58 	[0.00, 100.00]  
+episode number 	1.00 	1.35 	[1.00, 5.00]  
+hospital outcome 1alive 0dead 	1.00 	1.00 	[1.00, 1.00]  
+
+~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+Pearson & Student
+
+[target==hospital_outcome_1alive_0dead] 	 
+                                        abs(t)	 p-value abs(PCC)  	 conf_int 
+age_years 	                850.40 	0.00 	0.17       61.67 61.95 
+episode_number 	    176.42 	0.00 	0.01 	    0.42 	0.43 
+hospital_outcome 	     0.00 	1.00 	1.00 	    0.00 	0.00 
+sex_0male_1female 266.61 	0.00 	0.02      -0.46  -0.45 
+
+
+~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+Pearson & Student
+
+[target==length_of_stay_days] 	 
+                                        abs(t)	 p-value abs(PCC)  	 conf_int 
+age_years 	                 648.98 	0.00 	0.05 	            53.22 	53.55 
+episode_number 	     207.34 	0.00 	0.00 	           -8.08 	-7.93 
+length_of_stay_days 	  0.00 	1.00 	1.00 	           -0.11 	0.11 
+sex_0male_1female  230.25 	0.00 	0.04 	           -8.95 	-8.80 
+
+~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
