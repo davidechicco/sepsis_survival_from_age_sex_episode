@@ -5,18 +5,18 @@ XgBoost regression prediction of length of stay (LOS)
 Number of executions = 100
         RMSE   MAE   MSE SMAPE    R^2
 median 0.042 0.038 0.002 1.185 -1.697
-mean   0.042 0.038 0.002 1.185 -1.687
+mean     0.042 0.038 0.002 1.185 -1.687
 
 
-XgBoost survival prediction of length of stay (LOS)
+XgBoost survival prediction of survival
 binary classification
 
 
 === final results ===
 Number of executions = 100
-         MCC F1_score accuracy TP_rate TN_rate PR_AUC ROC_AUC
-median 0.151    0.742    0.611   0.605   0.681  0.966   0.688
-mean   0.151    0.750    0.620   0.617   0.666  0.966   0.688
+                MCC F1_score accuracy TP_rate TN_rate PR_AUC ROC_AUC
+median +0.151    0.742    0.611   0.605   0.681  0.966   0.688
+mean     +0.151    0.750    0.620   0.617   0.666  0.966   0.688
 
 ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
 
@@ -87,3 +87,39 @@ length_of_stay_days 	  0.00 	1.00 	1.00 	           -0.11 	0.11
 sex_0male_1female  230.25 	0.00 	0.04 	           -8.95 	-8.80 
 
 ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+
+> source("biostatistics_analysis_tests_Shapiro_Wilcoxon_Kruskal_ChiSquared.r")
+filename: ../data/journal.pone.0187990.s002_EDITED_survival_NORM_4663081.csv
+TARGET_LABEL: hospital_outcome_1alive_0dead
+All packages loaded successfully
+
+
+		 == Wilcoxon signed-rank test ==
+1  	age_years  	 0  
+2  	sex_0male_1female  	 0  
+3  	episode_number  	 1.7e-05  
+
+		 == chi squared test ==
+1  	age_years  	 5e-04  
+2  	sex_0male_1female  	 5e-04  
+3  	episode_number  	 5e-04  
+
+~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+
+
+> source("biostatistics_analysis_tests_Shapiro_Wilcoxon_Kruskal_ChiSquared.r")
+filename: ../data/journal.pone.0187990.s002_EDITED_length_of_stay.csv
+TARGET_LABEL: length_of_stay_days
+All packages loaded successfully
+
+		 == Kruskal-Wallis test ==
+1  	age_years  	 0  
+2  	sex_0male_1female  	 0  
+3  	episode_number  	 0  
+
+		 == chi squared test ==
+1  	age_years  	 5e-04  
+2  	sex_0male_1female  	 5e-04  
+3  	episode_number  	 0.003498 
+
+
