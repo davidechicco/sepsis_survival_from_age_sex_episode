@@ -94,7 +94,7 @@ confusion_matrix_rates <- function (actual_labels, predicted_values, keyword)
   
   cat("\n\n",keyword,"\t MCC \t F1_score \t accuracy \t TP_rate \t TN_rate \t PR AUC \t ROC AUC\n")
   cat(keyword,"      ", sep="")
-  cat(signed_dec_three(thisMcc), " \t ",  sep="")
+  cat(dec_three(thisMcc), " \t ",  sep="")
   cat(dec_three(f1_score), " \t ",  sep="")
   cat(dec_three(accuracy), " \t ",  sep="")
   cat(dec_three(recall), " \t ",  sep="")

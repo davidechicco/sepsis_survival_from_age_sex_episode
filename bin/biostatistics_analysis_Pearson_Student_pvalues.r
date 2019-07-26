@@ -3,16 +3,11 @@ options(stringsAsFactors = FALSE)
 
 source("./utils.r")
 
+
 # fileName <- "../data/journal.pone.0187990.s002_EDITED_survival.csv"
 # targetName <- "hospital_outcome_1alive_0dead"
-#
-# fileName <- "../data/journal.pone.0187990.s002_EDITED_length_of_stay.csv"
-# targetName <- "length_of_stay_days"
 
-# fileName <- "../data/journal.pone.0187990.s002_EDITED_survival_NORM_4663081.csv"
-# targetName <- "hospital_outcome_1alive_0dead"
-#
-fileName <- "../data/journal.pone.0187990.s002_EDITED_length_of_stay_NORM_7510167.csv"
+fileName <- "../data/journal.pone.0187990.s002_EDITED_length_of_stay.csv"
 targetName <- "length_of_stay_days"
 
 resultsFolderPath = "../results/"
@@ -46,7 +41,7 @@ num_to_return <- 1
 upper_num_limit <- 10000000
 exe_num <- sample(1:upper_num_limit, num_to_return)
 
-LATEX_MODE <- FALSE
+LATEX_MODE <- TRUE
 
 LATEX_SEP <- "&"
 LATEX_END_OF_ROW <- "\\\\"
@@ -106,15 +101,15 @@ if (ALL_PATIENTS_CORRELATION == TRUE) {
         tValue <- abs((thisTtest$statistic)[[1]])
         pValue <- thisTtest$p.value
         thisAbsPCC <- abs(cor(patients_data[,i], patients_data[,targetIndex], method=c("pearson")))
-        conf_int_start <- dec_two((thisTtest$conf.int)[1])
-        conf_int_end <- dec_two((thisTtest$conf.int)[2])
+        conf_int_start <- dec_three((thisTtest$conf.int)[1])
+        conf_int_end <- dec_three((thisTtest$conf.int)[2])
         
         # cat(colnames(patients_data)[i], "\t\t abs(t) \t p-value \t PCC \t conf_int\n", sep="")
-        cat(colnames(patients_data)[i], " ", SEP,"\t", dec_two(tValue), " ", SEP,"\t", dec_two(pValue), " ", SEP,"\t", dec_two(thisAbsPCC), " ", SEP,"\t", conf_int_start, " ", SEP,"\t", conf_int_end, " ", END_OF_ROW,"\n", sep="")
+        cat(colnames(patients_data)[i], " ", SEP,"\t", dec_three(tValue), " ", SEP,"\t", dec_three(pValue), " ", SEP,"\t", dec_three(thisAbsPCC), " ", SEP,"\t", conf_int_start, " ", SEP,"\t", conf_int_end, " ", END_OF_ROW,"\n", sep="")
         
-        # cat("t = ", dec_two(tValue), "\n", sep="")
-        # cat("p-value = ", dec_two(pValue), "\n", sep="")
-        # cat("PCC(", colnames(patients_data)[targetIndex], ", ", colnames(patients_data)[i], ") = ",  dec_two(thisAbsPCC), "\n", sep="")
+        # cat("t = ", dec_three(tValue), "\n", sep="")
+        # cat("p-value = ", dec_three(pValue), "\n", sep="")
+        # cat("PCC(", colnames(patients_data)[targetIndex], ", ", colnames(patients_data)[i], ") = ",  dec_three(thisAbsPCC), "\n", sep="")
       
          allTestsDataframe[i,] <- data.frame(feature = colnames(patients_data)[i], abs_PCC = thisAbsPCC, p=pValue, abs_t=tValue)         
     }

@@ -88,7 +88,7 @@ num_to_return <- 1
 upper_num_limit <- 10000000
 exe_num <- sample(1:upper_num_limit, num_to_return)
 
-LATEX_MODE <- FALSE
+LATEX_MODE <- TRUE
 
 LATEX_SEP <- "&"
 LATEX_END_OF_ROW <- "\\\\"
