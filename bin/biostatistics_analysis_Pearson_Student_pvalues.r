@@ -41,7 +41,7 @@ num_to_return <- 1
 upper_num_limit <- 10000000
 exe_num <- sample(1:upper_num_limit, num_to_return)
 
-LATEX_MODE <- TRUE
+LATEX_MODE <- FALSE
 
 LATEX_SEP <- "&"
 LATEX_END_OF_ROW <- "\\\\"
@@ -73,8 +73,8 @@ patients_data <- patients_data[ , order(names(patients_data))]
 targetIndex <- which(colnames(patients_data)==targetName)
 
 # let's normalize the target
-target_range <- max(patients_data[,targetIndex]) - min(patients_data[,targetIndex])
-patients_data[,targetIndex] <- (patients_data[,targetIndex])/target_range
+# target_range <- max(patients_data[,targetIndex]) - min(patients_data[,targetIndex])
+# patients_data[,targetIndex] <- (patients_data[,targetIndex])/target_range
 
 # All patients: p-value, t-value, and PCC
 

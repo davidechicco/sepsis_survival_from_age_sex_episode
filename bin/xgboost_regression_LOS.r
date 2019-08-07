@@ -53,6 +53,8 @@ cat("Number of executions = ", execution_number, "\n", sep="")
 for(exe_i in 1:execution_number)
 {
 
+    cat(">>> execution number: ", exe_i, "\n", sep="")
+
     # shuffle the rows
     patients_data <- patients_data[sample(nrow(patients_data)),] 
 

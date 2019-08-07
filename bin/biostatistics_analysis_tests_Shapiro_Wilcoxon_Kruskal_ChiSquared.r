@@ -81,6 +81,8 @@ survived_patients_data <-  patients_dataset[patients_dataset[[TARGET_LABEL]]==SU
 
 # All the outputs of the tests are stored on the alltests lists, that we print at the end of the discussion.
 
+
+
 mycols <- names(patients_dataset)
 mycols <- mycols[mycols!=TARGET_LABEL]
 alltests <- list()
@@ -126,7 +128,7 @@ if (ANDERSON_FLAG) {
 # cat("\n\n\t\t == Wilcoxon_rank ==\n")
 vectorWilcoxon <- c()
 for(thecol in mycols) { 
-   if(BINARY_TARGET_MODE)  vectorWilcoxon[thecol] <- round(alltests[["Wilcoxon_rank"]][[thecol]]$p.value, ROUND_NUM) 
+   if(BINARY_TARGET_MODE)  vectorWilcoxon[thecol] <- alltests[["Wilcoxon_rank"]][[thecol]]$p.value 
     
   #  cat(names((vectorWilcoxon)[thecol]), "\t \t \t", ((vectorWilcoxon)[[thecol]]), "\n")
 }
@@ -135,7 +137,7 @@ for(thecol in mycols) {
 # cat("\n\t\t == Kruskal ==\n")
 vectorKruskal <- c()
 for(thecol in mycols) { 
-   if(BINARY_TARGET_MODE==FALSE)  vectorKruskal[thecol] <- round(alltests[["Kruskal"]][[thecol]]$p.value, ROUND_NUM) 
+   if(BINARY_TARGET_MODE==FALSE)  vectorKruskal[thecol] <- alltests[["Kruskal"]][[thecol]]$p.value 
     
     # cat(names((vectorKruskal)[thecol]), "\t \t \t", ((vectorKruskal)[[thecol]]), "\n")
 }
@@ -144,7 +146,7 @@ for(thecol in mycols) {
 # cat("\n\t\t == Chi ==\n")
 vectorChi <- c()
 for(thecol in mycols) { 
-    vectorChi[thecol] <- round(alltests[["Chi"]][[thecol]]$p.value, ROUND_NUM)
+    vectorChi[thecol] <- alltests[["Chi"]][[thecol]]$p.value
     
     # cat(names((vectorChi)[thecol]), "\t \t \t", ((vectorChi)[[thecol]]), "\n")
 }
