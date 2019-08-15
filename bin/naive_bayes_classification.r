@@ -1,13 +1,16 @@
 setwd(".")
 options(stringsAsFactors = FALSE)
 
+start_time <- Sys.time()
+
+TRAIN_SET_OVERSAMPLING_SYNTHETIC <- TRUE
+NUMBER_OF_EXECUTIONS <- 100
 EXP_ARG_NUM <- 3
 
 fileName <- "../data/journal.pone.0187990.s002_EDITED_survival.csv"
 targetName <- "hospital_outcome_1alive_0dead"
 
-TRAIN_SET_OVERSAMPLING_SYNTHETIC <- TRUE
-NUMBER_OF_EXECUTIONS <- 100
+
 
 # fileName <- "../data/dataset_edited_without_time.csv"
 # targetName <- "death_event"
@@ -78,7 +81,9 @@ for(exe_i in 1:execution_number)
     
         patients_data_train <- patients_data[training_set_first_index:training_set_last_index, 1:(target_index)] # NEW
         patients_data_test <- patients_data[test_set_first_index:test_set_last_index, 1:(target_index)] # NEW
-        
+    
+       allFeaturesFormula <- as.formula(paste(as.factor(colnames(patients_data)[target_index]), '.', sep=' ~ ' ))
+    
         cat("training set BEFORE oversampling:")
         imbalance_retriever(patients_data_train[,target_index])
          
@@ -102,11 +107,12 @@ for(exe_i in 1:execution_number)
         patients_data_test_labels <- patients_data[test_set_first_index:test_set_last_index, target_index]   # NEW
 
         
-    allFeaturesFormula <- as.formula(paste(as.factor(colnames(patients_data)[target_index]), '.', sep=' ~ ' ))
+    
     naive_bayes_model <-  naiveBayes(allFeaturesFormula, data=patients_data_train)
 
     patients_data_test_PRED <- predict((naive_bayes_model), patients_data_test)
     # patients_data_test_PRED_binary <- as.numeric(patients_data_test_PRED)-1
+    patients_data_test_PRED_binary <- abs(as.numeric(patients_data_test_PRED)-2) # check what is 0 and what is 1
 
     patients_data_test_PRED_binary[patients_data_test_PRED_binary>=threshold]=1
     patients_data_test_PRED_binary[patients_data_test_PRED_binary<threshold]=0
@@ -123,10 +129,14 @@ for(exe_i in 1:execution_number)
  cat("Number of executions = ", execution_number, "\n", sep="")
  # statistics on the dataframe of confusion matrices
  statDescConfMatr <- stat.desc(confMatDataFrame)
-meanMedianRowResults <- (statDescConfMatr)[c("median","mean"),]
+meanRowResults <- (statDescConfMatr)[c("mean"),]
 cat("\n\n")
-print(dec_three(meanMedianRowResults))
+print(dec_three(meanRowResults))
 cat("\n\n=== === === ===\n")
 
+
+end_time <- Sys.time()
+total_time <- end_time - start_time
+cat("total execution time: ", seconds_to_period(total_time), "\n", sep="")
 
 

@@ -1,7 +1,6 @@
 setwd(".")
 options(stringsAsFactors = FALSE)
 
-TRAIN_SET_OVERSAMPLING_SYNTHETIC <- FALSE
 NUMBER_OF_EXECUTIONS <- 100
 
 fileName <- "../data/journal.pone.0187990.s002_EDITED_length_of_stay.csv"
@@ -67,19 +66,6 @@ for(exe_i in 1:execution_number)
     # Allocation of the training set and of the test set
     training_set <- patients_data[1:size_training_set, (1:(target_index-1))]
     training_set_including_label <- patients_data[1:size_training_set, (1:(target_index))]
-            
-     if(TRAIN_SET_OVERSAMPLING_SYNTHETIC == TRUE)
-         {
-            thisP <- 0.5
-         
-            data.rose <- ROSE(allFeaturesFormula, data = training_set_including_label, p=thisP, seed = 1)$data
-            training_set <- data.rose[1:size_training_set, (1:(target_index-1))]
-            training_set_including_label <- data.rose
-            
-            cat("training set AFTER oversampling:")
-            imbalance_retriever(data.rose[,target_index])
-         }         
-    
     
     test_set_index_start <- size_training_set+1
     test_set_index_end <- dim(patients_data)[1]
