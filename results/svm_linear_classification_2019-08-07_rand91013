@@ -1,0 +1,179 @@
+fileName: ../data/journal.pone.0187990.s002_EDITED_survival.csv
+targetName: hospital_outcome_1alive_0dead
+script_dir: .
+fileName = ../data/journal.pone.0187990.s002_EDITED_survival.csv
+Number of executions = 2
+[Dataset size]
+number of data instances (rows) = 110204 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 8105]
+7.35%
+[class: 1  #elements = 102099]
+92.65%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 4875]
+7.37%
+[class: 1  #elements = 61247]
+92.63%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 33144]
+50.13%
+[class: 1  #elements = 32978]
+49.87%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0.1471129
+
+When C=0.001, the MCC value is 0.1471129	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.1472383
+
+When C=0.01, the MCC value is 0.1472383	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.1472383
+
+When C=0.1, the MCC value is 0.1472383	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=1) on training set & applying the SVM model to validation set]
+
+MCC = 0.1472383
+
+When C=1, the MCC value is 0.1472383	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=10) on training set & applying the SVM model to validation set]
+
+MCC = 0.1472383
+
+When C=10, the MCC value is 0.1472383	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.147238329917843
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9690049
+ROC AUC 		0.7084056
+
+
+TOTAL:
+
+ FN =  13788  /  20451 	 (truth == 1) & (prediction < threshold)
+ TP =  6663  /  20451 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  107  /  1590 	 (truth == 0) & (prediction >= threshold)
+ TN =  1483  /  1590 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.145 	 0.490 	 0.370 	 0.326 	 0.933		 0.969		0.708
+
+[Dataset size]
+number of data instances (rows) = 110204 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 8105]
+7.35%
+[class: 1  #elements = 102099]
+92.65%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 4842]
+7.32%
+[class: 1  #elements = 61280]
+92.68%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 33144]
+50.13%
+[class: 1  #elements = 32978]
+49.87%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0.1474218
+
+When C=0.001, the MCC value is 0.1474218	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.1480321
+
+When C=0.01, the MCC value is 0.1480321	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.1480321
+
+When C=0.1, the MCC value is 0.1480321	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=1) on training set & applying the SVM model to validation set]
+
+MCC = 0.1480321
+
+When C=1, the MCC value is 0.1480321	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=10) on training set & applying the SVM model to validation set]
+
+MCC = 0.1480321
+
+When C=10, the MCC value is 0.1480321	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.148032133636544
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9679541
+ROC AUC 		0.7086131
+
+
+TOTAL:
+
+ FN =  13787  /  20396 	 (truth == 1) & (prediction < threshold)
+ TP =  6609  /  20396 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  98  /  1645 	 (truth == 0) & (prediction >= threshold)
+ TN =  1547  /  1645 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.151 	 0.488 	 0.370 	 0.324 	 0.940		 0.968		0.709
+
+
+
+
+=== final results ===
+Number of executions = 2
+
+
+        MCC F1_score accuracy TP_rate TN_rate PR_AUC ROC_AUC
+median 0.15     0.49     0.37    0.32    0.94   0.97    0.71
+
+
+=== === === ===

@@ -1,6 +1,7 @@
 setwd(".")
 options(stringsAsFactors = FALSE)
 
+start_time <- Sys.time()
 EXP_ARG_NUM <- 2
 
 thisKernel <- "linear"
@@ -31,7 +32,7 @@ targetName <- "hospital_outcome_1alive_0dead"
 cat("fileName: ", fileName, "\n", sep="")
 cat("targetName: ", targetName, "\n", sep="")
 
-list.of.packages <- c("easypackages", "e1071", "PRROC", "dplyr", "pastecs", "class", "gmodels", "kernlab")
+list.of.packages <- c("easypackages", "e1071", "PRROC", "dplyr", "pastecs", "class", "gmodels", "kernlab", "ROSE")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
 library("easypackages")
@@ -48,6 +49,12 @@ cat("fileName = ", fileName, "\n", sep="")
 # let's put the target label last on the right 
 patients_data <- patients_data%>%select(-targetName,targetName)
 
+target_index <- dim(patients_data)[2]
+original_patients_data <- patients_data
+
+# formula
+allFeaturesFormula <- as.formula(paste(as.factor(colnames(patients_data)[target_index]), '.', sep=' ~ ' ))
+
 NUM_METRICS <- 7
 confMatDataFrame <- matrix(ncol=NUM_METRICS, nrow=1)
 colnames(confMatDataFrame) <- c("MCC", "F1 score", "accuracy", "TP rate", "TN rate", "PR AUC", "ROC AUC")
@@ -57,6 +64,9 @@ execution_number <- NUMBER_OF_EXECUTIONS
 cat("Number of executions = ", execution_number, "\n", sep="")
 for(exe_i in 1:execution_number)
 {
+
+    cat("\n>>> execution number: ", exe_i, "\n", sep="")
+
     patients_data <- patients_data[sample(nrow(patients_data)),] # shuffle the rows
 
     totalElements <- dim(patients_data)[1]
@@ -132,6 +142,7 @@ for(exe_i in 1:execution_number)
     # NEW PART:
 
     c_array = c(0.001, 0.01, 0.1, 1, 10)
+    # c_array = c(0.01, 0.1)
     mccCounter = 1
 
     cat("\n[Optimization of the hyper-parameter C start]\n")
@@ -201,7 +212,11 @@ for(exe_i in 1:execution_number)
  cat("Number of executions = ", execution_number, "\n", sep="")
  # statistics on the dataframe of confusion matrices
  statDescConfMatr <- stat.desc(confMatDataFrame)
-medianRowResults <- (statDescConfMatr)[c("median"),]
+meanRowResults <- (statDescConfMatr)[c("mean"),]
 cat("\n\n")
-print(dec_two(medianRowResults))
+print(dec_three(meanRowResults))
 cat("\n\n=== === === ===\n")
+
+end_time <- Sys.time()
+total_time <- end_time - start_time
+cat("total execution time: ", seconds_to_period(total_time), "\n", sep="")

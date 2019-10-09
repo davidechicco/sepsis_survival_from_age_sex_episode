@@ -1,0 +1,619 @@
+Loading required package: clusterSim
+Loading required package: cluster
+Loading required package: MASS
+Loading required package: PRROC
+Loading requiscript_dir: .
+Read data from file /home/davide/projects/sepsis_survival_in_Norway/data/journal.pone.0187990.s002_EDITED_length_of_stay.csv
+Number of executions = 100
+>>> execution number: 1
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.724 	 6.840 	 188.354 	 0.814 	 -0.260 
+>>> execution number: 2
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.450 	 6.496 	 180.894 	 0.721 	 -0.188 
+>>> execution number: 3
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 12.723 	 6.292 	 161.866 	 0.717 	 -0.195 
+>>> execution number: 4
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.993 	 6.601 	 195.809 	 0.729 	 -0.176 
+>>> execution number: 5
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.844 	 6.514 	 191.652 	 0.723 	 -0.176 
+>>> execution number: 6
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.728 	 6.475 	 188.466 	 0.718 	 -0.178 
+>>> execution number: 7
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.539 	 6.442 	 183.315 	 0.718 	 -0.179 
+>>> execution number: 8
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.094 	 6.884 	 198.647 	 0.813 	 -0.248 
+>>> execution number: 9
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.768 	 6.528 	 189.563 	 0.723 	 -0.179 
+>>> execution number: 10
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.424 	 6.484 	 180.213 	 0.723 	 -0.188 
+>>> execution number: 11
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.835 	 6.894 	 191.409 	 0.814 	 -0.263 
+>>> execution number: 12
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.597 	 6.597 	 213.062 	 0.725 	 -0.161 
+>>> execution number: 13
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.578 	 6.411 	 184.364 	 0.721 	 -0.175 
+>>> execution number: 14
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.022 	 6.484 	 196.612 	 0.717 	 -0.169 
+>>> execution number: 15
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.710 	 6.532 	 187.970 	 0.723 	 -0.181 
+>>> execution number: 16
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.738 	 6.551 	 188.737 	 0.726 	 -0.181 
+>>> execution number: 17
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.697 	 6.431 	 187.601 	 0.723 	 -0.172 
+>>> execution number: 18
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.784 	 6.477 	 190.001 	 0.722 	 -0.175 
+>>> execution number: 19
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.243 	 6.419 	 175.377 	 0.727 	 -0.186 
+>>> execution number: 20
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.415 	 6.607 	 207.797 	 0.720 	 -0.168 
+>>> execution number: 21
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.516 	 6.562 	 210.713 	 0.719 	 -0.162 
+>>> execution number: 22
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 15.059 	 6.975 	 226.767 	 0.813 	 -0.219 
+>>> execution number: 23
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.252 	 6.581 	 203.110 	 0.722 	 -0.171 
+>>> execution number: 24
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.059 	 6.541 	 197.667 	 0.722 	 -0.171 
+>>> execution number: 25
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.119 	 6.535 	 199.344 	 0.723 	 -0.170 
+>>> execution number: 26
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.167 	 6.516 	 200.699 	 0.720 	 -0.167 
+>>> execution number: 27
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.906 	 6.568 	 193.381 	 0.724 	 -0.179 
+>>> execution number: 28
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.629 	 6.592 	 214.015 	 0.723 	 -0.160 
+>>> execution number: 29
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.232 	 6.581 	 202.553 	 0.721 	 -0.170 
+>>> execution number: 30
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.335 	 6.382 	 177.811 	 0.715 	 -0.182 
+>>> execution number: 31
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.104 	 6.535 	 198.914 	 0.721 	 -0.170 
+>>> execution number: 32
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.332 	 6.530 	 177.751 	 0.722 	 -0.194 
+>>> execution number: 33
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.480 	 6.576 	 181.700 	 0.727 	 -0.193 
+>>> execution number: 34
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.537 	 6.400 	 183.263 	 0.717 	 -0.176 
+>>> execution number: 35
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.081 	 6.508 	 198.269 	 0.716 	 -0.170 
+>>> execution number: 36
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.274 	 6.590 	 203.757 	 0.721 	 -0.170 
+>>> execution number: 37
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.863 	 6.567 	 192.193 	 0.720 	 -0.183 
+>>> execution number: 38
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.358 	 6.467 	 178.429 	 0.721 	 -0.187 
+>>> execution number: 39
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.355 	 6.517 	 206.069 	 0.721 	 -0.161 
+>>> execution number: 40
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.677 	 6.735 	 215.400 	 0.727 	 -0.169 
+>>> execution number: 41
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.387 	 6.374 	 179.202 	 0.715 	 -0.180 
+>>> execution number: 42
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.897 	 6.615 	 193.129 	 0.727 	 -0.182 
+>>> execution number: 43
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.129 	 6.611 	 199.625 	 0.720 	 -0.176 
+>>> execution number: 44
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.199 	 6.412 	 174.206 	 0.722 	 -0.188 
+>>> execution number: 45
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.338 	 6.595 	 205.592 	 0.721 	 -0.169 
+>>> execution number: 46
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.881 	 6.478 	 192.689 	 0.721 	 -0.171 
+>>> execution number: 47
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.787 	 6.434 	 190.083 	 0.718 	 -0.173 
+>>> execution number: 48
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.676 	 6.491 	 187.034 	 0.717 	 -0.181 
+>>> execution number: 49
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.894 	 6.705 	 221.829 	 0.722 	 -0.162 
+>>> execution number: 50
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.442 	 6.419 	 180.700 	 0.720 	 -0.182 
+>>> execution number: 51
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.496 	 6.569 	 210.130 	 0.723 	 -0.162 
+>>> execution number: 52
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.353 	 6.950 	 205.995 	 0.815 	 -0.245 
+>>> execution number: 53
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.196 	 6.617 	 201.530 	 0.723 	 -0.172 
+>>> execution number: 54
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.658 	 6.468 	 186.550 	 0.723 	 -0.176 
+>>> execution number: 55
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.958 	 6.444 	 194.825 	 0.719 	 -0.169 
+>>> execution number: 56
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.446 	 6.445 	 180.798 	 0.720 	 -0.182 
+>>> execution number: 57
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.341 	 6.379 	 177.986 	 0.714 	 -0.182 
+>>> execution number: 58
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.083 	 6.543 	 198.341 	 0.720 	 -0.172 
+>>> execution number: 59
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.756 	 6.464 	 189.232 	 0.723 	 -0.173 
+>>> execution number: 60
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.926 	 6.445 	 193.933 	 0.716 	 -0.168 
+>>> execution number: 61
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.490 	 6.467 	 181.985 	 0.720 	 -0.184 
+>>> execution number: 62
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.739 	 6.569 	 188.771 	 0.727 	 -0.182 
+>>> execution number: 63
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.550 	 6.980 	 211.697 	 0.817 	 -0.238 
+>>> execution number: 64
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.280 	 6.529 	 203.929 	 0.719 	 -0.165 
+>>> execution number: 65
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.691 	 6.526 	 187.441 	 0.721 	 -0.183 
+>>> execution number: 66
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.048 	 6.632 	 197.342 	 0.723 	 -0.179 
+>>> execution number: 67
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.141 	 6.476 	 199.965 	 0.718 	 -0.165 
+>>> execution number: 68
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.018 	 6.464 	 196.512 	 0.719 	 -0.168 
+>>> execution number: 69
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.246 	 6.902 	 202.935 	 0.816 	 -0.244 
+>>> execution number: 70
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.229 	 6.504 	 202.462 	 0.719 	 -0.166 
+>>> execution number: 71
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.881 	 6.515 	 192.693 	 0.723 	 -0.175 
+>>> execution number: 72
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.785 	 6.530 	 190.037 	 0.725 	 -0.179 
+>>> execution number: 73
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.869 	 6.575 	 221.095 	 0.719 	 -0.152 
+>>> execution number: 74
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.737 	 6.514 	 188.712 	 0.719 	 -0.180 
+>>> execution number: 75
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.920 	 6.558 	 193.770 	 0.722 	 -0.177 
+>>> execution number: 76
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 15.120 	 7.160 	 228.627 	 0.821 	 -0.232 
+>>> execution number: 77
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.042 	 6.579 	 197.186 	 0.723 	 -0.176 
+>>> execution number: 78
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.043 	 6.643 	 197.192 	 0.725 	 -0.181 
+>>> execution number: 79
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.710 	 6.436 	 187.965 	 0.719 	 -0.174 
+>>> execution number: 80
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.870 	 6.466 	 192.373 	 0.724 	 -0.171 
+>>> execution number: 81
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.938 	 6.485 	 194.275 	 0.718 	 -0.171 
+>>> execution number: 82
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.178 	 6.891 	 201.028 	 0.816 	 -0.246 
+>>> execution number: 83
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.587 	 6.609 	 212.789 	 0.725 	 -0.163 
+>>> execution number: 84
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.587 	 6.544 	 184.600 	 0.723 	 -0.186 
+>>> execution number: 85
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.002 	 6.442 	 196.043 	 0.716 	 -0.167 
+>>> execution number: 86
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.893 	 6.558 	 193.027 	 0.723 	 -0.178 
+>>> execution number: 87
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.225 	 6.340 	 174.893 	 0.718 	 -0.182 
+>>> execution number: 88
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.682 	 6.455 	 187.191 	 0.718 	 -0.176 
+>>> execution number: 89
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.963 	 6.490 	 194.965 	 0.717 	 -0.171 
+>>> execution number: 90
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.127 	 6.558 	 199.568 	 0.723 	 -0.171 
+>>> execution number: 91
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.287 	 6.970 	 204.124 	 0.811 	 -0.250 
+>>> execution number: 92
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.049 	 6.319 	 170.280 	 0.716 	 -0.186 
+>>> execution number: 93
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.355 	 6.526 	 178.353 	 0.720 	 -0.195 
+>>> execution number: 94
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.659 	 6.466 	 186.569 	 0.718 	 -0.178 
+>>> execution number: 95
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.313 	 6.570 	 204.876 	 0.718 	 -0.168 
+>>> execution number: 96
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.202 	 6.674 	 201.706 	 0.725 	 -0.178 
+>>> execution number: 97
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.045 	 6.494 	 197.273 	 0.723 	 -0.169 
+>>> execution number: 98
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.716 	 6.568 	 188.136 	 0.723 	 -0.183 
+>>> execution number: 99
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.971 	 6.549 	 195.199 	 0.722 	 -0.176 
+>>> execution number: 100
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.896 	 6.618 	 193.099 	 0.722 	 -0.184 
+
+
+
+=== final results ===
+Number of executions = 100
+
+
+      RMSE  MAE    MSE SMAPE   R^2
+mean 13.93 6.56 194.28  0.73 -0.18
+
+
+=== === === ===

@@ -1,0 +1,38 @@
+Loading required package: clusterSim
+Loading required package: cluster
+Loading required package: MASS
+Loading required package: PRROC
+Loading requiscript_dir: .
+Read data from file /home/davide/projects/sepsis_survival_in_Norway/data/journal.pone.0187990.s002_EDITED_length_of_stay.csv
+Number of executions = 3
+>>> execution number: 1
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.993 	 6.492 	 195.804 	 0.719 	 -0.171 
+>>> execution number: 2
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 14.901 	 6.661 	 222.049 	 0.720 	 -0.158 
+>>> execution number: 3
+perce_training_set = 80%
+dim(training_set) 88163 4 
+dim(test_set) 22041 4 
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 13.899 	 6.500 	 193.180 	 0.720 	 -0.173 
+
+
+
+=== final results ===
+Number of executions = 3
+
+
+       RMSE   MAE     MSE SMAPE    R^2
+mean 14.264 6.551 203.678 0.720 -0.167
+
+
+=== === === ===
+ loaded successfully

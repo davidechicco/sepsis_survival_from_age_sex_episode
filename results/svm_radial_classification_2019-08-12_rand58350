@@ -1,0 +1,54 @@
+Loading required package: e1071
+Loading required package: PRROC
+Loading required package: dplyr
+
+Attachingscript_dir: .
+fileName = ../data/journal.pone.0187990.s002_EDITED_survival.csv
+Number of executions = 100
+
+>>> execution number: 1
+[Dataset size]
+number of data instances (rows) = 110204 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 8105]
+7.35%
+[class: 1  #elements = 102099]
+92.65%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 4873]
+7.37%
+[class: 1  #elements = 61249]
+92.63%
+
+ackage:base’:
+
+    date
+
+All packages loaded successfully
+All packages loaded successfully
+Loading required package: ggplot2
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+
+Attaching package: ‘ggplot2’
+
+The following object is masked from ‘package:kernlab’:
+
+    alpha
+
+All packages loaded successfully
+All packages loaded successfully
+Error in ROSE(allFeaturesFormula, data = patients_data_train_with_labels,  : 
+  could not find function "ROSE"
+Execution halted

@@ -1,0 +1,52 @@
+Loading required package: e1071
+Loading required package: PRROC
+Loading required package: dplyr
+
+Attachingscript_dir: .
+fileName = ../data/journal.pone.0187990.s002_EDITED_survival.csv
+Number of executions = 100
+
+>>> execution number: 1
+[Dataset size]
+number of data instances (rows) = 110204 
+number of features (columns) = 4 
+ge: pastecs
+
+Attaching package: ‘pastecs’
+
+The following objects are masked from ‘package:dplyr’:
+
+    first, last
+
+Loading required package: class
+Loading required package: gmodels
+Loading required package: kernlab
+Loading required package: lubridate
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+All packages loaded successfully
+All packages loaded successfully
+Loading required package: ggplot2
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+
+Attaching package: ‘ggplot2’
+
+The following object is masked from ‘package:kernlab’:
+
+    alpha
+
+All packages loaded successfully
+All packages loaded successfully
+Error in `[.data.frame`(patients_data, , target_index) : 
+  object 'target_index' not found
+Calls: imbalance_retriever -> table -> [ -> [.data.frame
+Execution halted

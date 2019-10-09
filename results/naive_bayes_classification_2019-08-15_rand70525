@@ -1,0 +1,4017 @@
+Loading required package: PRROC
+Loading required package: e1071
+Loading required package: randomForest
+ranscript_dir: .
+fileName = ../data/journal.pone.0187990.s002_EDITED_survival.csv
+Number of executions = 100
+
+
+
+>>> execution number: 1
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6502]
+7.37%
+[class: 1  #elements = 81661]
+92.63%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9572499
+ROC AUC 		0.6397038
+
+
+TOTAL:
+
+ FN =  12203  /  20438 	 (truth == 1) & (prediction < threshold)
+ TP =  8235  /  20438 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  198  /  1603 	 (truth == 0) & (prediction >= threshold)
+ TN =  1405  /  1603 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.149 	 0.570 	 0.437 	 0.403 	 0.876		 0.957		0.640
+
+
+
+
+>>> execution number: 2
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6449]
+7.31%
+[class: Error in seconds_to_period(total_time) : 
+  could not find function "seconds_to_period"
+Calls: cat
+Execution halted
+031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9563747
+ROC AUC 		0.6419817
+
+
+TOTAL:
+
+ FN =  12196  /  20385 	 (truth == 1) & (prediction < threshold)
+ TP =  8189  /  20385 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  195  /  1656 	 (truth == 0) & (prediction >= threshold)
+ TN =  1461  /  1656 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.154 	 0.569 	 0.438 	 0.402 	 0.882		 0.956		0.642
+
+
+
+
+>>> execution number: 3
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6500]
+7.37%
+[class: 1  #elements = 81663]
+92.63%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.957991
+ROC AUC 		0.6436872
+
+
+TOTAL:
+
+ FN =  12144  /  20436 	 (truth == 1) & (prediction < threshold)
+ TP =  8292  /  20436 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  190  /  1605 	 (truth == 0) & (prediction >= threshold)
+ TN =  1415  /  1605 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.153 	 0.573 	 0.440 	 0.406 	 0.882		 0.958		0.644
+
+
+
+
+>>> execution number: 4
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6466]
+7.33%
+[class: 1  #elements = 81697]
+92.67%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9562025
+ROC AUC 		0.6391037
+
+
+TOTAL:
+
+ FN =  12224  /  20402 	 (truth == 1) & (prediction < threshold)
+ TP =  8178  /  20402 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  201  /  1639 	 (truth == 0) & (prediction >= threshold)
+ TN =  1438  /  1639 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.150 	 0.568 	 0.436 	 0.401 	 0.877		 0.956		0.639
+
+
+
+
+>>> execution number: 5
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6475]
+7.34%
+[class: 1  #elements = 81688]
+92.66%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9569859
+ROC AUC 		0.6412788
+
+
+TOTAL:
+
+ FN =  12252  /  20411 	 (truth == 1) & (prediction < threshold)
+ TP =  8159  /  20411 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  191  /  1630 	 (truth == 0) & (prediction >= threshold)
+ TN =  1439  /  1630 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.152 	 0.567 	 0.435 	 0.400 	 0.883		 0.957		0.641
+
+
+
+
+>>> execution number: 6
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6452]
+7.32%
+[class: 1  #elements = 81711]
+92.68%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9558438
+ROC AUC 		0.6390249
+
+
+TOTAL:
+
+ FN =  12240  /  20388 	 (truth == 1) & (prediction < threshold)
+ TP =  8148  /  20388 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  201  /  1653 	 (truth == 0) & (prediction >= threshold)
+ TN =  1452  /  1653 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.151 	 0.567 	 0.436 	 0.400 	 0.878		 0.956		0.639
+
+
+
+
+>>> execution number: 7
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6479]
+7.35%
+[class: 1  #elements = 81684]
+92.65%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9577294
+ROC AUC 		0.6445569
+
+
+TOTAL:
+
+ FN =  12190  /  20415 	 (truth == 1) & (prediction < threshold)
+ TP =  8225  /  20415 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  185  /  1626 	 (truth == 0) & (prediction >= threshold)
+ TN =  1441  /  1626 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.156 	 0.571 	 0.439 	 0.403 	 0.886		 0.958		0.645
+
+
+
+
+>>> execution number: 8
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6478]
+7.35%
+[class: 1  #elements = 81685]
+92.65%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9586475
+ROC AUC 		0.6470787
+
+
+TOTAL:
+
+ FN =  12389  /  20414 	 (truth == 1) & (prediction < threshold)
+ TP =  8025  /  20414 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  161  /  1627 	 (truth == 0) & (prediction >= threshold)
+ TN =  1466  /  1627 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.159 	 0.561 	 0.431 	 0.393 	 0.901		 0.959		0.647
+
+
+
+
+>>> execution number: 9
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6487]
+7.36%
+[class: 1  #elements = 81676]
+92.64%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9558635
+ROC AUC 		0.6350115
+
+
+TOTAL:
+
+ FN =  12245  /  20423 	 (truth == 1) & (prediction < threshold)
+ TP =  8178  /  20423 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  211  /  1618 	 (truth == 0) & (prediction >= threshold)
+ TN =  1407  /  1618 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.145 	 0.568 	 0.435 	 0.400 	 0.870		 0.956		0.635
+
+
+
+
+>>> execution number: 10
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6484]
+7.35%
+[class: 1  #elements = 81679]
+92.65%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9571011
+ROC AUC 		0.6413065
+
+
+TOTAL:
+
+ FN =  12180  /  20420 	 (truth == 1) & (prediction < threshold)
+ TP =  8240  /  20420 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  196  /  1621 	 (truth == 0) & (prediction >= threshold)
+ TN =  1425  /  1621 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.152 	 0.571 	 0.439 	 0.404 	 0.879		 0.957		0.641
+
+
+
+
+>>> execution number: 11
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6426]
+7.29%
+[class: 1  #elements = 81737]
+92.71%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9566321
+ROC AUC 		0.6455296
+
+
+TOTAL:
+
+ FN =  12204  /  20362 	 (truth == 1) & (prediction < threshold)
+ TP =  8158  /  20362 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  184  /  1679 	 (truth == 0) & (prediction >= threshold)
+ TN =  1495  /  1679 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.159 	 0.568 	 0.438 	 0.401 	 0.890		 0.957		0.646
+
+
+
+
+>>> execution number: 12
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6492]
+7.36%
+[class: 1  #elements = 81671]
+92.64%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9575659
+ROC AUC 		0.6416288
+
+
+TOTAL:
+
+ FN =  12286  /  20428 	 (truth == 1) & (prediction < threshold)
+ TP =  8142  /  20428 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  186  /  1613 	 (truth == 0) & (prediction >= threshold)
+ TN =  1427  /  1613 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.152 	 0.566 	 0.434 	 0.399 	 0.885		 0.958		0.642
+
+
+
+
+>>> execution number: 13
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6451]
+7.32%
+[class: 1  #elements = 81712]
+92.68%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9567171
+ROC AUC 		0.6436891
+
+
+TOTAL:
+
+ FN =  12137  /  20387 	 (truth == 1) & (prediction < threshold)
+ TP =  8250  /  20387 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  194  /  1654 	 (truth == 0) & (prediction >= threshold)
+ TN =  1460  /  1654 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.156 	 0.572 	 0.441 	 0.405 	 0.883		 0.957		0.644
+
+
+
+
+>>> execution number: 14
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6473]
+7.34%
+[class: 1  #elements = 81690]
+92.66%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9557375
+ROC AUC 		0.6357701
+
+
+TOTAL:
+
+ FN =  12291  /  20409 	 (truth == 1) & (prediction < threshold)
+ TP =  8118  /  20409 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  206  /  1632 	 (truth == 0) & (prediction >= threshold)
+ TN =  1426  /  1632 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.147 	 0.565 	 0.433 	 0.398 	 0.874		 0.956		0.636
+
+
+
+
+>>> execution number: 15
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6516]
+7.39%
+[class: 1  #elements = 81647]
+92.61%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9590577
+ROC AUC 		0.6447669
+
+
+TOTAL:
+
+ FN =  12381  /  20452 	 (truth == 1) & (prediction < threshold)
+ TP =  8071  /  20452 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  167  /  1589 	 (truth == 0) & (prediction >= threshold)
+ TN =  1422  /  1589 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.155 	 0.563 	 0.431 	 0.395 	 0.895		 0.959		0.645
+
+
+
+
+>>> execution number: 16
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6429]
+7.29%
+[class: 1  #elements = 81734]
+92.71%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9549002
+ROC AUC 		0.6379155
+
+
+TOTAL:
+
+ FN =  12196  /  20365 	 (truth == 1) & (prediction < threshold)
+ TP =  8169  /  20365 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  210  /  1676 	 (truth == 0) & (prediction >= threshold)
+ TN =  1466  /  1676 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.151 	 0.568 	 0.437 	 0.401 	 0.875		 0.955		0.638
+
+
+
+
+>>> execution number: 17
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6492]
+7.36%
+[class: 1  #elements = 81671]
+92.64%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9574913
+ROC AUC 		0.6410086
+
+
+TOTAL:
+
+ FN =  12324  /  20428 	 (truth == 1) & (prediction < threshold)
+ TP =  8104  /  20428 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  185  /  1613 	 (truth == 0) & (prediction >= threshold)
+ TN =  1428  /  1613 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.152 	 0.564 	 0.432 	 0.397 	 0.885		 0.957		0.641
+
+
+
+
+>>> execution number: 18
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6483]
+7.35%
+[class: 1  #elements = 81680]
+92.65%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9575209
+ROC AUC 		0.6431686
+
+
+TOTAL:
+
+ FN =  12193  /  20419 	 (truth == 1) & (prediction < threshold)
+ TP =  8226  /  20419 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  189  /  1622 	 (truth == 0) & (prediction >= threshold)
+ TN =  1433  /  1622 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.154 	 0.571 	 0.438 	 0.403 	 0.883		 0.958		0.643
+
+
+
+
+>>> execution number: 19
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6510]
+7.38%
+[class: 1  #elements = 81653]
+92.62%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9585096
+ROC AUC 		0.6431705
+
+
+TOTAL:
+
+ FN =  12361  /  20446 	 (truth == 1) & (prediction < threshold)
+ TP =  8085  /  20446 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  174  /  1595 	 (truth == 0) & (prediction >= threshold)
+ TN =  1421  /  1595 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.153 	 0.563 	 0.431 	 0.395 	 0.891		 0.959		0.643
+
+
+
+
+>>> execution number: 20
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6516]
+7.39%
+[class: 1  #elements = 81647]
+92.61%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9582847
+ROC AUC 		0.6410548
+
+
+TOTAL:
+
+ FN =  12417  /  20452 	 (truth == 1) & (prediction < threshold)
+ TP =  8035  /  20452 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  176  /  1589 	 (truth == 0) & (prediction >= threshold)
+ TN =  1413  /  1589 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.151 	 0.561 	 0.429 	 0.393 	 0.889		 0.958		0.641
+
+
+
+
+>>> execution number: 21
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6437]
+7.30%
+[class: 1  #elements = 81726]
+92.70%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9546509
+ROC AUC 		0.636453
+
+
+TOTAL:
+
+ FN =  12126  /  20373 	 (truth == 1) & (prediction < threshold)
+ TP =  8247  /  20373 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  220  /  1668 	 (truth == 0) & (prediction >= threshold)
+ TN =  1448  /  1668 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.148 	 0.572 	 0.440 	 0.405 	 0.868		 0.955		0.636
+
+
+
+
+>>> execution number: 22
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6530]
+7.41%
+[class: 1  #elements = 81633]
+92.59%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9574511
+ROC AUC 		0.6361066
+
+
+TOTAL:
+
+ FN =  12361  /  20466 	 (truth == 1) & (prediction < threshold)
+ TP =  8105  /  20466 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  195  /  1575 	 (truth == 0) & (prediction >= threshold)
+ TN =  1380  /  1575 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.145 	 0.564 	 0.430 	 0.396 	 0.876		 0.957		0.636
+
+
+
+
+>>> execution number: 23
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6534]
+7.41%
+[class: 1  #elements = 81629]
+92.59%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9581042
+ROC AUC 		0.6395749
+
+
+TOTAL:
+
+ FN =  12228  /  20470 	 (truth == 1) & (prediction < threshold)
+ TP =  8242  /  20470 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  194  /  1571 	 (truth == 0) & (prediction >= threshold)
+ TN =  1377  /  1571 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.148 	 0.570 	 0.436 	 0.403 	 0.877		 0.958		0.640
+
+
+
+
+>>> execution number: 24
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6532]
+7.41%
+[class: 1  #elements = 81631]
+92.59%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9587151
+ROC AUC 		0.6427778
+
+
+TOTAL:
+
+ FN =  12203  /  20468 	 (truth == 1) & (prediction < threshold)
+ TP =  8265  /  20468 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  186  /  1573 	 (truth == 0) & (prediction >= threshold)
+ TN =  1387  /  1573 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.151 	 0.572 	 0.438 	 0.404 	 0.882		 0.959		0.643
+
+
+
+
+>>> execution number: 25
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6459]
+7.33%
+[class: 1  #elements = 81704]
+92.67%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9569419
+ROC AUC 		0.6427639
+
+
+TOTAL:
+
+ FN =  12267  /  20395 	 (truth == 1) & (prediction < threshold)
+ TP =  8128  /  20395 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  186  /  1646 	 (truth == 0) & (prediction >= threshold)
+ TN =  1460  /  1646 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.155 	 0.566 	 0.435 	 0.399 	 0.887		 0.957		0.643
+
+
+
+
+>>> execution number: 26
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6469]
+7.34%
+[class: 1  #elements = 81694]
+92.66%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9571175
+ROC AUC 		0.6431826
+
+
+TOTAL:
+
+ FN =  12167  /  20405 	 (truth == 1) & (prediction < threshold)
+ TP =  8238  /  20405 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  192  /  1636 	 (truth == 0) & (prediction >= threshold)
+ TN =  1444  /  1636 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.154 	 0.571 	 0.439 	 0.404 	 0.883		 0.957		0.643
+
+
+
+
+>>> execution number: 27
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6505]
+7.38%
+[class: 1  #elements = 81658]
+92.62%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9550808
+ROC AUC 		0.6285061
+
+
+TOTAL:
+
+ FN =  12364  /  20441 	 (truth == 1) & (prediction < threshold)
+ TP =  8077  /  20441 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  221  /  1600 	 (truth == 0) & (prediction >= threshold)
+ TN =  1379  /  1600 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.138 	 0.562 	 0.429 	 0.395 	 0.862		 0.955		0.629
+
+
+
+
+>>> execution number: 28
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6420]
+7.28%
+[class: 1  #elements = 81743]
+92.72%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9552528
+ROC AUC 		0.640248
+
+
+TOTAL:
+
+ FN =  12218  /  20356 	 (truth == 1) & (prediction < threshold)
+ TP =  8138  /  20356 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  201  /  1685 	 (truth == 0) & (prediction >= threshold)
+ TN =  1484  /  1685 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.154 	 0.567 	 0.437 	 0.400 	 0.881		 0.955		0.640
+
+
+
+
+>>> execution number: 29
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6472]
+7.34%
+[class: 1  #elements = 81691]
+92.66%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9576574
+ROC AUC 		0.643877
+
+
+TOTAL:
+
+ FN =  12336  /  20408 	 (truth == 1) & (prediction < threshold)
+ TP =  8072  /  20408 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  176  /  1633 	 (truth == 0) & (prediction >= threshold)
+ TN =  1457  /  1633 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.156 	 0.563 	 0.432 	 0.396 	 0.892		 0.958		0.644
+
+
+
+
+>>> execution number: 30
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6542]
+7.42%
+[class: 1  #elements = 81621]
+92.58%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9573885
+ROC AUC 		0.6356514
+
+
+TOTAL:
+
+ FN =  12184  /  20478 	 (truth == 1) & (prediction < threshold)
+ TP =  8294  /  20478 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  209  /  1563 	 (truth == 0) & (prediction >= threshold)
+ TN =  1354  /  1563 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.143 	 0.572 	 0.438 	 0.405 	 0.866		 0.957		0.636
+
+
+
+
+>>> execution number: 31
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6469]
+7.34%
+[class: 1  #elements = 81694]
+92.66%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9568775
+ROC AUC 		0.6417988
+
+
+TOTAL:
+
+ FN =  12211  /  20405 	 (truth == 1) & (prediction < threshold)
+ TP =  8194  /  20405 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  193  /  1636 	 (truth == 0) & (prediction >= threshold)
+ TN =  1443  /  1636 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.153 	 0.569 	 0.437 	 0.402 	 0.882		 0.957		0.642
+
+
+
+
+>>> execution number: 32
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6514]
+7.39%
+[class: 1  #elements = 81649]
+92.61%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9582596
+ROC AUC 		0.6409164
+
+
+TOTAL:
+
+ FN =  12450  /  20450 	 (truth == 1) & (prediction < threshold)
+ TP =  8000  /  20450 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  174  /  1591 	 (truth == 0) & (prediction >= threshold)
+ TN =  1417  /  1591 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.151 	 0.559 	 0.427 	 0.391 	 0.891		 0.958		0.641
+
+
+
+
+>>> execution number: 33
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6512]
+7.39%
+[class: 1  #elements = 81651]
+92.61%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.958224
+ROC AUC 		0.6427395
+
+
+TOTAL:
+
+ FN =  12223  /  20448 	 (truth == 1) & (prediction < threshold)
+ TP =  8225  /  20448 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  186  /  1593 	 (truth == 0) & (prediction >= threshold)
+ TN =  1407  /  1593 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.152 	 0.570 	 0.437 	 0.402 	 0.883		 0.958		0.643
+
+
+
+
+>>> execution number: 34
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6472]
+7.34%
+[class: 1  #elements = 81691]
+92.66%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9576721
+ROC AUC 		0.645556
+
+
+TOTAL:
+
+ FN =  12130  /  20408 	 (truth == 1) & (prediction < threshold)
+ TP =  8278  /  20408 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  187  /  1633 	 (truth == 0) & (prediction >= threshold)
+ TN =  1446  /  1633 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.157 	 0.573 	 0.441 	 0.406 	 0.885		 0.958		0.646
+
+
+
+
+>>> execution number: 35
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6488]
+7.36%
+[class: 1  #elements = 81675]
+92.64%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9572177
+ROC AUC 		0.6411483
+
+
+TOTAL:
+
+ FN =  12208  /  20424 	 (truth == 1) & (prediction < threshold)
+ TP =  8216  /  20424 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  194  /  1617 	 (truth == 0) & (prediction >= threshold)
+ TN =  1423  /  1617 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.152 	 0.570 	 0.437 	 0.402 	 0.880		 0.957		0.641
+
+
+
+
+>>> execution number: 36
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6458]
+7.33%
+[class: 1  #elements = 81705]
+92.67%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.957356
+ROC AUC 		0.6452539
+
+
+TOTAL:
+
+ FN =  12191  /  20394 	 (truth == 1) & (prediction < threshold)
+ TP =  8203  /  20394 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  184  /  1647 	 (truth == 0) & (prediction >= threshold)
+ TN =  1463  /  1647 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.157 	 0.570 	 0.439 	 0.402 	 0.888		 0.957		0.645
+
+
+
+
+>>> execution number: 37
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6472]
+7.34%
+[class: 1  #elements = 81691]
+92.66%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9557462
+ROC AUC 		0.6366396
+
+
+TOTAL:
+
+ FN =  12194  /  20408 	 (truth == 1) & (prediction < threshold)
+ TP =  8214  /  20408 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  211  /  1633 	 (truth == 0) & (prediction >= threshold)
+ TN =  1422  /  1633 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.147 	 0.570 	 0.437 	 0.402 	 0.871		 0.956		0.637
+
+
+
+
+>>> execution number: 38
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6512]
+7.39%
+[class: 1  #elements = 81651]
+92.61%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9573794
+ROC AUC 		0.6383946
+
+
+TOTAL:
+
+ FN =  12298  /  20448 	 (truth == 1) & (prediction < threshold)
+ TP =  8150  /  20448 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  194  /  1593 	 (truth == 0) & (prediction >= threshold)
+ TN =  1399  /  1593 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.148 	 0.566 	 0.433 	 0.399 	 0.878		 0.957		0.638
+
+
+
+
+>>> execution number: 39
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6487]
+7.36%
+[class: 1  #elements = 81676]
+92.64%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9563381
+ROC AUC 		0.635999
+
+
+TOTAL:
+
+ FN =  12394  /  20423 	 (truth == 1) & (prediction < threshold)
+ TP =  8029  /  20423 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  196  /  1618 	 (truth == 0) & (prediction >= threshold)
+ TN =  1422  /  1618 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.147 	 0.561 	 0.429 	 0.393 	 0.879		 0.956		0.636
+
+
+
+
+>>> execution number: 40
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6446]
+7.31%
+[class: 1  #elements = 81717]
+92.69%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9558223
+ROC AUC 		0.6402148
+
+
+TOTAL:
+
+ FN =  12160  /  20382 	 (truth == 1) & (prediction < threshold)
+ TP =  8222  /  20382 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  204  /  1659 	 (truth == 0) & (prediction >= threshold)
+ TN =  1455  /  1659 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.152 	 0.571 	 0.439 	 0.403 	 0.877		 0.956		0.640
+
+
+
+
+>>> execution number: 41
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6492]
+7.36%
+[class: 1  #elements = 81671]
+92.64%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9581558
+ROC AUC 		0.645292
+
+
+TOTAL:
+
+ FN =  12149  /  20428 	 (truth == 1) & (prediction < threshold)
+ TP =  8279  /  20428 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  185  /  1613 	 (truth == 0) & (prediction >= threshold)
+ TN =  1428  /  1613 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.156 	 0.573 	 0.440 	 0.405 	 0.885		 0.958		0.645
+
+
+
+
+>>> execution number: 42
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6459]
+7.33%
+[class: 1  #elements = 81704]
+92.67%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.955731
+ROC AUC 		0.6384399
+
+
+TOTAL:
+
+ FN =  12146  /  20395 	 (truth == 1) & (prediction < threshold)
+ TP =  8249  /  20395 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  210  /  1646 	 (truth == 0) & (prediction >= threshold)
+ TN =  1436  /  1646 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.150 	 0.572 	 0.439 	 0.404 	 0.872		 0.956		0.638
+
+
+
+
+>>> execution number: 43
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6461]
+7.33%
+[class: 1  #elements = 81702]
+92.67%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9566075
+ROC AUC 		0.6418795
+
+
+TOTAL:
+
+ FN =  12165  /  20397 	 (truth == 1) & (prediction < threshold)
+ TP =  8232  /  20397 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  197  /  1644 	 (truth == 0) & (prediction >= threshold)
+ TN =  1447  /  1644 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.153 	 0.571 	 0.439 	 0.404 	 0.880		 0.957		0.642
+
+
+
+
+>>> execution number: 44
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6478]
+7.35%
+[class: 1  #elements = 81685]
+92.65%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9577527
+ROC AUC 		0.6450048
+
+
+TOTAL:
+
+ FN =  12160  /  20414 	 (truth == 1) & (prediction < threshold)
+ TP =  8254  /  20414 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  186  /  1627 	 (truth == 0) & (prediction >= threshold)
+ TN =  1441  /  1627 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.156 	 0.572 	 0.440 	 0.404 	 0.886		 0.958		0.645
+
+
+
+
+>>> execution number: 45
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6483]
+7.35%
+[class: 1  #elements = 81680]
+92.65%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9573428
+ROC AUC 		0.6414632
+
+
+TOTAL:
+
+ FN =  12313  /  20419 	 (truth == 1) & (prediction < threshold)
+ TP =  8106  /  20419 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  185  /  1622 	 (truth == 0) & (prediction >= threshold)
+ TN =  1437  /  1622 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.152 	 0.565 	 0.433 	 0.397 	 0.886		 0.957		0.641
+
+
+
+
+>>> execution number: 46
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6451]
+7.32%
+[class: 1  #elements = 81712]
+92.68%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9568148
+ROC AUC 		0.6436064
+
+
+TOTAL:
+
+ FN =  12202  /  20387 	 (truth == 1) & (prediction < threshold)
+ TP =  8185  /  20387 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  189  /  1654 	 (truth == 0) & (prediction >= threshold)
+ TN =  1465  /  1654 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.156 	 0.569 	 0.438 	 0.401 	 0.886		 0.957		0.644
+
+
+
+
+>>> execution number: 47
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6441]
+7.31%
+[class: 1  #elements = 81722]
+92.69%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9567841
+ROC AUC 		0.6440845
+
+
+TOTAL:
+
+ FN =  12264  /  20377 	 (truth == 1) & (prediction < threshold)
+ TP =  8113  /  20377 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  183  /  1664 	 (truth == 0) & (prediction >= threshold)
+ TN =  1481  /  1664 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.157 	 0.566 	 0.435 	 0.398 	 0.890		 0.957		0.644
+
+
+
+
+>>> execution number: 48
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6428]
+7.29%
+[class: 1  #elements = 81735]
+92.71%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9564979
+ROC AUC 		0.6446764
+
+
+TOTAL:
+
+ FN =  12213  /  20364 	 (truth == 1) & (prediction < threshold)
+ TP =  8151  /  20364 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  186  /  1677 	 (truth == 0) & (prediction >= threshold)
+ TN =  1491  /  1677 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.158 	 0.568 	 0.437 	 0.400 	 0.889		 0.956		0.645
+
+
+
+
+>>> execution number: 49
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6512]
+7.39%
+[class: 1  #elements = 81651]
+92.61%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9606879
+ROC AUC 		0.6545276
+
+
+TOTAL:
+
+ FN =  12126  /  20448 	 (truth == 1) & (prediction < threshold)
+ TP =  8322  /  20448 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  156  /  1593 	 (truth == 0) & (prediction >= threshold)
+ TN =  1437  /  1593 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.164 	 0.575 	 0.443 	 0.407 	 0.902		 0.961		0.655
+
+
+
+
+>>> execution number: 50
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6448]
+7.31%
+[class: 1  #elements = 81715]
+92.69%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9568823
+ROC AUC 		0.6433571
+
+
+TOTAL:
+
+ FN =  12313  /  20384 	 (truth == 1) & (prediction < threshold)
+ TP =  8071  /  20384 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  181  /  1657 	 (truth == 0) & (prediction >= threshold)
+ TN =  1476  /  1657 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.156 	 0.564 	 0.433 	 0.396 	 0.891		 0.957		0.643
+
+
+
+
+>>> execution number: 51
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6486]
+7.36%
+[class: 1  #elements = 81677]
+92.64%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9561814
+ROC AUC 		0.6361122
+
+
+TOTAL:
+
+ FN =  12302  /  20422 	 (truth == 1) & (prediction < threshold)
+ TP =  8120  /  20422 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  203  /  1619 	 (truth == 0) & (prediction >= threshold)
+ TN =  1416  /  1619 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.146 	 0.565 	 0.433 	 0.398 	 0.875		 0.956		0.636
+
+
+
+
+>>> execution number: 52
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6455]
+7.32%
+[class: 1  #elements = 81708]
+92.68%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9565829
+ROC AUC 		0.6422322
+
+
+TOTAL:
+
+ FN =  12193  /  20391 	 (truth == 1) & (prediction < threshold)
+ TP =  8198  /  20391 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  194  /  1650 	 (truth == 0) & (prediction >= threshold)
+ TN =  1456  /  1650 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.154 	 0.570 	 0.438 	 0.402 	 0.882		 0.957		0.642
+
+
+
+
+>>> execution number: 53
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6532]
+7.41%
+[class: 1  #elements = 81631]
+92.59%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9581406
+ROC AUC 		0.6394303
+
+
+TOTAL:
+
+ FN =  12301  /  20468 	 (truth == 1) & (prediction < threshold)
+ TP =  8167  /  20468 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  189  /  1573 	 (truth == 0) & (prediction >= threshold)
+ TN =  1384  /  1573 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.148 	 0.567 	 0.433 	 0.399 	 0.880		 0.958		0.639
+
+
+
+
+>>> execution number: 54
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6542]
+7.42%
+[class: 1  #elements = 81621]
+92.58%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9594669
+ROC AUC 		0.6439497
+
+
+TOTAL:
+
+ FN =  12342  /  20478 	 (truth == 1) & (prediction < threshold)
+ TP =  8136  /  20478 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  171  /  1563 	 (truth == 0) & (prediction >= threshold)
+ TN =  1392  /  1563 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.152 	 0.565 	 0.432 	 0.397 	 0.891		 0.959		0.644
+
+
+
+
+>>> execution number: 55
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6480]
+7.35%
+[class: 1  #elements = 81683]
+92.65%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9561552
+ROC AUC 		0.6378239
+
+
+TOTAL:
+
+ FN =  12150  /  20416 	 (truth == 1) & (prediction < threshold)
+ TP =  8266  /  20416 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  210  /  1625 	 (truth == 0) & (prediction >= threshold)
+ TN =  1415  /  1625 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.148 	 0.572 	 0.439 	 0.405 	 0.871		 0.956		0.638
+
+
+
+
+>>> execution number: 56
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6473]
+7.34%
+[class: 1  #elements = 81690]
+92.66%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9572489
+ROC AUC 		0.6421307
+
+
+TOTAL:
+
+ FN =  12319  /  20409 	 (truth == 1) & (prediction < threshold)
+ TP =  8090  /  20409 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  183  /  1632 	 (truth == 0) & (prediction >= threshold)
+ TN =  1449  /  1632 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.154 	 0.564 	 0.433 	 0.396 	 0.888		 0.957		0.642
+
+
+
+
+>>> execution number: 57
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6481]
+7.35%
+[class: 1  #elements = 81682]
+92.65%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9568506
+ROC AUC 		0.6400414
+
+
+TOTAL:
+
+ FN =  12247  /  20417 	 (truth == 1) & (prediction < threshold)
+ TP =  8170  /  20417 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  195  /  1624 	 (truth == 0) & (prediction >= threshold)
+ TN =  1429  /  1624 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.151 	 0.568 	 0.436 	 0.400 	 0.880		 0.957		0.640
+
+
+
+
+>>> execution number: 58
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6506]
+7.38%
+[class: 1  #elements = 81657]
+92.62%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9572701
+ROC AUC 		0.6387847
+
+
+TOTAL:
+
+ FN =  12275  /  20442 	 (truth == 1) & (prediction < threshold)
+ TP =  8167  /  20442 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  195  /  1599 	 (truth == 0) & (prediction >= threshold)
+ TN =  1404  /  1599 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.148 	 0.567 	 0.434 	 0.400 	 0.878		 0.957		0.639
+
+
+
+
+>>> execution number: 59
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6480]
+7.35%
+[class: 1  #elements = 81683]
+92.65%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9566629
+ROC AUC 		0.6401002
+
+
+TOTAL:
+
+ FN =  12145  /  20416 	 (truth == 1) & (prediction < threshold)
+ TP =  8271  /  20416 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  203  /  1625 	 (truth == 0) & (prediction >= threshold)
+ TN =  1422  /  1625 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.151 	 0.573 	 0.440 	 0.405 	 0.875		 0.957		0.640
+
+
+
+
+>>> execution number: 60
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6504]
+7.38%
+[class: 1  #elements = 81659]
+92.62%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9570285
+ROC AUC 		0.637279
+
+
+TOTAL:
+
+ FN =  12364  /  20440 	 (truth == 1) & (prediction < threshold)
+ TP =  8076  /  20440 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  193  /  1601 	 (truth == 0) & (prediction >= threshold)
+ TN =  1408  /  1601 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.147 	 0.563 	 0.430 	 0.395 	 0.879		 0.957		0.637
+
+
+
+
+>>> execution number: 61
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6481]
+7.35%
+[class: 1  #elements = 81682]
+92.65%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.955332
+ROC AUC 		0.632509
+
+
+TOTAL:
+
+ FN =  12366  /  20417 	 (truth == 1) & (prediction < threshold)
+ TP =  8051  /  20417 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  210  /  1624 	 (truth == 0) & (prediction >= threshold)
+ TN =  1414  /  1624 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.143 	 0.561 	 0.429 	 0.394 	 0.871		 0.955		0.633
+
+
+
+
+>>> execution number: 62
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6459]
+7.33%
+[class: 1  #elements = 81704]
+92.67%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9574319
+ROC AUC 		0.6454404
+
+
+TOTAL:
+
+ FN =  12195  /  20395 	 (truth == 1) & (prediction < threshold)
+ TP =  8200  /  20395 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  183  /  1646 	 (truth == 0) & (prediction >= threshold)
+ TN =  1463  /  1646 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.158 	 0.570 	 0.438 	 0.402 	 0.889		 0.957		0.645
+
+
+
+
+>>> execution number: 63
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6515]
+7.39%
+[class: 1  #elements = 81648]
+92.61%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9585179
+ROC AUC 		0.6424372
+
+
+TOTAL:
+
+ FN =  12387  /  20451 	 (truth == 1) & (prediction < threshold)
+ TP =  8064  /  20451 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  174  /  1590 	 (truth == 0) & (prediction >= threshold)
+ TN =  1416  /  1590 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.152 	 0.562 	 0.430 	 0.394 	 0.891		 0.959		0.642
+
+
+
+
+>>> execution number: 64
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6466]
+7.33%
+[class: 1  #elements = 81697]
+92.67%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9570025
+ROC AUC 		0.6424948
+
+
+TOTAL:
+
+ FN =  12235  /  20402 	 (truth == 1) & (prediction < threshold)
+ TP =  8167  /  20402 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  189  /  1639 	 (truth == 0) & (prediction >= threshold)
+ TN =  1450  /  1639 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.154 	 0.568 	 0.436 	 0.400 	 0.885		 0.957		0.642
+
+
+
+
+>>> execution number: 65
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6496]
+7.37%
+[class: 1  #elements = 81667]
+92.63%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9576598
+ROC AUC 		0.6417474
+
+
+TOTAL:
+
+ FN =  12265  /  20432 	 (truth == 1) & (prediction < threshold)
+ TP =  8167  /  20432 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  187  /  1609 	 (truth == 0) & (prediction >= threshold)
+ TN =  1422  /  1609 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.152 	 0.567 	 0.435 	 0.400 	 0.884		 0.958		0.642
+
+
+
+
+>>> execution number: 66
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6446]
+7.31%
+[class: 1  #elements = 81717]
+92.69%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9563129
+ROC AUC 		0.6424646
+
+
+TOTAL:
+
+ FN =  12142  /  20382 	 (truth == 1) & (prediction < threshold)
+ TP =  8240  /  20382 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  198  /  1659 	 (truth == 0) & (prediction >= threshold)
+ TN =  1461  /  1659 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.155 	 0.572 	 0.440 	 0.404 	 0.881		 0.956		0.642
+
+
+
+
+>>> execution number: 67
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6451]
+7.32%
+[class: 1  #elements = 81712]
+92.68%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9569409
+ROC AUC 		0.6436955
+
+
+TOTAL:
+
+ FN =  12260  /  20387 	 (truth == 1) & (prediction < threshold)
+ TP =  8127  /  20387 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  184  /  1654 	 (truth == 0) & (prediction >= threshold)
+ TN =  1470  /  1654 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.156 	 0.566 	 0.435 	 0.399 	 0.889		 0.957		0.644
+
+
+
+
+>>> execution number: 68
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6457]
+7.32%
+[class: 1  #elements = 81706]
+92.68%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9546895
+ROC AUC 		0.6340935
+
+
+TOTAL:
+
+ FN =  12152  /  20393 	 (truth == 1) & (prediction < threshold)
+ TP =  8241  /  20393 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  224  /  1648 	 (truth == 0) & (prediction >= threshold)
+ TN =  1424  /  1648 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.145 	 0.571 	 0.439 	 0.404 	 0.864		 0.955		0.634
+
+
+
+
+>>> execution number: 69
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6405]
+7.26%
+[class: 1  #elements = 81758]
+92.74%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9542841
+ROC AUC 		0.6402327
+
+
+TOTAL:
+
+ FN =  11896  /  20341 	 (truth == 1) & (prediction < threshold)
+ TP =  8445  /  20341 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  229  /  1700 	 (truth == 0) & (prediction >= threshold)
+ TN =  1471  /  1700 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.153 	 0.582 	 0.450 	 0.415 	 0.865		 0.954		0.640
+
+
+
+
+>>> execution number: 70
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6439]
+7.30%
+[class: 1  #elements = 81724]
+92.70%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9553745
+ROC AUC 		0.6393061
+
+
+TOTAL:
+
+ FN =  12130  /  20375 	 (truth == 1) & (prediction < threshold)
+ TP =  8245  /  20375 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  210  /  1666 	 (truth == 0) & (prediction >= threshold)
+ TN =  1456  /  1666 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.151 	 0.572 	 0.440 	 0.405 	 0.874		 0.955		0.639
+
+
+
+
+>>> execution number: 71
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6412]
+7.27%
+[class: 1  #elements = 81751]
+92.73%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9558986
+ROC AUC 		0.6436369
+
+
+TOTAL:
+
+ FN =  12243  /  20348 	 (truth == 1) & (prediction < threshold)
+ TP =  8105  /  20348 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  188  /  1693 	 (truth == 0) & (prediction >= threshold)
+ TN =  1505  /  1693 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.158 	 0.566 	 0.436 	 0.398 	 0.889		 0.956		0.644
+
+
+
+
+>>> execution number: 72
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6508]
+7.38%
+[class: 1  #elements = 81655]
+92.62%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9578136
+ROC AUC 		0.6418389
+
+
+TOTAL:
+
+ FN =  12161  /  20444 	 (truth == 1) & (prediction < threshold)
+ TP =  8283  /  20444 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  194  /  1597 	 (truth == 0) & (prediction >= threshold)
+ TN =  1403  /  1597 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.151 	 0.573 	 0.439 	 0.405 	 0.879		 0.958		0.642
+
+
+
+
+>>> execution number: 73
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6510]
+7.38%
+[class: 1  #elements = 81653]
+92.62%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9590881
+ROC AUC 		0.6468098
+
+
+TOTAL:
+
+ FN =  12225  /  20446 	 (truth == 1) & (prediction < threshold)
+ TP =  8221  /  20446 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  173  /  1595 	 (truth == 0) & (prediction >= threshold)
+ TN =  1422  /  1595 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.157 	 0.570 	 0.438 	 0.402 	 0.892		 0.959		0.647
+
+
+
+
+>>> execution number: 74
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6470]
+7.34%
+[class: 1  #elements = 81693]
+92.66%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9565917
+ROC AUC 		0.6399769
+
+
+TOTAL:
+
+ FN =  12272  /  20406 	 (truth == 1) & (prediction < threshold)
+ TP =  8134  /  20406 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  194  /  1635 	 (truth == 0) & (prediction >= threshold)
+ TN =  1441  /  1635 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.151 	 0.566 	 0.434 	 0.399 	 0.881		 0.957		0.640
+
+
+
+
+>>> execution number: 75
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6466]
+7.33%
+[class: 1  #elements = 81697]
+92.67%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9570814
+ROC AUC 		0.6427128
+
+
+TOTAL:
+
+ FN =  12251  /  20402 	 (truth == 1) & (prediction < threshold)
+ TP =  8151  /  20402 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  187  /  1639 	 (truth == 0) & (prediction >= threshold)
+ TN =  1452  /  1639 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.154 	 0.567 	 0.436 	 0.400 	 0.886		 0.957		0.643
+
+
+
+
+>>> execution number: 76
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6405]
+7.26%
+[class: 1  #elements = 81758]
+92.74%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9539795
+ROC AUC 		0.6364836
+
+
+TOTAL:
+
+ FN =  12228  /  20341 	 (truth == 1) & (prediction < threshold)
+ TP =  8113  /  20341 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  214  /  1700 	 (truth == 0) & (prediction >= threshold)
+ TN =  1486  /  1700 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.150 	 0.566 	 0.436 	 0.399 	 0.874		 0.954		0.636
+
+
+
+
+>>> execution number: 77
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6446]
+7.31%
+[class: 1  #elements = 81717]
+92.69%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9554906
+ROC AUC 		0.6377581
+
+
+TOTAL:
+
+ FN =  12297  /  20382 	 (truth == 1) & (prediction < threshold)
+ TP =  8085  /  20382 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  201  /  1659 	 (truth == 0) & (prediction >= threshold)
+ TN =  1458  /  1659 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.150 	 0.564 	 0.433 	 0.397 	 0.879		 0.955		0.638
+
+
+
+
+>>> execution number: 78
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6526]
+7.40%
+[class: 1  #elements = 81637]
+92.60%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9588887
+ROC AUC 		0.6431229
+
+
+TOTAL:
+
+ FN =  12350  /  20462 	 (truth == 1) & (prediction < threshold)
+ TP =  8112  /  20462 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  174  /  1579 	 (truth == 0) & (prediction >= threshold)
+ TN =  1405  /  1579 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.152 	 0.564 	 0.432 	 0.396 	 0.890		 0.959		0.643
+
+
+
+
+>>> execution number: 79
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6439]
+7.30%
+[class: 1  #elements = 81724]
+92.70%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9551506
+ROC AUC 		0.6389665
+
+
+TOTAL:
+
+ FN =  12046  /  20375 	 (truth == 1) & (prediction < threshold)
+ TP =  8329  /  20375 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  218  /  1666 	 (truth == 0) & (prediction >= threshold)
+ TN =  1448  /  1666 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.151 	 0.576 	 0.444 	 0.409 	 0.869		 0.955		0.639
+
+
+
+
+>>> execution number: 80
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6493]
+7.36%
+[class: 1  #elements = 81670]
+92.64%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9556597
+ROC AUC 		0.6331676
+
+
+TOTAL:
+
+ FN =  12276  /  20429 	 (truth == 1) & (prediction < threshold)
+ TP =  8153  /  20429 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  214  /  1612 	 (truth == 0) & (prediction >= threshold)
+ TN =  1398  /  1612 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.143 	 0.566 	 0.433 	 0.399 	 0.867		 0.956		0.633
+
+
+
+
+>>> execution number: 81
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6473]
+7.34%
+[class: 1  #elements = 81690]
+92.66%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9568766
+ROC AUC 		0.6411739
+
+
+TOTAL:
+
+ FN =  12233  /  20409 	 (truth == 1) & (prediction < threshold)
+ TP =  8176  /  20409 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  193  /  1632 	 (truth == 0) & (prediction >= threshold)
+ TN =  1439  /  1632 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.152 	 0.568 	 0.436 	 0.401 	 0.882		 0.957		0.641
+
+
+
+
+>>> execution number: 82
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6431]
+7.29%
+[class: 1  #elements = 81732]
+92.71%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9548809
+ROC AUC 		0.6378824
+
+
+TOTAL:
+
+ FN =  12159  /  20367 	 (truth == 1) & (prediction < threshold)
+ TP =  8208  /  20367 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  213  /  1674 	 (truth == 0) & (prediction >= threshold)
+ TN =  1461  /  1674 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.150 	 0.570 	 0.439 	 0.403 	 0.873		 0.955		0.638
+
+
+
+
+>>> execution number: 83
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6433]
+7.30%
+[class: 1  #elements = 81730]
+92.70%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9570224
+ROC AUC 		0.6466395
+
+
+TOTAL:
+
+ FN =  12178  /  20369 	 (truth == 1) & (prediction < threshold)
+ TP =  8191  /  20369 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  182  /  1672 	 (truth == 0) & (prediction >= threshold)
+ TN =  1490  /  1672 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.160 	 0.570 	 0.439 	 0.402 	 0.891		 0.957		0.647
+
+
+
+
+>>> execution number: 84
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6457]
+7.32%
+[class: 1  #elements = 81706]
+92.68%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9577752
+ROC AUC 		0.6464775
+
+
+TOTAL:
+
+ FN =  12278  /  20393 	 (truth == 1) & (prediction < threshold)
+ TP =  8115  /  20393 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  173  /  1648 	 (truth == 0) & (prediction >= threshold)
+ TN =  1475  /  1648 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.159 	 0.566 	 0.435 	 0.398 	 0.895		 0.958		0.646
+
+
+
+
+>>> execution number: 85
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6422]
+7.28%
+[class: 1  #elements = 81741]
+92.72%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.95535
+ROC AUC 		0.64014
+
+
+TOTAL:
+
+ FN =  12257  /  20358 	 (truth == 1) & (prediction < threshold)
+ TP =  8101  /  20358 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  198  /  1683 	 (truth == 0) & (prediction >= threshold)
+ TN =  1485  /  1683 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.154 	 0.565 	 0.435 	 0.398 	 0.882		 0.955		0.640
+
+
+
+
+>>> execution number: 86
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6395]
+7.25%
+[class: 1  #elements = 81768]
+92.75%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9541135
+ROC AUC 		0.6390456
+
+
+TOTAL:
+
+ FN =  12109  /  20331 	 (truth == 1) & (prediction < threshold)
+ TP =  8222  /  20331 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  216  /  1710 	 (truth == 0) & (prediction >= threshold)
+ TN =  1494  /  1710 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.153 	 0.572 	 0.441 	 0.404 	 0.874		 0.954		0.639
+
+
+
+
+>>> execution number: 87
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6505]
+7.38%
+[class: 1  #elements = 81658]
+92.62%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9570866
+ROC AUC 		0.6383164
+
+
+TOTAL:
+
+ FN =  12244  /  20441 	 (truth == 1) & (prediction < threshold)
+ TP =  8197  /  20441 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  199  /  1600 	 (truth == 0) & (prediction >= threshold)
+ TN =  1401  /  1600 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.148 	 0.569 	 0.435 	 0.401 	 0.876		 0.957		0.638
+
+
+
+
+>>> execution number: 88
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6439]
+7.30%
+[class: 1  #elements = 81724]
+92.70%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9539212
+ROC AUC 		0.63195
+
+
+TOTAL:
+
+ FN =  12283  /  20375 	 (truth == 1) & (prediction < threshold)
+ TP =  8092  /  20375 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  222  /  1666 	 (truth == 0) & (prediction >= threshold)
+ TN =  1444  /  1666 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.144 	 0.564 	 0.433 	 0.397 	 0.867		 0.954		0.632
+
+
+
+
+>>> execution number: 89
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6484]
+7.35%
+[class: 1  #elements = 81679]
+92.65%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9567657
+ROC AUC 		0.6393085
+
+
+TOTAL:
+
+ FN =  12249  /  20420 	 (truth == 1) & (prediction < threshold)
+ TP =  8171  /  20420 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  197  /  1621 	 (truth == 0) & (prediction >= threshold)
+ TN =  1424  /  1621 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.150 	 0.568 	 0.435 	 0.400 	 0.878		 0.957		0.639
+
+
+
+
+>>> execution number: 90
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6457]
+7.32%
+[class: 1  #elements = 81706]
+92.68%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9546445
+ROC AUC 		0.6329318
+
+
+TOTAL:
+
+ FN =  12286  /  20393 	 (truth == 1) & (prediction < threshold)
+ TP =  8107  /  20393 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  217  /  1648 	 (truth == 0) & (prediction >= threshold)
+ TN =  1431  /  1648 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.144 	 0.565 	 0.433 	 0.398 	 0.868		 0.955		0.633
+
+
+
+
+>>> execution number: 91
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6496]
+7.37%
+[class: 1  #elements = 81667]
+92.63%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9581243
+ROC AUC 		0.6453253
+
+
+TOTAL:
+
+ FN =  12068  /  20432 	 (truth == 1) & (prediction < threshold)
+ TP =  8364  /  20432 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  191  /  1609 	 (truth == 0) & (prediction >= threshold)
+ TN =  1418  /  1609 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.155 	 0.577 	 0.444 	 0.409 	 0.881		 0.958		0.645
+
+
+
+
+>>> execution number: 92
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6459]
+7.33%
+[class: 1  #elements = 81704]
+92.67%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9555504
+ROC AUC 		0.6367866
+
+
+TOTAL:
+
+ FN =  12263  /  20395 	 (truth == 1) & (prediction < threshold)
+ TP =  8132  /  20395 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  206  /  1646 	 (truth == 0) & (prediction >= threshold)
+ TN =  1440  /  1646 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.148 	 0.566 	 0.434 	 0.399 	 0.875		 0.956		0.637
+
+
+
+
+>>> execution number: 93
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6507]
+7.38%
+[class: 1  #elements = 81656]
+92.62%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9575228
+ROC AUC 		0.6396948
+
+
+TOTAL:
+
+ FN =  12288  /  20443 	 (truth == 1) & (prediction < threshold)
+ TP =  8155  /  20443 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  191  /  1598 	 (truth == 0) & (prediction >= threshold)
+ TN =  1407  /  1598 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.149 	 0.567 	 0.434 	 0.399 	 0.880		 0.958		0.640
+
+
+
+
+>>> execution number: 94
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6489]
+7.36%
+[class: 1  #elements = 81674]
+92.64%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9566946
+ROC AUC 		0.6373872
+
+
+TOTAL:
+
+ FN =  12386  /  20425 	 (truth == 1) & (prediction < threshold)
+ TP =  8039  /  20425 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  192  /  1616 	 (truth == 0) & (prediction >= threshold)
+ TN =  1424  /  1616 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.148 	 0.561 	 0.429 	 0.394 	 0.881		 0.957		0.637
+
+
+
+
+>>> execution number: 95
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6477]
+7.35%
+[class: 1  #elements = 81686]
+92.65%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9569994
+ROC AUC 		0.6420256
+
+
+TOTAL:
+
+ FN =  12132  /  20413 	 (truth == 1) & (prediction < threshold)
+ TP =  8281  /  20413 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  198  /  1628 	 (truth == 0) & (prediction >= threshold)
+ TN =  1430  /  1628 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.153 	 0.573 	 0.441 	 0.406 	 0.878		 0.957		0.642
+
+
+
+
+>>> execution number: 96
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6552]
+7.43%
+[class: 1  #elements = 81611]
+92.57%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9596924
+ROC AUC 		0.64415
+
+
+TOTAL:
+
+ FN =  12299  /  20488 	 (truth == 1) & (prediction < threshold)
+ TP =  8189  /  20488 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  173  /  1553 	 (truth == 0) & (prediction >= threshold)
+ TN =  1380  /  1553 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.152 	 0.568 	 0.434 	 0.400 	 0.889		 0.960		0.644
+
+
+
+
+>>> execution number: 97
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6515]
+7.39%
+[class: 1  #elements = 81648]
+92.61%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9600894
+ROC AUC 		0.6506782
+
+
+TOTAL:
+
+ FN =  12230  /  20451 	 (truth == 1) & (prediction < threshold)
+ TP =  8221  /  20451 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  160  /  1590 	 (truth == 0) & (prediction >= threshold)
+ TN =  1430  /  1590 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.161 	 0.570 	 0.438 	 0.402 	 0.899		 0.960		0.651
+
+
+
+
+>>> execution number: 98
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6484]
+7.35%
+[class: 1  #elements = 81679]
+92.65%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9566615
+ROC AUC 		0.6386474
+
+
+TOTAL:
+
+ FN =  12276  /  20420 	 (truth == 1) & (prediction < threshold)
+ TP =  8144  /  20420 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  197  /  1621 	 (truth == 0) & (prediction >= threshold)
+ TN =  1424  /  1621 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.149 	 0.566 	 0.434 	 0.399 	 0.878		 0.957		0.639
+
+
+
+
+>>> execution number: 99
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6486]
+7.36%
+[class: 1  #elements = 81677]
+92.64%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9564003
+ROC AUC 		0.6384308
+
+
+TOTAL:
+
+ FN =  12119  /  20422 	 (truth == 1) & (prediction < threshold)
+ TP =  8303  /  20422 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  210  /  1619 	 (truth == 0) & (prediction >= threshold)
+ TN =  1409  /  1619 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.148 	 0.574 	 0.441 	 0.407 	 0.870		 0.956		0.638
+
+
+
+
+>>> execution number: 100
+training_set_perce = 80%
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 6434]
+7.30%
+[class: 1  #elements = 81729]
+92.70%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 1  #elements = 44031]
+49.94%
+[class: 0  #elements = 44132]
+50.06%
+
+[training set dimensions:  88163  patients]
+[test set dimensions:  22041  patients]
+[Creating the training set and test set for the labels "1"-"0"]
+
+PR AUC (integral) 	0.9558683
+ROC AUC 		0.6411117
+
+
+TOTAL:
+
+ FN =  12244  /  20370 	 (truth == 1) & (prediction < threshold)
+ TP =  8126  /  20370 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  195  /  1671 	 (truth == 0) & (prediction >= threshold)
+ TN =  1476  /  1671 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.154 	 0.566 	 0.436 	 0.399 	 0.883		 0.956		0.641
+
+
+
+
+=== final results ===
+Number of executions = 100
+
+
+       MCC F1_score accuracy TP_rate TN_rate PR_AUC ROC_AUC
+mean 0.152    0.568    0.436   0.401   0.881  0.957   0.641
+
+
+=== === === ===

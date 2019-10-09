@@ -1,0 +1,919 @@
+Loading required package: PRROC
+Loading required package: e1071
+Loading required package: randomForest
+randomForest 4.6-14
+Type rfNews() to see newscript_dir: .
+fileName = /home/davide/projects/sepsis_survival_in_Norway/data/journal.pone.0187990.s002_EDITED_length_of_stay.csv
+Number of executions = 100
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 120.808 	 109.080 	 14594.458 	 1.561 	 -91.856 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 117.551 	 105.024 	 13818.288 	 1.537 	 -96.753 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 121.842 	 109.867 	 14845.520 	 1.551 	 -93.490 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 119.796 	 106.236 	 14351.139 	 1.530 	 -91.980 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 118.056 	 103.395 	 13937.319 	 1.518 	 -96.216 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 117.757 	 103.957 	 13866.717 	 1.530 	 -91.103 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 123.652 	 113.038 	 15289.931 	 1.575 	 -101.603 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 108.997 	 97.598 	 11880.384 	 1.530 	 -82.885 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 127.369 	 113.294 	 16222.808 	 1.546 	 -111.423 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 111.829 	 100.868 	 12505.714 	 1.545 	 -82.237 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 116.768 	 103.016 	 13634.673 	 1.523 	 -84.545 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 113.636 	 99.882 	 12913.168 	 1.507 	 -80.702 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 117.810 	 104.322 	 13879.276 	 1.529 	 -96.857 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 111.323 	 99.442 	 12392.809 	 1.528 	 -85.027 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 114.411 	 103.536 	 13089.984 	 1.557 	 -85.648 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 116.949 	 103.498 	 13677.106 	 1.520 	 -93.260 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 119.730 	 105.285 	 14335.373 	 1.520 	 -91.501 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 113.363 	 99.945 	 12851.228 	 1.519 	 -82.066 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 116.854 	 104.737 	 13654.819 	 1.539 	 -94.105 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 133.260 	 117.567 	 17758.245 	 1.534 	 -111.634 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 107.405 	 96.225 	 11535.860 	 1.527 	 -76.906 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 114.059 	 101.189 	 13009.562 	 1.523 	 -83.277 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 101.992 	 90.615 	 10402.309 	 1.509 	 -65.852 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 110.435 	 99.035 	 12195.938 	 1.521 	 -73.941 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 119.070 	 106.914 	 14177.736 	 1.545 	 -91.289 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 122.737 	 109.976 	 15064.375 	 1.545 	 -100.772 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 109.921 	 99.472 	 12082.671 	 1.553 	 -84.151 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 109.499 	 97.518 	 11990.080 	 1.525 	 -72.586 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 116.350 	 102.176 	 13537.373 	 1.513 	 -89.095 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 110.194 	 97.692 	 12142.707 	 1.514 	 -76.227 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 122.624 	 108.721 	 15036.612 	 1.542 	 -103.229 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 115.422 	 103.721 	 13322.173 	 1.542 	 -90.082 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 112.447 	 99.864 	 12644.322 	 1.520 	 -77.198 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 122.585 	 108.048 	 15026.987 	 1.527 	 -90.890 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 118.274 	 105.139 	 13988.654 	 1.528 	 -95.393 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 125.698 	 111.599 	 15800.092 	 1.542 	 -104.642 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 124.396 	 111.509 	 15474.486 	 1.544 	 -94.824 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 111.459 	 98.120 	 12423.169 	 1.513 	 -79.328 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 119.029 	 105.001 	 14167.892 	 1.522 	 -92.747 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 125.757 	 110.733 	 15814.940 	 1.529 	 -99.298 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 107.775 	 95.013 	 11615.376 	 1.502 	 -74.388 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 115.600 	 102.150 	 13363.367 	 1.515 	 -85.468 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 115.774 	 104.573 	 13403.698 	 1.554 	 -87.697 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 113.454 	 101.070 	 12871.853 	 1.523 	 -80.162 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 118.981 	 104.684 	 14156.474 	 1.528 	 -92.196 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 116.435 	 103.471 	 13557.218 	 1.530 	 -83.182 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 115.084 	 101.757 	 13244.331 	 1.520 	 -82.099 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 109.650 	 97.195 	 12023.145 	 1.514 	 -78.456 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 124.643 	 112.100 	 15535.957 	 1.554 	 -107.751 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 115.451 	 102.744 	 13328.891 	 1.528 	 -91.048 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 119.240 	 108.125 	 14218.094 	 1.568 	 -100.843 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 117.949 	 103.818 	 13912.055 	 1.521 	 -89.249 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 107.155 	 94.551 	 11482.159 	 1.505 	 -72.955 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 107.341 	 94.954 	 11522.189 	 1.510 	 -70.918 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 104.418 	 91.812 	 10903.173 	 1.502 	 -66.285 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 122.092 	 108.976 	 14906.442 	 1.545 	 -97.915 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 115.905 	 102.990 	 13434.045 	 1.535 	 -90.197 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 111.236 	 98.116 	 12373.445 	 1.510 	 -78.830 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 111.130 	 99.254 	 12349.861 	 1.528 	 -77.665 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 119.460 	 105.582 	 14270.593 	 1.532 	 -88.203 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 104.726 	 93.589 	 10967.435 	 1.516 	 -66.414 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 113.186 	 100.553 	 12811.047 	 1.531 	 -79.089 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 110.952 	 97.883 	 12310.321 	 1.515 	 -80.200 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 115.104 	 100.315 	 13249.040 	 1.507 	 -96.531 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 112.946 	 101.318 	 12756.818 	 1.532 	 -85.753 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 118.236 	 104.275 	 13979.834 	 1.522 	 -92.147 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 95.077 	 84.498 	 9039.667 	 1.501 	 -60.391 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 114.812 	 102.094 	 13181.804 	 1.520 	 -86.333 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 105.665 	 92.742 	 11165.142 	 1.501 	 -75.102 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 109.179 	 96.801 	 11920.033 	 1.513 	 -79.888 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 117.860 	 105.133 	 13891.004 	 1.531 	 -93.245 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 115.023 	 102.227 	 13230.244 	 1.527 	 -87.558 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 110.066 	 97.284 	 12114.574 	 1.513 	 -84.840 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 110.660 	 98.062 	 12245.650 	 1.520 	 -82.717 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 116.973 	 104.871 	 13682.714 	 1.537 	 -93.567 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 114.723 	 102.104 	 13161.315 	 1.528 	 -83.944 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 123.679 	 110.658 	 15296.403 	 1.550 	 -96.472 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 121.045 	 108.084 	 14651.839 	 1.537 	 -99.242 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 113.457 	 100.853 	 12872.525 	 1.523 	 -83.040 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 112.302 	 100.400 	 12611.709 	 1.528 	 -84.467 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 116.071 	 104.247 	 13472.527 	 1.534 	 -92.005 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 117.672 	 106.228 	 13846.725 	 1.550 	 -89.536 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 114.641 	 100.182 	 13142.524 	 1.505 	 -89.738 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 119.675 	 106.041 	 14322.174 	 1.526 	 -94.792 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 110.067 	 97.813 	 12114.829 	 1.518 	 -82.711 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 112.410 	 99.352 	 12635.977 	 1.515 	 -81.440 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 110.725 	 99.087 	 12259.978 	 1.529 	 -78.902 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 119.275 	 105.085 	 14226.409 	 1.526 	 -95.118 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 115.116 	 103.711 	 13251.617 	 1.547 	 -85.393 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 115.949 	 102.388 	 13444.284 	 1.528 	 -90.222 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 121.083 	 109.922 	 14661.148 	 1.560 	 -94.533 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 120.492 	 107.229 	 14518.312 	 1.542 	 -91.026 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 118.269 	 104.693 	 13987.524 	 1.518 	 -86.057 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 124.901 	 112.466 	 15600.189 	 1.558 	 -104.514 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 118.557 	 104.527 	 14055.768 	 1.524 	 -87.485 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 114.210 	 103.521 	 13043.865 	 1.556 	 -90.734 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 128.318 	 115.011 	 16465.585 	 1.555 	 -110.922 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 111.914 	 98.722 	 12524.649 	 1.510 	 -77.010 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 106.265 	 93.848 	 11292.253 	 1.507 	 -75.424 
+training_set_perce = 80%
+[Creating the subsets for the values]
+[Creating the subsets for the labels ]
+[1] "dim(patients_data_train)"
+[1] 88163     4
+[1] "dim(patients_data_test)"
+[1] 22041     4
+  @@@ regression :: 	 RMSE 	 MAE 	 MSE  	 SMAPE 	 R^2 
+  @@@ regression :: 	 106.312 	 94.755 	 11302.328 	 1.517 	 -71.476 
+
+
+
+=== final results ===
+Number of executions = 100
+
+
+        RMSE     MAE       MSE SMAPE     R^2
+mean 115.475 102.724 13371.170 1.529 -87.421
+
+
+=== === === ===

@@ -79,8 +79,7 @@ for(exe_i in 1:execution_number)
     allFeaturesFormula <- as.formula(paste(as.factor(colnames(patients_data)[target_index]), '.', sep=' ~ ' ))
     cart_model <- rpart(allFeaturesFormula, method="class", data=training_set);
 
-    pred_test_predictions <- as.numeric(predict(cart_model, test_set, type = "class"))
-    
+    pred_test_predictions <- as.numeric(predict(cart_model, test_set, type = "class"))    
     thisResultMat <- regression_rates(test_labels, pred_test_predictions, "@@@ Test set @@@")
 
      if (exe_i == 1)  resultDataFrame <-  thisResultMat
