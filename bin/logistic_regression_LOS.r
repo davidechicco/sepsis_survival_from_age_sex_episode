@@ -1,20 +1,36 @@
 setwd(".")
 options(stringsAsFactors = FALSE)
+cat("\014")
+set.seed(11)
 
-EXP_ARG_NUM <- 3
-
-TRAIN_SET_OVERSAMPLING_SYNTHETIC <- TRUE
 NUMBER_OF_EXECUTIONS <- 100
+NORMALIZATION <- FALSE
 
-fileName <- "../data/journal.pone.0187990.s002_EDITED_length_of_stay.csv"
+EXP_ARG_NUM <- 1
+args = commandArgs(trailingOnly=TRUE)
+if (length(args)<EXP_ARG_NUM) {
+  stop("At least one argument must be supplied ", call.=FALSE)
+} else {  
+  inputDatasetFlag <- args[1]
+}
+
+if(inputDatasetFlag == "STUDY_COHORT") {
+
+    fileName <- "../data/dataFrameForLOS_study_cohort_rand2109.csv" #study cohort
+
+} else if(inputDatasetFlag == "PRIMARY_COHORT") {
+
+    fileName <- "../data/journal.pone.0187990.s002_EDITED_length_of_stay.csv" #primary cohort
+
+} else {
+    fileName <- NULL    
+}
+
+
 targetName <- "length_of_stay_days"
 
 
-# fileName <- "../data/dataset_edited_without_time.csv"
-# targetName <- "death_event"
-
-# fileName <- "../../../projects/sepsis_severity_ICU/data/sepsis_severity_dataset_edited_2019-02-11.csv"
-# targetName <- "ADDED.survival"
+cat("inputDatasetFlag: ", inputDatasetFlag, "\n", sep="")
 
 cat("fileName: ", fileName, "\n", sep="")
 cat("targetName: ", targetName, "\n", sep="")
@@ -47,9 +63,14 @@ patients_data_original <- patients_data
 target_index <- dim(patients_data)[2]
 original_patients_data <- patients_data
 
-# let's normalize the target
-LOS_range <- max(patients_data[,target_index]) - min(patients_data[,target_index])
-patients_data[,target_index] <- (patients_data[,target_index])/LOS_range
+if(NORMALIZATION==TRUE){
+
+    # let's normalize the target
+    LOS_range <- max(patients_data[,target_index]) - min(patients_data[,target_index])
+    patients_data[,target_index] <- (patients_data[,target_index])/LOS_range
+    cat("Normalization yes\n")
+}
+
 
 # as.factor()
 # patients_data[,target_index] <- as.factor(patients_data[,target_index])
@@ -97,9 +118,9 @@ for(exe_i in 1:execution_number)
         prc_data_train_labels <- prc_data_train_including_label[, target_index] # NEW
         prc_data_test_labels <- patients_data[test_set_first_index:test_set_last_index, target_index]   # NEW
 
-    cat("\n[Training the linear regression model on training set & applying the linear regression to test set]\n", sep="")
+    cat("\n[Training the logistic regression model on training set & applying the logistic regression to test set]\n", sep="")
 
-    logistic_reg_model_new <- glm(length_of_stay_days ~ (age_years + sex_0male_1female + episode_number), data=prc_data_train_including_label, family = "binomial")
+    logistic_reg_model_new <- glm(as.factor(length_of_stay_days) ~ (age_years + sex_0male_1female + episode_number), data=prc_data_train_including_label, family = "binomial")
     prc_data_test_pred <- predict(logistic_reg_model_new, prc_data_test, type = "response")
 
     prc_data_test_pred_bin <- as.numeric(prc_data_test_pred)

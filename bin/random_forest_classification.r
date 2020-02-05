@@ -1,37 +1,15 @@
 setwd(".")
 options(stringsAsFactors = FALSE)
-
-EXP_ARG_NUM <- 2
+cat("\014")
+set.seed(11)
 
 TRAIN_SET_OVERSAMPLING_SYNTHETIC <- TRUE
 NUMBER_OF_EXECUTIONS <- 100
 
-# fileName <-  "/home/davide/projects/heart-failure-gene-expression-analysis/temp/patients_data_dataset_dim_red_svd5_file_1052379918.csv" 
-# targetName <- "diagnosis"
-
-# fileName <- "/home/davide/projects/heart-failure-gene-expression-analysis/data_preprocessed/STEMI_patients_data_heart_failure_1052379918_dimRed_47621531.csv"
-# targetName <- "added_diagnosis"
-
-# args = commandArgs(trailingOnly=TRUE)
-# if (length(args)<EXP_ARG_NUM) {
-#   stop("At least two argument must be supplied (input files)", call.=FALSE)
-# } else {
-#   # default output file
-#   fileName <- args[1]
-#   targetName <- args[2]
-# }
-
-# fileName <- "/home/davide/projects/breast_cancer_Coimbra/data/dataR2_EDITED.csv"
-# targetName <- "DIAGNOSIS"
-
+# fileName <- "../data/dataFrameForSurvival_study_cohort_rand2109.csv"
 fileName <- "../data/journal.pone.0187990.s002_EDITED_survival.csv"
 targetName <- "hospital_outcome_1alive_0dead"
 
-# fileName <- "../data/dataset_edited_without_time.csv"
-# targetName <- "death_event"
-
-# fileName <- "../../../projects/sepsis_severity_ICU/data/sepsis_severity_dataset_edited_2019-02-11.csv"
-# targetName <- "ADDED.survival"
 
 cat("fileName: ", fileName, "\n", sep="")
 cat("targetName: ", targetName, "\n", sep="")

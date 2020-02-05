@@ -1,15 +1,17 @@
 setwd(".")
 options(stringsAsFactors = FALSE)
+cat("\014")
+set.seed(11)
 
 start_time <- Sys.time()
 
 TRAIN_SET_OVERSAMPLING_SYNTHETIC <- TRUE
 NUMBER_OF_EXECUTIONS <- 100
-EXP_ARG_NUM <- 3
 
-fileName <- "../data/journal.pone.0187990.s002_EDITED_survival.csv"
+
+fileName <- "../data/dataFrameForSurvival_study_cohort_rand2109.csv" # study cohort 
+# fileName <- "../data/journal.pone.0187990.s002_EDITED_survival.csv" # primary cohort
 targetName <- "hospital_outcome_1alive_0dead"
-
 
 
 # fileName <- "../data/dataset_edited_without_time.csv"
@@ -21,7 +23,7 @@ targetName <- "hospital_outcome_1alive_0dead"
 cat("fileName: ", fileName, "\n", sep="")
 cat("targetName: ", targetName, "\n", sep="")
 
-list.of.packages <- c("easypackages", "PRROC", "e1071", "randomForest","class", "gmodels", "formula.tools", "dplyr", "pastecs", "ROSE")
+list.of.packages <- c("easypackages", "PRROC", "e1071", "randomForest","class", "gmodels", "formula.tools", "dplyr", "pastecs", "ROSE", "lubridate")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
 

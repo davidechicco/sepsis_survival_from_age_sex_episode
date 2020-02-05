@@ -1,19 +1,34 @@
 setwd(".")
 options(stringsAsFactors = FALSE)
-
+cat("\014")
+set.seed(11)
 NUMBER_OF_EXECUTIONS <- 100
 
-fileName <- "/home/davide/projects/sepsis_survival_in_Norway/data/journal.pone.0187990.s002_EDITED_length_of_stay.csv"
-# fileName <- "../data/journal.pone.0187990.s002_EDITED_length_of_stay_NORM_7510167.csv"
+EXP_ARG_NUM <- 1
+args = commandArgs(trailingOnly=TRUE)
+if (length(args)<EXP_ARG_NUM) {
+  stop("At least one argument must be supplied ", call.=FALSE)
+} else {  
+  inputDatasetFlag <- args[1]
+}
+
+if(inputDatasetFlag == "STUDY_COHORT") {
+
+    fileName <- "../data/dataFrameForLOS_study_cohort_rand2109.csv" #study cohort
+
+} else if(inputDatasetFlag == "PRIMARY_COHORT") {
+
+    fileName <- "../data/journal.pone.0187990.s002_EDITED_length_of_stay.csv" #primary cohort
+
+} else {
+    fileName <- NULL    
+}
+
+
 targetName <- "length_of_stay_days"
 
 
-# fileName <- "../data/dataset_edited_without_time.csv"
-# targetName <- "death_event"
-
-# fileName <- "../../../projects/sepsis_severity_ICU/data/sepsis_severity_dataset_edited_2019-02-11.csv"
-# targetName <- "ADDED.survival"
-
+cat("inputDatasetFlag: ", inputDatasetFlag, "\n", sep="")
 cat("fileName: ", fileName, "\n", sep="")
 cat("targetName: ", targetName, "\n", sep="")
 
@@ -30,7 +45,7 @@ source("./utils.r")
 threshold <- 0.5
 
 # file reading
-patients_data <- read.csv(fileName, header = TRUE, sep =",");
+patients_data <- read.csv(fileName, header = TRUE, sep =",",  stringsAsFactors=FALSE);
 cat("Read data from file ", fileName, "\n", sep="")
 
 NUM_METRICS <- 5

@@ -1,13 +1,37 @@
 setwd(".")
 options(stringsAsFactors = FALSE)
+cat("\014")
+set.seed(11)
 
-EXP_ARG_NUM <- 3
-
-TRAIN_SET_OVERSAMPLING_SYNTHETIC <- TRUE
 NUMBER_OF_EXECUTIONS <- 100
+OUTLIERS_REMOVAL <- FALSE
+NORMALIZATION <- FALSE
 
-fileName <- "../data/journal.pone.0187990.s002_EDITED_length_of_stay.csv"
+EXP_ARG_NUM <- 1
+args = commandArgs(trailingOnly=TRUE)
+if (length(args)<EXP_ARG_NUM) {
+  stop("At least one argument must be supplied ", call.=FALSE)
+} else {  
+  inputDatasetFlag <- args[1]
+}
+
+if(inputDatasetFlag == "STUDY_COHORT") {
+
+    fileName <- "../data/dataFrameForLOS_study_cohort_rand2109.csv" #study cohort
+
+} else if(inputDatasetFlag == "PRIMARY_COHORT") {
+
+    fileName <- "../data/journal.pone.0187990.s002_EDITED_length_of_stay.csv" #primary cohort
+
+} else {
+    fileName <- NULL    
+}
+
+
 targetName <- "length_of_stay_days"
+
+
+cat("inputDatasetFlag: ", inputDatasetFlag, "\n", sep="")
 
 
 # fileName <- "../data/dataset_edited_without_time.csv"
@@ -43,14 +67,30 @@ cat("loaded fileName = ", fileName, "\n", sep="")
 patients_data <- patients_data%>%select(-targetName,targetName)
 patients_data_original <- patients_data
 
+target_index <- dim(patients_data_original)[2]
 
-target_index <- dim(patients_data)[2]
-original_patients_data <- patients_data
 
-# let's normalize the target
-LOS_range <- max(patients_data[,target_index]) - min(patients_data[,target_index])
-patients_data[,target_index] <- (patients_data[,target_index])/LOS_range
+if(OUTLIERS_REMOVAL==TRUE) {
 
+    cat("nrows(patients_data_original) = ", nrow(patients_data_original), "\n", sep="")
+
+    # let's remove the outliers: the admissions >= 100 days
+    DAYS_LIMIT <- 400
+    patients_data_removed_outliers <- patients_data_original[patients_data_original[,target_index] < DAYS_LIMIT, drop=FALSE, ]
+    # patients_data <- patients_data_original[patients_data$length_of_stay_days < 100, drop=FALSE, ]
+    cat("We removed the admissions which lasted more then ", DAYS_LIMIT, " days\n", sep="")
+    cat("nrows(patients_data_removed_outliers) = ", nrow(patients_data_removed_outliers), "\n", sep="")
+     # Sys.sleep(1)
+    patients_data <- patients_data_removed_outliers
+}
+
+if(NORMALIZATION==TRUE){
+
+    # let's normalize the target
+    LOS_range <- max(patients_data[,target_index]) - min(patients_data[,target_index])
+    patients_data[,target_index] <- (patients_data[,target_index])/LOS_range
+    cat("Normalization yes\n")
+}
 
 # formula
 allFeaturesFormula <- as.formula(paste(as.factor(colnames(patients_data)[target_index]), '.', sep=' ~ ' ))

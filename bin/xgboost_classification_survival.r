@@ -1,10 +1,13 @@
 setwd(".")
 options(stringsAsFactors = FALSE)
+cat("\014")
+set.seed(11)
 
 TRAIN_SET_OVERSAMPLING_SYNTHETIC <- TRUE
 NUMBER_OF_EXECUTIONS <- 100
 
-fileName <- "../data/journal.pone.0187990.s002_EDITED_survival.csv"
+fileName <- "../data/dataFrameForSurvival_study_cohort_rand2109.csv" # study cohort 
+# fileName <- "../data/journal.pone.0187990.s002_EDITED_survival.csv" # primary cohort
 targetName <- "hospital_outcome_1alive_0dead"
 
 # https://xgboost.readthedocs.io/en/latest/R-package/xgboostPresentation.html

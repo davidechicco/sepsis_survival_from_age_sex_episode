@@ -1,12 +1,36 @@
 setwd(".")
 options(stringsAsFactors = FALSE)
+cat("\014")
+set.seed(11)
 
 NUMBER_OF_EXECUTIONS <- 100
+NORMALIZATION <- FALSE
 
-fileName <- "../data/journal.pone.0187990.s002_EDITED_length_of_stay.csv"
+EXP_ARG_NUM <- 1
+args = commandArgs(trailingOnly=TRUE)
+if (length(args)<EXP_ARG_NUM) {
+  stop("At least one argument must be supplied ", call.=FALSE)
+} else {  
+  inputDatasetFlag <- args[1]
+}
+
+if(inputDatasetFlag == "STUDY_COHORT") {
+
+    fileName <- "../data/dataFrameForLOS_study_cohort_rand2109.csv" #study cohort
+
+} else if(inputDatasetFlag == "PRIMARY_COHORT") {
+
+    fileName <- "../data/journal.pone.0187990.s002_EDITED_length_of_stay.csv" #primary cohort
+
+} else {
+    fileName <- NULL    
+}
+
+
 targetName <- "length_of_stay_days"
 
-# https://xgboost.readthedocs.io/en/latest/R-package/xgboostPresentation.html
+
+cat("inputDatasetFlag: ", inputDatasetFlag, "\n", sep="")
 
 cat("fileName: ", fileName, "\n", sep="")
 cat("targetName: ", targetName, "\n", sep="")
@@ -37,9 +61,13 @@ patients_data <- patients_data%>%dplyr::select(-targetName,targetName)
 # shuffle the rows
 patients_data <- patients_data[sample(nrow(patients_data)),] 
 
-# let's normalize the target
-LOS_range <- max(patients_data$length_of_stay_days) - min(patients_data$length_of_stay_days)
-patients_data$length_of_stay_days <- (patients_data$length_of_stay_days)/LOS_range
+if(NORMALIZATION==TRUE){
+
+    # let's normalize the target
+    LOS_range <- max(patients_data[,target_index]) - min(patients_data[,target_index])
+    patients_data[,target_index] <- (patients_data[,target_index])/LOS_range
+    cat("Normalization yes\n")
+}
 
 target_index <- dim(patients_data)[2]
 original_patients_data <- patients_data
@@ -87,7 +115,7 @@ for(exe_i in 1:execution_number)
     this_nrounds <- 2
     this_verbose <- 0
     
-    bst_model <- xgboost(data = as.matrix(training_set), label=training_labels, max.depth = this_max_depth, eta = this_eta, nthread = this_nthread, nrounds = this_nrounds, objective = "binary:logistic", verbose = this_verbose)
+    bst_model <- xgboost(data = as.matrix(training_set), label=training_labels, max.depth = this_max_depth, eta = this_eta, nthread = this_nthread, nrounds = this_nrounds, objective = "reg:linear", verbose = this_verbose)
    
     pred <- predict(bst_model, as.matrix(test_set))
     pred_test_predictions <- as.numeric(pred)
@@ -107,7 +135,7 @@ for(exe_i in 1:execution_number)
  cat("Number of executions = ", execution_number, "\n", sep="")
  # statistics on the dataframe of confusion matrices
  statDescConfMatr <- stat.desc(resultDataFrame)
-medianAndMeanRowResults <- (statDescConfMatr)[c("median", "mean"),]
-print(dec_three(medianAndMeanRowResults))
+meanRowResults <- (statDescConfMatr)[c("mean"),]
+print(dec_three(meanRowResults))
 cat("\n\n=== === === ===\n")
 
