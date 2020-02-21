@@ -2,40 +2,37 @@ setwd(".")
 options(stringsAsFactors = FALSE)
 cat("\014")
 set.seed(11)
-
-start_time <- Sys.time()
-EXP_ARG_NUM <- 2
-
-thisKernel <- "radial"
-
-TRAIN_SET_OVERSAMPLING_SYNTHETIC <- TRUE
 NUMBER_OF_EXECUTIONS <- 100
+TRAIN_SET_OVERSAMPLING_SYNTHETIC <- TRUE
+start_time <- Sys.time()
 
-fileName <- "../data/dataFrameForSurvival_study_cohort_rand2109.csv" # study cohort 
-# fileName <- "../data/journal.pone.0187990.s002_EDITED_survival.csv" # primary cohort
+EXP_ARG_NUM <- 1
+args = commandArgs(trailingOnly=TRUE)
+if (length(args)<EXP_ARG_NUM) {
+  stop("At least one argument must be supplied ", call.=FALSE)
+} else {  
+  inputDatasetFlag <- args[1]
+}
+
+if(inputDatasetFlag == "STUDY_COHORT") { 
+    fileName <- "../data/dataFrameForSurvival_study_cohort_rand2109_FIXED.csv" #study cohort
+} else if(inputDatasetFlag == "PRIMARY_COHORT") {
+    fileName <- "../data/journal.pone.0187990.s002_EDITED_survival.csv" #primary cohort
+} else {
+    fileName <- NULL    
+}
+
+cat("inputDatasetFlag: ", inputDatasetFlag, "\n", sep="")
 targetName <- "hospital_outcome_1alive_0dead"
 
+thisKernel <- "radial"
+cat("thisKernel: ", thisKernel, "\n", sep="")
 
-# args = commandArgs(trailingOnly=TRUE)
-# if (length(args)<EXP_ARG_NUM) {
-#   stop("At least two argument must be supplied (input files)", call.=FALSE)
-# } else {
-#   # default output file
-#   fileName <- args[1]
-#   targetName <- args[2]
-# }
-
-
-# fileName <- "../data/dataset_edited_without_time.csv"
-# targetName <- "death_event"
-
-# fileName <- "../../../projects/sepsis_severity_ICU/data/sepsis_severity_dataset_edited_2019-02-11.csv"
-# targetName <- "ADDED.survival"
 
 cat("fileName: ", fileName, "\n", sep="")
 cat("targetName: ", targetName, "\n", sep="")
 
-list.of.packages <- c("easypackages", "e1071", "PRROC", "dplyr", "pastecs", "class", "gmodels", "kernlab", "ROSE")
+list.of.packages <- c("easypackages", "e1071", "PRROC", "dplyr", "pastecs", "class", "gmodels", "kernlab", "ROSE", " lubridate")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
 library("easypackages")
@@ -43,8 +40,12 @@ libraries(list.of.packages)
 
 threshold = 0.5
 
-source("./confusion_matrix_rates.r")
-source("./utils.r")
+source("/home/davidechicco/my_projects/General-biomedical-informatics-binary-outcome-analysis/bin/confusion_matrix_rates.r")
+source("/home/davidechicco/my_projects/General-biomedical-informatics-binary-outcome-analysis/bin/utils.r")
+
+NUM_METRICS <- 9
+confMatDataFrame <- matrix(ncol=NUM_METRICS, nrow=1)
+colnames(confMatDataFrame) <- c("MCC", "F1_score", "accuracy", "TP_rate", "TN_rate", "PPV", "NPV", "PR_AUC", "ROC_AUC")
 
 patients_data <- read.csv(file=fileName,head=TRUE,sep=",",stringsAsFactors=FALSE)
 cat("fileName = ", fileName, "\n", sep="")
@@ -57,11 +58,6 @@ original_patients_data <- patients_data
 
 # formula
 allFeaturesFormula <- as.formula(paste(as.factor(colnames(patients_data)[target_index]), '.', sep=' ~ ' ))
-
-NUM_METRICS <- 7
-confMatDataFrame <- matrix(ncol=NUM_METRICS, nrow=1)
-colnames(confMatDataFrame) <- c("MCC", "F1 score", "accuracy", "TP rate", "TN rate", "PR AUC", "ROC AUC")
-
 
 execution_number <- NUMBER_OF_EXECUTIONS
 cat("Number of executions = ", execution_number, "\n", sep="")

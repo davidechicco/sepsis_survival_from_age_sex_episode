@@ -2,23 +2,30 @@ setwd(".")
 options(stringsAsFactors = FALSE)
 cat("\014")
 set.seed(11)
-
+NUMBER_OF_EXECUTIONS <- 100
+TRAIN_SET_OVERSAMPLING_SYNTHETIC <- TRUE
 start_time <- Sys.time()
 
-TRAIN_SET_OVERSAMPLING_SYNTHETIC <- TRUE
-NUMBER_OF_EXECUTIONS <- 100
+EXP_ARG_NUM <- 1
+args = commandArgs(trailingOnly=TRUE)
+if (length(args)<EXP_ARG_NUM) {
+  stop("At least one argument must be supplied ", call.=FALSE)
+} else {  
+  inputDatasetFlag <- args[1]
+}
 
+if(inputDatasetFlag == "STUDY_COHORT") { 
+    fileName <- "../data/dataFrameForSurvival_study_cohort_rand2109_FIXED.csv" #study cohort
+} else if(inputDatasetFlag == "PRIMARY_COHORT") {
+    fileName <- "../data/journal.pone.0187990.s002_EDITED_survival.csv" #primary cohort
+} else {
+    fileName <- NULL    
+}
 
-fileName <- "../data/dataFrameForSurvival_study_cohort_rand2109.csv" # study cohort 
-# fileName <- "../data/journal.pone.0187990.s002_EDITED_survival.csv" # primary cohort
+cat("inputDatasetFlag: ", inputDatasetFlag, "\n", sep="")
 targetName <- "hospital_outcome_1alive_0dead"
 
-
-# fileName <- "../data/dataset_edited_without_time.csv"
-# targetName <- "death_event"
-
-# fileName <- "../../../projects/sepsis_severity_ICU/data/sepsis_severity_dataset_edited_2019-02-11.csv"
-# targetName <- "ADDED.survival"
+# fileName <- "../data/dataFrameForSurvival_study_cohort_rand2109.csv" #study cohort
 
 cat("fileName: ", fileName, "\n", sep="")
 cat("targetName: ", targetName, "\n", sep="")
@@ -31,12 +38,12 @@ library("easypackages")
 libraries(list.of.packages)
 
 
-source("./confusion_matrix_rates.r")
-source("./utils.r")
+source("/home/davidechicco/my_projects/General-biomedical-informatics-binary-outcome-analysis/bin/confusion_matrix_rates.r")
+source("/home/davidechicco/my_projects/General-biomedical-informatics-binary-outcome-analysis/bin/utils.r")
 
-NUM_METRICS <- 7
+NUM_METRICS <- 9
 confMatDataFrame <- matrix(ncol=NUM_METRICS, nrow=1)
-colnames(confMatDataFrame) <- c("MCC", "F1 score", "accuracy", "TP rate", "TN rate", "PR AUC", "ROC AUC")
+colnames(confMatDataFrame) <- c("MCC", "F1_score", "accuracy", "TP_rate", "TN_rate", "PPV", "NPV", "PR_AUC", "ROC_AUC")
 
 threshold <- 0.5
 
@@ -111,7 +118,7 @@ for(exe_i in 1:execution_number)
         
     
     naive_bayes_model <-  naiveBayes(allFeaturesFormula, data=patients_data_train)
-
+    
     patients_data_test_PRED <- predict((naive_bayes_model), patients_data_test)
     # patients_data_test_PRED_binary <- as.numeric(patients_data_test_PRED)-1
     patients_data_test_PRED_binary <- abs(as.numeric(patients_data_test_PRED)-2) # check what is 0 and what is 1

@@ -2,38 +2,53 @@ setwd(".")
 options(stringsAsFactors = FALSE)
 cat("\014")
 set.seed(11)
-
-TRAIN_SET_OVERSAMPLING_SYNTHETIC <- TRUE
 NUMBER_OF_EXECUTIONS <- 100
+TRAIN_SET_OVERSAMPLING_SYNTHETIC <- TRUE
+start_time <- Sys.time()
 
-fileName <- "../data/dataFrameForSurvival_study_cohort_rand2109.csv" # study cohort 
-# fileName <- "../data/journal.pone.0187990.s002_EDITED_survival.csv" # primary cohort
+EXP_ARG_NUM <- 1
+args = commandArgs(trailingOnly=TRUE)
+if (length(args)<EXP_ARG_NUM) {
+  stop("At least one argument must be supplied ", call.=FALSE)
+} else {  
+  inputDatasetFlag <- args[1]
+}
+
+if(inputDatasetFlag == "STUDY_COHORT") { 
+    fileName <- "../data/dataFrameForSurvival_study_cohort_rand2109_FIXED.csv" #study cohort
+} else if(inputDatasetFlag == "PRIMARY_COHORT") {
+    fileName <- "../data/journal.pone.0187990.s002_EDITED_survival.csv" #primary cohort
+} else {
+    fileName <- NULL    
+}
+
+cat("inputDatasetFlag: ", inputDatasetFlag, "\n", sep="")
 targetName <- "hospital_outcome_1alive_0dead"
+
 
 # https://xgboost.readthedocs.io/en/latest/R-package/xgboostPresentation.html
 
 cat("fileName: ", fileName, "\n", sep="")
 cat("targetName: ", targetName, "\n", sep="")
 
-list.of.packages <- c("easypackages", "clusterSim", "PRROC", "e1071", "rpart",  "dplyr", "pastecs", "xgboost", "ROSE")
+list.of.packages <- c("easypackages", "clusterSim", "PRROC", "e1071", "rpart",  "dplyr", "pastecs", "xgboost", "ROSE", " lubridate")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
 
 library("easypackages")
 libraries(list.of.packages)
 
-source("./confusion_matrix_rates.r")
-source("./utils.r")
+source("/home/davidechicco/my_projects/General-biomedical-informatics-binary-outcome-analysis/bin/confusion_matrix_rates.r")
+source("/home/davidechicco/my_projects/General-biomedical-informatics-binary-outcome-analysis/bin/utils.r")
 
+NUM_METRICS <- 9
+confMatDataFrame <- matrix(ncol=NUM_METRICS, nrow=1)
+colnames(confMatDataFrame) <- c("MCC", "F1_score", "accuracy", "TP_rate", "TN_rate", "PPV", "NPV", "PR_AUC", "ROC_AUC")
 threshold <- 0.5
 
 # file reading
 patients_data <- read.csv(fileName, header = TRUE, sep =",");
 cat("Read data from file ", fileName, "\n", sep="")
-
-NUM_METRICS <- 7
-confMatDataFrame <- matrix(ncol=NUM_METRICS, nrow=1)
-colnames(confMatDataFrame) <- c("MCC", "F1 score", "accuracy", "TP rate", "TN rate", "PR AUC", "ROC AUC")
 
 # let's put the target label last on the right 
 patients_data <- patients_data%>%dplyr::select(-targetName,targetName)
@@ -125,7 +140,7 @@ for(exe_i in 1:execution_number)
  cat("Number of executions = ", execution_number, "\n", sep="")
  # statistics on the dataframe of confusion matrices
  statDescConfMatr <- stat.desc(confMatDataFrame)
-medianAndMeanRowResults <- (statDescConfMatr)[c("median", "mean"),]
-print(dec_three(medianAndMeanRowResults))
+meanRowResults <- (statDescConfMatr)[c("mean"),]
+print(dec_three(meanRowResults))
 cat("\n\n=== === === ===\n")
 

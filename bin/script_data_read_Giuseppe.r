@@ -112,8 +112,8 @@ for(j in INDEX_COL_FIRST_CATE:INDEX_COL_LAST_CATE){
 #     print(theseChosenRowsAsDFrameForSurvival)
 }
 
-uniqueRows_dataFrameForSurvival <- dataFrameForLOS[!duplicated(dataFrameForSurvival[,c("original_row_num")]),]
-uniqueRows_dataFrameForLOS <- dataFrameForSurvival[!duplicated(dataFrameForSurvival[,c("original_row_num")]),]
+uniqueRows_dataFrameForLOS <- dataFrameForLOS[!duplicated(dataFrameForLOS[,c("original_row_num")]),]
+uniqueRows_dataFrameForSurvival <- dataFrameForSurvival[!duplicated(dataFrameForSurvival[,c("original_row_num")]),]
 
  # 19051 ... ci sono 591 righe in eccesso rispetto alle 18460 che dovrebbero essere nel study cohort
 cat("Number of unique rows found as idx: ", (length(unique(idx))), "\n")
@@ -123,7 +123,7 @@ cat("Number of rows found in the survival dataframe: ", nrow(uniqueRows_dataFram
 cat("Number of rows found in the LOS dataframe: ", nrow(uniqueRows_dataFrameForSurvival), "\n")
 
 
-SAVE_FILES_FLAG <- TRUE
+SAVE_FILES_FLAG <- FALSE
 
 if(SAVE_FILES_FLAG) {
 

@@ -13,12 +13,12 @@ libraries(list.of.packages)
 
 fileName <- ""
 
-primary_or_study_cohort <- "PRIMARY_COHORT"
+primary_or_study_cohort <- "STUDY_COHORT"
 # STUDY_COHORT or PRIMARY_COHORT
 
 if(primary_or_study_cohort == "STUDY_COHORT"){
 
-    fileName <- "/home/davidechicco/my_projects/sepsis_survival_in_Norway/data/dataFrameForSurvival_study_cohort_rand2109.csv"
+    fileName <- "/home/davidechicco/my_projects/sepsis_survival_in_Norway/data/dataFrameForSurvival_study_cohort_rand2109_FIXED.csv"
     datasetFlag <- "study"
 
 } else if(primary_or_study_cohort == "PRIMARY_COHORT") {
@@ -27,6 +27,9 @@ if(primary_or_study_cohort == "STUDY_COHORT"){
     datasetFlag <- "primary"
 
 }
+
+datasetName <- gsub("_", " ", tolower(primary_or_study_cohort))
+cat("datasetName: ", datasetName, "\n")
 
 
 sepsis_datatable <- read.csv(fileName, header = TRUE, sep =",");
@@ -57,9 +60,11 @@ for(index in time_vector){
   P_this <- NULL
   feature_label <- colnames(sepsis_datatable[index])
   
+  thisTitle <- paste0(datasetName, ": patients with sepis") 
+  
   print(feature_label)
   
-  P_this <- ggplot(sick_patients_table, aes(x=CurrentFeature)) + geom_histogram(fill="#CC79A7", binwidth=1) + labs(x=(feature_label), y="#patients") + ylim(0,max_y) 
+  P_this <- ggplot(sick_patients_table, aes(x=CurrentFeature)) + geom_histogram(fill="#CC79A7", binwidth=1) + labs(x=(feature_label), y="#patients") + ylim(0,max_y) + ggtitle(thisTitle)
   
   sick_plot_list[[length(sick_plot_list) + 1]] <- P_this
   i <- i+1
@@ -67,7 +72,7 @@ for(index in time_vector){
 
 # sick_plot_list[[1]] <- sick_plot_list[[1]] + ggtitle("sepsis patients: boolean features") + theme(plot.title = element_text(size = fontSize+1, hjust = 0.5))
 
-do.call("ggarrange", c(sick_plot_list, ncol=1))
+do.call("ggarrange", c(sick_plot_list, ncol=1, nrow=2))
 #grid.arrange(sick_plot_list)
 # dev.off()
 
@@ -91,8 +96,10 @@ for(index in time_vector){
   healthy_patients_table$CurrentFeature = healthy_patients_table[, index]
   P_this <- NULL
   feature_label <- colnames(sepsis_datatable[index])
+  
+  thisTitle <- paste0(datasetName, ": patients without sepis") 
     
-  P_this <- ggplot(healthy_patients_table, aes(x=CurrentFeature)) + geom_histogram(fill="#009E73", binwidth=1) + labs(x=(feature_label), y="#patients")  + ylim(0,max_y) 
+  P_this <- ggplot(healthy_patients_table, aes(x=CurrentFeature)) + geom_histogram(fill="#009E73", binwidth=1) + labs(x=(feature_label), y="#patients")  + ylim(0,max_y) + ggtitle(thisTitle)
   
   healthy_plot_list[[length(healthy_plot_list) + 1]] <- P_this
   i <- i+1
@@ -100,7 +107,7 @@ for(index in time_vector){
 
 # healthy_plot_list[[1]] <- healthy_plot_list[[1]] + ggtitle("non-sepsis patients: boolean features") + theme(plot.title = element_text(size = fontSize+1, hjust = 0.5))
 
-do.call("ggarrange", c(healthy_plot_list, ncol=1))
+do.call("ggarrange", c(healthy_plot_list, ncol=1, nrow=2))
 #grid.arrange(sick_plot_list)
 # dev.off()
 

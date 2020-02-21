@@ -12,14 +12,10 @@ if (length(args)<EXP_ARG_NUM) {
   inputDatasetFlag <- args[1]
 }
 
-if(inputDatasetFlag == "STUDY_COHORT") {
-
+if(inputDatasetFlag == "STUDY_COHORT") { 
     fileName <- "../data/dataFrameForLOS_study_cohort_rand2109.csv" #study cohort
-
 } else if(inputDatasetFlag == "PRIMARY_COHORT") {
-
     fileName <- "../data/journal.pone.0187990.s002_EDITED_length_of_stay.csv" #primary cohort
-
 } else {
     fileName <- NULL    
 }

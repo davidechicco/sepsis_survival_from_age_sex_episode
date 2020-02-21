@@ -5,27 +5,30 @@ set.seed(11)
 
 NUMBER_OF_EXECUTIONS <- 100
 NORMALIZATION <- FALSE
+OUTLIERS_REMOVAL <- FALSE
 
-EXP_ARG_NUM <- 1
-args = commandArgs(trailingOnly=TRUE)
-if (length(args)<EXP_ARG_NUM) {
-  stop("At least one argument must be supplied ", call.=FALSE)
-} else {  
-  inputDatasetFlag <- args[1]
-}
+# EXP_ARG_NUM <- 1
+# args = commandArgs(trailingOnly=TRUE)
+# if (length(args)<EXP_ARG_NUM) {
+#   stop("At least one argument must be supplied ", call.=FALSE)
+# } else {  
+#   inputDatasetFlag <- args[1]
+# }
+# 
+# if(inputDatasetFlag == "STUDY_COHORT") {
+# 
+#     fileName <- "../data/dataFrameForLOS_study_cohort_rand2109.csv" #study cohort
+# 
+# } else if(inputDatasetFlag == "PRIMARY_COHORT") {
+# 
+#     fileName <- "../data/journal.pone.0187990.s002_EDITED_length_of_stay.csv" #primary cohort
+# 
+# } else {
+#     fileName <- NULL    
+# }
 
-if(inputDatasetFlag == "STUDY_COHORT") {
-
-    fileName <- "../data/dataFrameForLOS_study_cohort_rand2109.csv" #study cohort
-
-} else if(inputDatasetFlag == "PRIMARY_COHORT") {
-
-    fileName <- "../data/journal.pone.0187990.s002_EDITED_length_of_stay.csv" #primary cohort
-
-} else {
-    fileName <- NULL    
-}
-
+inputDatasetFlag <- "PRIMARY_COHORT"
+fileName <- "../data/journal.pone.0187990.s002_EDITED_length_of_stay.csv" #primary cohort
 
 targetName <- "length_of_stay_days"
 
@@ -50,6 +53,23 @@ threshold <- 0.5
 # file reading
 patients_data <- read.csv(fileName, header = TRUE, sep =",");
 cat("Read data from file ", fileName, "\n", sep="")
+patients_data_original <- patients_data
+
+if(OUTLIERS_REMOVAL==TRUE) {
+
+    cat("nrows(patients_data_original) = ", nrow(patients_data_original), "\n", sep="")
+
+    # let's remove the outliers: the admissions >= 100 days
+    DAYS_LIMIT <- 50
+    patients_data_removed_outliers <- patients_data_original[patients_data_original[,target_index] < DAYS_LIMIT, drop=FALSE, ]
+    # patients_data <- patients_data_original[patients_data$length_of_stay_days < 100, drop=FALSE, ]
+    cat("We removed the admissions which lasted more then ", DAYS_LIMIT, " days\n", sep="")
+    cat("nrows(patients_data_removed_outliers) = ", nrow(patients_data_removed_outliers), "\n", sep="")
+     # Sys.sleep(1)
+    patients_data <- patients_data_removed_outliers
+}
+
+
 
 NUM_METRICS <- 5
 resultDataFrame <- matrix(ncol=NUM_METRICS, nrow=1)
@@ -115,7 +135,8 @@ for(exe_i in 1:execution_number)
     this_nrounds <- 2
     this_verbose <- 0
     
-    bst_model <- xgboost(data = as.matrix(training_set), label=training_labels, max.depth = this_max_depth, eta = this_eta, nthread = this_nthread, nrounds = this_nrounds, objective = "reg:linear", verbose = this_verbose)
+    # bst_model <- xgboost(data = as.matrix(training_set), label=training_labels, max.depth = this_max_depth, eta = this_eta, nthread = this_nthread, nrounds = this_nrounds, objective = "reg:linear", verbose = this_verbose)
+    bst_model <- xgboost(data = as.matrix(training_set), label=training_labels, nrounds = this_nrounds,  objective = "reg:linear", verbose = this_verbose)
    
     pred <- predict(bst_model, as.matrix(test_set))
     pred_test_predictions <- as.numeric(pred)

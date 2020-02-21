@@ -26,7 +26,6 @@ Rscript lin_regression_LOS.r $studyFlag > $outputFile 2> $outputFile
 # logistic regression
 method="log_reg_LOS"
 today=`date +%Y-%m-%d`
-random_number=$(shuf -i1-100000 -n1)
 
 outputFile=""
 studyFlag="STUDY_COHORT"
@@ -42,7 +41,6 @@ Rscript logistic_regression_LOS.r $studyFlag > $outputFile 2> $outputFile
 # decision tree
 method="decision_tree_LOS"
 today=`date +%Y-%m-%d`
-random_number=$(shuf -i1-100000 -n1)
 
 outputFile=""
 studyFlag="STUDY_COHORT"
@@ -57,7 +55,6 @@ Rscript cart_regression_LOS.r $studyFlag > $outputFile 2> $outputFile
 # xgboost
 method="xgboost_LOS"
 today=`date +%Y-%m-%d`
-random_number=$(shuf -i1-100000 -n1)
 
 outputFile=""
 studyFlag="STUDY_COHORT"
@@ -74,7 +71,6 @@ Rscript xgboost_regression_LOS.r $studyFlag > $outputFile 2> $outputFile
 # naive bayes
 method="naive_bayes_LOS"
 today=`date +%Y-%m-%d`
-random_number=$(shuf -i1-100000 -n1)
 
 outputFile=""
 studyFlag="STUDY_COHORT"

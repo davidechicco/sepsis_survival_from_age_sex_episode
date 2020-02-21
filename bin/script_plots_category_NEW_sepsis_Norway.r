@@ -17,12 +17,12 @@ primary_or_study_cohort <- "STUDY_COHORT"
 
 if(primary_or_study_cohort == "STUDY_COHORT"){
 
-    fileName <- "/home/davidechicco/my_projects/sepsis_survival_in_Norway/data/dataFrameForSurvival_study_cohort_rand2109.csv"
+    fileName <- "/home/davidechicco/my_projects/sepsis_survival_in_Norway/data/dataFrameForSurvival_study_cohort_rand2109_FIXED.csv"
     datasetFlag <- "study"
 
 } else if(primary_or_study_cohort == "PRIMARY_COHORT") {
 
-    fileName <- "/home/davidechicco/my_projects/sepsis_survival_in_Norway/data//journal.pone.0187990.s002_EDITED_survival.csv"
+    fileName <- "/home/davidechicco/my_projects/sepsis_survival_in_Norway/data/journal.pone.0187990.s002_EDITED_survival.csv"
     datasetFlag <- "primary"
 
 }
@@ -44,6 +44,10 @@ lun <- length(cate_vector)
 
 fontSize = 10
 
+
+datasetName <- gsub("_", " ", tolower(primary_or_study_cohort))
+cat("datasetName: ", datasetName, "\n")
+
 # Sick patients
  
 
@@ -54,17 +58,20 @@ for(index in cate_vector){
 
   temp_df = sick_patients_table
   temp_df$CurrentFeature = sick_patients_table[, index]
-  P_this <- NULL
+  P_this <- NULL 
+
+  thisTitle <- paste0(datasetName, ": patients with sepis") 
   
   P_this <- ggplot(temp_df, aes(factor(" "), fill=factor(CurrentFeature))) + geom_bar(stat="count", position="stack") + ylim(0,dim(sick_patients_table)[1])  + labs(x=" ", y=colnames(sick_patients_table[index])) + theme(axis.text=element_text(size=fontSize), axis.title=element_text(size=fontSize), legend.text=element_text(size=fontSize), legend.title=element_text(size=fontSize), legend.key.size=unit(0.3, "cm")) + coord_flip() + theme(legend.title=element_blank()) 
+  
+   P_this <- P_this + ggtitle(thisTitle) 
   
   if (index == grep("episode_number", colnames(sepsis_datatable))) {
     P_this <- P_this +  scale_fill_discrete(labels=c("1", "2", "3", "4", "5"))
   }
    if (index == grep("sex_0male_1female", colnames(sepsis_datatable))) {
     P_this <- P_this +  scale_fill_discrete(labels=c("male", "female"))
-  }
-  
+  }  
   
    sick_plot_list[[length(sick_plot_list) + 1]] <- P_this
   i <- i+1
@@ -72,7 +79,7 @@ for(index in cate_vector){
 
 # sick_plot_list[[1]] <- sick_plot_list[[1]] + ggtitle("sepsis patients: boolean features") + theme(plot.title = element_text(size = fontSize+1, hjust = 0.5))
 
-do.call("ggarrange", c(sick_plot_list, ncol=1))
+do.call("ggarrange", c(sick_plot_list, ncol=1, nrow=6))
 #grid.arrange(sick_plot_list)
 
 
@@ -95,8 +102,12 @@ for(index in cate_vector){
   temp_df = healthy_patients_table
   temp_df$CurrentFeature = healthy_patients_table[, index]
   P_this <- NULL
+  
+  thisTitle <- paste0(datasetName, ": patients without sepis") 
     
-  P_this <- ggplot(temp_df, aes(factor(" "), fill=factor(CurrentFeature))) + geom_bar(stat="count", position="stack") + ylim(0,dim(healthy_patients_table)[1]) + labs(x=" ", y=(colnames(healthy_patients_table[index])))  + theme(axis.text=element_text(size=fontSize), axis.title=element_text(size=fontSize), legend.text=element_text(size=fontSize), legend.title=element_text(size=fontSize), legend.key.size=unit(0.3, "cm")) + coord_flip() + theme(legend.title=element_blank())
+  P_this <- ggplot(temp_df, aes(factor(" "), fill=factor(CurrentFeature))) + geom_bar(stat="count", position="stack") + ylim(0,dim(healthy_patients_table)[1]) + labs(x=" ", y=(colnames(healthy_patients_table[index])))  + theme(axis.text=element_text(size=fontSize), axis.title=element_text(size=fontSize), legend.text=element_text(size=fontSize), legend.title=element_text(size=fontSize), legend.key.size=unit(0.3, "cm")) + coord_flip() + theme(legend.title=element_blank()) 
+  
+  P_this <- P_this + ggtitle(thisTitle)
   
   if (index == grep("episode_number", colnames(sepsis_datatable))) {
     P_this <- P_this +  scale_fill_discrete(labels=c("1", "2", "3", "4", "5"))
@@ -104,7 +115,6 @@ for(index in cate_vector){
   if (index == grep("sex_0male_1female", colnames(sepsis_datatable))) {
     P_this <- P_this +  scale_fill_discrete(labels=c("male", "female"))
   }
-
   
   P_this$width = 20
   
@@ -114,7 +124,7 @@ for(index in cate_vector){
 
 # healthy_plot_list[[1]] <- healthy_plot_list[[1]] + ggtitle("non-sepsis patients: boolean features") + theme(plot.title = element_text(size = fontSize+1, hjust = 0.5))
 
-do.call("ggarrange", c(healthy_plot_list, ncol=1))
+do.call("ggarrange", c(healthy_plot_list, ncol=1, nrow=6))
 #grid.arrange(sick_plot_list)
 
 
