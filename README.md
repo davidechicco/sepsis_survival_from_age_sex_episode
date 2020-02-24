@@ -1,5 +1,31 @@
-# Prediction of sepsis survival in Norway
-Machine learning prediction of sepsis survival in Norway
+# Prediction of sepsis survival from age, sex, and septic episode number
+Machine learning prediction of sepsis survival from age, sex, and septic episode number
 
-## Paper and dataset
-Siri Tandberg Knoop, Steinar Skrede, Nina Langeland, and Hans Kristian Flaatten. ["Epidemiology and impact on all-cause mortality of sepsis in Norwegian hospitals: a national retrospective study"](https://doi.org/10.1371/journal.pone.0187990). PLoS ONE 12(11): e0187990. November 2017.
+# Instructions
+Install R on your computer first.
+To perform the predictions on the primary cohort, type on terminal shell:
+
+`Rscript lin_reg_classification.r PRIMARY_COHORT`
+
+`Rscript naive_bayes_classification.r PRIMARY_COHORT`
+
+`Rscript svm_radial_classification.r PRIMARY_COHORT`
+
+`Rscript svm_linear_classification.r PRIMARY_COHORT`
+
+`Rscript xgboost_classification_survival.r PRIMARY_COHORT`
+
+To perform the predictions on the study cohort, type on terminal shell:
+
+`Rscript lin_reg_classification.r STUDY_COHORT`
+
+`Rscript naive_bayes_classification.r STUDY_COHORT`
+
+`Rscript svm_radial_classification.r STUDY_COHORT`
+
+`Rscript svm_linear_classification.r STUDY_COHORT`
+
+`Rscript xgboost_classification_survival.r STUDY_COHORT`
+
+# Contacts
+For any enquire, please write to [Davide Chicco](https://www.davidechicco.it) (Krembil Research Institute) at [davidechicco(AT)davidechicco.it](mailto:davidechicco@davidechicco.it)
