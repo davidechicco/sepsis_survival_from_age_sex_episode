@@ -1,0 +1,7339 @@
+Installing package into ‘/home/dave/R/x86_64-pc-linux-gnu-library/3.6’
+(as ‘lib’ is unspecified)
+Warning message:
+package ‘ lubridate’ is not available (for R version 3.6.3) 
+Loading script_dir: .
+fileName = ../data/pone.0200187.s002_three_features_extrapolated_only_preop_shock_present_FINAL.csv
+Number of executions = 100
+
+>>> execution number: 1
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 12]
+14.634%
+[class: 1  #elements = 70]
+85.366%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.4803845
+
+When C=0.01, the MCC value is 0.4803845	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.6
+
+When C=0.1, the MCC value is 0.6	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.6
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9366081
+ROC AUC 		0.7545455
+
+
+TOTAL:
+
+ FN =  1  /  22 	 (truth == 1) & (prediction < threshold)
+ TP =  21  /  22 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  3  /  5 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  5 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.438 	 0.913 	 0.852 	 0.955 	 0.400		 0.937		0.755
+
+
+>>> execution number: 2
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 16]
+19.512%
+[class: 1  #elements = 66]
+80.488%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.2695652
+
+When C=0.1, the MCC value is 0.2695652	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.269565217391304
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.943651
+ROC AUC 		0.7430556
+
+
+TOTAL:
+
+ FN =  1  /  24 	 (truth == 1) & (prediction < threshold)
+ TP =  23  /  24 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  1  /  3 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  3 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.625 	 0.958 	 0.926 	 0.958 	 0.667		 0.944		0.743
+
+
+>>> execution number: 3
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 12]
+14.634%
+[class: 1  #elements = 70]
+85.366%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = -0.01623283
+
+When C=0.01, the MCC value is -0.01623283	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.1615146
+
+When C=0.1, the MCC value is 0.1615146	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.16151457061745
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.921448
+ROC AUC 		0.8285714
+
+
+TOTAL:
+
+ FN =  1  /  20 	 (truth == 1) & (prediction < threshold)
+ TP =  19  /  20 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  7 	 (truth == 0) & (prediction >= threshold)
+ TN =  5  /  7 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.700 	 0.927 	 0.889 	 0.950 	 0.714		 0.921		0.829
+
+
+>>> execution number: 4
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 12]
+14.634%
+[class: 1  #elements = 70]
+85.366%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.4127595
+
+When C=0.01, the MCC value is 0.4127595	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.4414732
+
+When C=0.1, the MCC value is 0.4414732	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.441473159687696
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9582256
+ROC AUC 		0.8892857
+
+
+TOTAL:
+
+ FN =  1  /  20 	 (truth == 1) & (prediction < threshold)
+ TP =  19  /  20 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  7 	 (truth == 0) & (prediction >= threshold)
+ TN =  5  /  7 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.700 	 0.927 	 0.889 	 0.950 	 0.714		 0.958		0.889
+
+
+>>> execution number: 5
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 17]
+20.732%
+[class: 1  #elements = 65]
+79.268%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.4414732
+
+When C=0.01, the MCC value is 0.4414732	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.6091096
+
+When C=0.1, the MCC value is 0.6091096	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.609109590101505
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.963541
+ROC AUC 		0.63
+
+
+TOTAL:
+
+ FN =  4  /  25 	 (truth == 1) & (prediction < threshold)
+ TP =  21  /  25 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  2 	 (truth == 0) & (prediction >= threshold)
+ TN =  0  /  2 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      -0.118 	 0.875 	 0.778 	 0.840 	 0.000		 0.964		0.630
+
+
+>>> execution number: 6
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 8]
+9.756%
+[class: 1  #elements = 74]
+90.244%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.06364909
+
+When C=0.1, the MCC value is 0.06364909	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.0636490947285459
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8436641
+ROC AUC 		0.7235294
+
+
+TOTAL:
+
+ FN =  6  /  17 	 (truth == 1) & (prediction < threshold)
+ TP =  11  /  17 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  4  /  10 	 (truth == 0) & (prediction >= threshold)
+ TN =  6  /  10 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.240 	 0.688 	 0.630 	 0.647 	 0.600		 0.844		0.724
+
+
+>>> execution number: 7
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 12]
+14.634%
+[class: 1  #elements = 70]
+85.366%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = -0.2132007
+
+When C=0.01, the MCC value is -0.2132007	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.03553345
+
+When C=0.1, the MCC value is 0.03553345	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.0355334527259351
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9708225
+ROC AUC 		0.9126984
+
+
+TOTAL:
+
+ FN =  0  /  21 	 (truth == 1) & (prediction < threshold)
+ TP =  21  /  21 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  6 	 (truth == 0) & (prediction >= threshold)
+ TN =  4  /  6 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.780 	 0.955 	 0.926 	 1.000 	 0.667		 0.971		0.913
+
+
+>>> execution number: 8
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 17]
+20.732%
+[class: 1  #elements = 65]
+79.268%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = -0.09607689
+
+When C=0.01, the MCC value is -0.09607689	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.2533333
+
+When C=0.1, the MCC value is 0.2533333	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.253333333333333
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8506203
+ROC AUC 		0.5326087
+
+
+TOTAL:
+
+ FN =  1  /  23 	 (truth == 1) & (prediction < threshold)
+ TP =  22  /  23 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  3  /  4 	 (truth == 0) & (prediction >= threshold)
+ TN =  1  /  4 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.280 	 0.917 	 0.852 	 0.957 	 0.250		 0.851		0.533
+
+
+>>> execution number: 9
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 13]
+15.854%
+[class: 1  #elements = 69]
+84.146%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.5130435
+
+When C=0.1, the MCC value is 0.5130435	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.51304347826087
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9504547
+ROC AUC 		0.8452381
+
+
+TOTAL:
+
+ FN =  2  /  21 	 (truth == 1) & (prediction < threshold)
+ TP =  19  /  21 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  6 	 (truth == 0) & (prediction >= threshold)
+ TN =  4  /  6 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.571 	 0.905 	 0.852 	 0.905 	 0.667		 0.950		0.845
+
+
+>>> execution number: 10
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 14]
+17.073%
+[class: 1  #elements = 68]
+82.927%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.3685139
+
+When C=0.01, the MCC value is 0.3685139	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.3685139
+
+When C=0.1, the MCC value is 0.3685139	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.368513865595044
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9328021
+ROC AUC 		0.6521739
+
+
+TOTAL:
+
+ FN =  2  /  23 	 (truth == 1) & (prediction < threshold)
+ TP =  21  /  23 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  3  /  4 	 (truth == 0) & (prediction >= threshold)
+ TN =  1  /  4 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.184 	 0.894 	 0.815 	 0.913 	 0.250		 0.933		0.652
+
+
+>>> execution number: 11
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 17]
+20.732%
+[class: 1  #elements = 65]
+79.268%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.6091096
+
+When C=0.1, the MCC value is 0.6091096	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.609109590101505
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9003296
+ROC AUC 		0.4861111
+
+
+TOTAL:
+
+ FN =  2  /  24 	 (truth == 1) & (prediction < threshold)
+ TP =  22  /  24 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  3 	 (truth == 0) & (prediction >= threshold)
+ TN =  1  /  3 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.250 	 0.917 	 0.852 	 0.917 	 0.333		 0.900		0.486
+
+
+>>> execution number: 12
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 17]
+20.732%
+[class: 1  #elements = 65]
+79.268%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.518545
+
+When C=0.1, the MCC value is 0.518545	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.518544972870135
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9813428
+ROC AUC 		0.8913043
+
+
+TOTAL:
+
+ FN =  3  /  23 	 (truth == 1) & (prediction < threshold)
+ TP =  20  /  23 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  1  /  4 	 (truth == 0) & (prediction >= threshold)
+ TN =  3  /  4 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.529 	 0.909 	 0.852 	 0.870 	 0.750		 0.981		0.891
+
+
+>>> execution number: 13
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 12]
+14.634%
+[class: 1  #elements = 70]
+85.366%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.7565217
+
+When C=0.01, the MCC value is 0.7565217	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.7565217
+
+When C=0.1, the MCC value is 0.7565217	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.756521739130435
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.6784971
+ROC AUC 		0.2928571
+
+
+TOTAL:
+
+ FN =  1  /  20 	 (truth == 1) & (prediction < threshold)
+ TP =  19  /  20 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  6  /  7 	 (truth == 0) & (prediction >= threshold)
+ TN =  1  /  7 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.155 	 0.844 	 0.741 	 0.950 	 0.143		 0.678		0.293
+
+
+>>> execution number: 14
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 13]
+15.854%
+[class: 1  #elements = 69]
+84.146%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.4127595
+
+When C=0.01, the MCC value is 0.4127595	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.3426241
+
+When C=0.1, the MCC value is 0.3426241	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.412759458244594
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8634142
+ROC AUC 		0.6230159
+
+
+TOTAL:
+
+ FN =  0  /  21 	 (truth == 1) & (prediction < threshold)
+ TP =  21  /  21 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  6  /  6 	 (truth == 0) & (prediction >= threshold)
+ TN =  0  /  6 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.000 	 0.875 	 0.778 	 1.000 	 0.000		 0.863		0.623
+
+
+>>> execution number: 15
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 14]
+17.073%
+[class: 1  #elements = 68]
+82.927%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.4803845
+
+When C=0.01, the MCC value is 0.4803845	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.7071068
+
+When C=0.1, the MCC value is 0.7071068	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.707106781186548
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9792856
+ROC AUC 		0.8472222
+
+
+TOTAL:
+
+ FN =  2  /  24 	 (truth == 1) & (prediction < threshold)
+ TP =  22  /  24 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  1  /  3 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  3 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.516 	 0.936 	 0.889 	 0.917 	 0.667		 0.979		0.847
+
+
+>>> execution number: 16
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 17]
+20.732%
+[class: 1  #elements = 65]
+79.268%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = -0.06666667
+
+When C=0.01, the MCC value is -0.06666667	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = -0.09607689
+
+When C=0.1, the MCC value is -0.09607689	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.001, corresponding to MCC=0
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.001) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9273318
+ROC AUC 		0.7065217
+
+
+TOTAL:
+
+ FN =  0  /  23 	 (truth == 1) & (prediction < threshold)
+ TP =  23  /  23 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  4  /  4 	 (truth == 0) & (prediction >= threshold)
+ TN =  0  /  4 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.000 	 0.920 	 0.852 	 1.000 	 0.000		 0.927		0.707
+
+
+>>> execution number: 17
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 14]
+17.073%
+[class: 1  #elements = 68]
+82.927%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.4710033
+
+When C=0.1, the MCC value is 0.4710033	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.47100330099124
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8988145
+ROC AUC 		0.576087
+
+
+TOTAL:
+
+ FN =  8  /  23 	 (truth == 1) & (prediction < threshold)
+ TP =  15  /  23 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  4 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  4 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.112 	 0.750 	 0.630 	 0.652 	 0.500		 0.899		0.576
+
+
+>>> execution number: 18
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 15]
+18.293%
+[class: 1  #elements = 67]
+81.707%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = -0.1809068
+
+When C=0.01, the MCC value is -0.1809068	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.2110267
+
+When C=0.1, the MCC value is 0.2110267	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.211026726541659
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9766872
+ROC AUC 		0.8194444
+
+
+TOTAL:
+
+ FN =  1  /  24 	 (truth == 1) & (prediction < threshold)
+ TP =  23  /  24 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  3 	 (truth == 0) & (prediction >= threshold)
+ TN =  1  /  3 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.350 	 0.939 	 0.889 	 0.958 	 0.333		 0.977		0.819
+
+
+>>> execution number: 19
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 19]
+23.171%
+[class: 1  #elements = 63]
+76.829%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = -0.07692308
+
+When C=0.01, the MCC value is -0.07692308	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = -0.07692308
+
+When C=0.1, the MCC value is -0.07692308	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.001, corresponding to MCC=0
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.001) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9369162
+ROC AUC 		0.6388889
+
+
+TOTAL:
+
+ FN =  0  /  24 	 (truth == 1) & (prediction < threshold)
+ TP =  24  /  24 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  3  /  3 	 (truth == 0) & (prediction >= threshold)
+ TN =  0  /  3 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.000 	 0.941 	 0.889 	 1.000 	 0.000		 0.937		0.639
+
+
+>>> execution number: 20
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 12]
+14.634%
+[class: 1  #elements = 70]
+85.366%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.6091096
+
+When C=0.1, the MCC value is 0.6091096	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.609109590101505
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.7095945
+ROC AUC 		0.55
+
+
+TOTAL:
+
+ FN =  1  /  20 	 (truth == 1) & (prediction < threshold)
+ TP =  19  /  20 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  5  /  7 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  7 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.329 	 0.864 	 0.778 	 0.950 	 0.286		 0.710		0.550
+
+
+>>> execution number: 21
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 14]
+17.073%
+[class: 1  #elements = 68]
+82.927%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.1399793
+
+When C=0.01, the MCC value is 0.1399793	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.1399793
+
+When C=0.1, the MCC value is 0.1399793	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.139979294535123
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.7934535
+ROC AUC 		0.5785714
+
+
+TOTAL:
+
+ FN =  3  /  20 	 (truth == 1) & (prediction < threshold)
+ TP =  17  /  20 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  4  /  7 	 (truth == 0) & (prediction >= threshold)
+ TN =  3  /  7 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.294 	 0.829 	 0.741 	 0.850 	 0.429		 0.793		0.579
+
+
+>>> execution number: 22
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 13]
+15.854%
+[class: 1  #elements = 69]
+84.146%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.1615146
+
+When C=0.01, the MCC value is 0.1615146	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = -0.04170288
+
+When C=0.1, the MCC value is -0.04170288	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.16151457061745
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.7812526
+ROC AUC 		0.4603175
+
+
+TOTAL:
+
+ FN =  9  /  21 	 (truth == 1) & (prediction < threshold)
+ TP =  12  /  21 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  4  /  6 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  6 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      -0.081 	 0.649 	 0.519 	 0.571 	 0.333		 0.781		0.460
+
+
+>>> execution number: 23
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 13]
+15.854%
+[class: 1  #elements = 69]
+84.146%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = -0.1132277
+
+When C=0.01, the MCC value is -0.1132277	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = -0.1132277
+
+When C=0.1, the MCC value is -0.1132277	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.001, corresponding to MCC=0
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.001) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.7738453
+ROC AUC 		0.6285714
+
+
+TOTAL:
+
+ FN =  0  /  20 	 (truth == 1) & (prediction < threshold)
+ TP =  20  /  20 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  7  /  7 	 (truth == 0) & (prediction >= threshold)
+ TN =  0  /  7 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.000 	 0.851 	 0.741 	 1.000 	 0.000		 0.774		0.629
+
+
+>>> execution number: 24
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 16]
+19.512%
+[class: 1  #elements = 66]
+80.488%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.3522819
+
+When C=0.01, the MCC value is 0.3522819	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.518545
+
+When C=0.1, the MCC value is 0.518545	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.518544972870135
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9007691
+ROC AUC 		0.7
+
+
+TOTAL:
+
+ FN =  1  /  22 	 (truth == 1) & (prediction < threshold)
+ TP =  21  /  22 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  3  /  5 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  5 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.438 	 0.913 	 0.852 	 0.955 	 0.400		 0.901		0.700
+
+
+>>> execution number: 25
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 11]
+13.415%
+[class: 1  #elements = 71]
+86.585%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.5025189
+
+When C=0.1, the MCC value is 0.5025189	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.502518907629606
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9348638
+ROC AUC 		0.8214286
+
+
+TOTAL:
+
+ FN =  2  /  21 	 (truth == 1) & (prediction < threshold)
+ TP =  19  /  21 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  6 	 (truth == 0) & (prediction >= threshold)
+ TN =  4  /  6 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.571 	 0.905 	 0.852 	 0.905 	 0.667		 0.935		0.821
+
+
+>>> execution number: 26
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 17]
+20.732%
+[class: 1  #elements = 65]
+79.268%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.3819144
+
+When C=0.01, the MCC value is 0.3819144	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.3819144
+
+When C=0.1, the MCC value is 0.3819144	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.381914369798501
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9088165
+ROC AUC 		0.6141304
+
+
+TOTAL:
+
+ FN =  1  /  23 	 (truth == 1) & (prediction < threshold)
+ TP =  22  /  23 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  3  /  4 	 (truth == 0) & (prediction >= threshold)
+ TN =  1  /  4 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.280 	 0.917 	 0.852 	 0.957 	 0.250		 0.909		0.614
+
+
+>>> execution number: 27
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 16]
+19.512%
+[class: 1  #elements = 66]
+80.488%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.5330018
+
+When C=0.1, the MCC value is 0.5330018	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.533001790889026
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9393054
+ROC AUC 		0.7173913
+
+
+TOTAL:
+
+ FN =  3  /  23 	 (truth == 1) & (prediction < threshold)
+ TP =  20  /  23 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  4 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  4 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.338 	 0.889 	 0.815 	 0.870 	 0.500		 0.939		0.717
+
+
+>>> execution number: 28
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 15]
+18.293%
+[class: 1  #elements = 67]
+81.707%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.3685139
+
+When C=0.1, the MCC value is 0.3685139	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.368513865595044
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9897831
+ROC AUC 		0.9166667
+
+
+TOTAL:
+
+ FN =  3  /  24 	 (truth == 1) & (prediction < threshold)
+ TP =  21  /  24 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  0  /  3 	 (truth == 0) & (prediction >= threshold)
+ TN =  3  /  3 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.661 	 0.933 	 0.889 	 0.875 	 1.000		 0.990		0.917
+
+
+>>> execution number: 29
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 14]
+17.073%
+[class: 1  #elements = 68]
+82.927%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.4714045
+
+When C=0.01, the MCC value is 0.4714045	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.1885618
+
+When C=0.1, the MCC value is 0.1885618	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.471404520791032
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8631991
+ROC AUC 		0.6507937
+
+
+TOTAL:
+
+ FN =  1  /  21 	 (truth == 1) & (prediction < threshold)
+ TP =  20  /  21 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  4  /  6 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  6 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.378 	 0.889 	 0.815 	 0.952 	 0.333		 0.863		0.651
+
+
+>>> execution number: 30
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 16]
+19.512%
+[class: 1  #elements = 66]
+80.488%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.518545
+
+When C=0.01, the MCC value is 0.518545	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.518545
+
+When C=0.1, the MCC value is 0.518545	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.518544972870135
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8660607
+ROC AUC 		0.4728261
+
+
+TOTAL:
+
+ FN =  4  /  23 	 (truth == 1) & (prediction < threshold)
+ TP =  19  /  23 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  3  /  4 	 (truth == 0) & (prediction >= threshold)
+ TN =  1  /  4 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.070 	 0.844 	 0.741 	 0.826 	 0.250		 0.866		0.473
+
+
+>>> execution number: 31
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 15]
+18.293%
+[class: 1  #elements = 67]
+81.707%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.2357023
+
+When C=0.01, the MCC value is 0.2357023	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.5025189
+
+When C=0.1, the MCC value is 0.5025189	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.502518907629606
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9138031
+ROC AUC 		0.32
+
+
+TOTAL:
+
+ FN =  2  /  25 	 (truth == 1) & (prediction < threshold)
+ TP =  23  /  25 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  2 	 (truth == 0) & (prediction >= threshold)
+ TN =  0  /  2 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      -0.080 	 0.920 	 0.852 	 0.920 	 0.000		 0.914		0.320
+
+
+>>> execution number: 32
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 14]
+17.073%
+[class: 1  #elements = 68]
+82.927%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.1931218
+
+When C=0.01, the MCC value is 0.1931218	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.3636364
+
+When C=0.1, the MCC value is 0.3636364	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.363636363636364
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8603867
+ROC AUC 		0.4293478
+
+
+TOTAL:
+
+ FN =  2  /  23 	 (truth == 1) & (prediction < threshold)
+ TP =  21  /  23 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  3  /  4 	 (truth == 0) & (prediction >= threshold)
+ TN =  1  /  4 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.184 	 0.894 	 0.815 	 0.913 	 0.250		 0.860		0.429
+
+
+>>> execution number: 33
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 15]
+18.293%
+[class: 1  #elements = 67]
+81.707%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.3426241
+
+When C=0.01, the MCC value is 0.3426241	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.3426241
+
+When C=0.1, the MCC value is 0.3426241	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.342624144432096
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8261297
+ROC AUC 		0.2934783
+
+
+TOTAL:
+
+ FN =  1  /  23 	 (truth == 1) & (prediction < threshold)
+ TP =  22  /  23 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  4  /  4 	 (truth == 0) & (prediction >= threshold)
+ TN =  0  /  4 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      -0.082 	 0.898 	 0.815 	 0.957 	 0.000		 0.826		0.293
+
+
+>>> execution number: 34
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 14]
+17.073%
+[class: 1  #elements = 68]
+82.927%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.4414732
+
+When C=0.01, the MCC value is 0.4414732	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.4414732
+
+When C=0.1, the MCC value is 0.4414732	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.441473159687696
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8973815
+ROC AUC 		0.6818182
+
+
+TOTAL:
+
+ FN =  2  /  22 	 (truth == 1) & (prediction < threshold)
+ TP =  20  /  22 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  3  /  5 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  5 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.338 	 0.889 	 0.815 	 0.909 	 0.400		 0.897		0.682
+
+
+>>> execution number: 35
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 16]
+19.512%
+[class: 1  #elements = 66]
+80.488%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.4714045
+
+When C=0.01, the MCC value is 0.4714045	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.6091096
+
+When C=0.1, the MCC value is 0.6091096	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.609109590101505
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.909007
+ROC AUC 		0.6086957
+
+
+TOTAL:
+
+ FN =  1  /  23 	 (truth == 1) & (prediction < threshold)
+ TP =  22  /  23 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  3  /  4 	 (truth == 0) & (prediction >= threshold)
+ TN =  1  /  4 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.280 	 0.917 	 0.852 	 0.957 	 0.250		 0.909		0.609
+
+
+>>> execution number: 36
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 12]
+14.634%
+[class: 1  #elements = 70]
+85.366%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.2477168
+
+When C=0.01, the MCC value is 0.2477168	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.3651484
+
+When C=0.1, the MCC value is 0.3651484	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.365148371670111
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9186878
+ROC AUC 		0.6521739
+
+
+TOTAL:
+
+ FN =  4  /  23 	 (truth == 1) & (prediction < threshold)
+ TP =  19  /  23 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  4 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  4 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.279 	 0.864 	 0.778 	 0.826 	 0.500		 0.919		0.652
+
+
+>>> execution number: 37
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 17]
+20.732%
+[class: 1  #elements = 65]
+79.268%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.1885618
+
+When C=0.01, the MCC value is 0.1885618	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.1885618
+
+When C=0.1, the MCC value is 0.1885618	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.188561808316413
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8814651
+ROC AUC 		0.5434783
+
+
+TOTAL:
+
+ FN =  4  /  23 	 (truth == 1) & (prediction < threshold)
+ TP =  19  /  23 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  3  /  4 	 (truth == 0) & (prediction >= threshold)
+ TN =  1  /  4 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.070 	 0.844 	 0.741 	 0.826 	 0.250		 0.881		0.543
+
+
+>>> execution number: 38
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 16]
+19.512%
+[class: 1  #elements = 66]
+80.488%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.6793662
+
+When C=0.01, the MCC value is 0.6793662	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.518545
+
+When C=0.1, the MCC value is 0.518545	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.679366220486757
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9373671
+ROC AUC 		0.7173913
+
+
+TOTAL:
+
+ FN =  2  /  23 	 (truth == 1) & (prediction < threshold)
+ TP =  21  /  23 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  4  /  4 	 (truth == 0) & (prediction >= threshold)
+ TN =  0  /  4 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      -0.118 	 0.875 	 0.778 	 0.913 	 0.000		 0.937		0.717
+
+
+>>> execution number: 39
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 18]
+21.951%
+[class: 1  #elements = 64]
+78.049%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.2533333
+
+When C=0.01, the MCC value is 0.2533333	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.4414732
+
+When C=0.1, the MCC value is 0.4414732	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.441473159687696
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9832957
+ROC AUC 		0.875
+
+
+TOTAL:
+
+ FN =  1  /  24 	 (truth == 1) & (prediction < threshold)
+ TP =  23  /  24 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  1  /  3 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  3 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.625 	 0.958 	 0.926 	 0.958 	 0.667		 0.983		0.875
+
+
+>>> execution number: 40
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 14]
+17.073%
+[class: 1  #elements = 68]
+82.927%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.4285714
+
+When C=0.1, the MCC value is 0.4285714	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.428571428571429
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9133566
+ROC AUC 		0.5555556
+
+
+TOTAL:
+
+ FN =  0  /  24 	 (truth == 1) & (prediction < threshold)
+ TP =  24  /  24 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  3 	 (truth == 0) & (prediction >= threshold)
+ TN =  1  /  3 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.555 	 0.960 	 0.926 	 1.000 	 0.333		 0.913		0.556
+
+
+>>> execution number: 41
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 12]
+14.634%
+[class: 1  #elements = 70]
+85.366%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.7083333
+
+When C=0.01, the MCC value is 0.7083333	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.6091096
+
+When C=0.1, the MCC value is 0.6091096	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.708333333333333
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.6726403
+ROC AUC 		0.4342105
+
+
+TOTAL:
+
+ FN =  3  /  19 	 (truth == 1) & (prediction < threshold)
+ TP =  16  /  19 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  8  /  8 	 (truth == 0) & (prediction >= threshold)
+ TN =  0  /  8 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      -0.229 	 0.744 	 0.593 	 0.842 	 0.000		 0.673		0.434
+
+
+>>> execution number: 42
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 14]
+17.073%
+[class: 1  #elements = 68]
+82.927%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.6655458
+
+When C=0.1, the MCC value is 0.6655458	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.665545829862154
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9770608
+ROC AUC 		0.8804348
+
+
+TOTAL:
+
+ FN =  2  /  23 	 (truth == 1) & (prediction < threshold)
+ TP =  21  /  23 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  4 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  4 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.413 	 0.913 	 0.852 	 0.913 	 0.500		 0.977		0.880
+
+
+>>> execution number: 43
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 9]
+10.976%
+[class: 1  #elements = 73]
+89.024%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = -0.1434438
+
+When C=0.01, the MCC value is -0.1434438	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.518545
+
+When C=0.1, the MCC value is 0.518545	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.518544972870135
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9110721
+ROC AUC 		0.7454545
+
+
+TOTAL:
+
+ FN =  1  /  22 	 (truth == 1) & (prediction < threshold)
+ TP =  21  /  22 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  5 	 (truth == 0) & (prediction >= threshold)
+ TN =  3  /  5 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.606 	 0.933 	 0.889 	 0.955 	 0.600		 0.911		0.745
+
+
+>>> execution number: 44
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 13]
+15.854%
+[class: 1  #elements = 69]
+84.146%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.4382863
+
+When C=0.1, the MCC value is 0.4382863	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.438286278201907
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9372335
+ROC AUC 		0.8055556
+
+
+TOTAL:
+
+ FN =  0  /  21 	 (truth == 1) & (prediction < threshold)
+ TP =  21  /  21 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  3  /  6 	 (truth == 0) & (prediction >= threshold)
+ TN =  3  /  6 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.661 	 0.933 	 0.889 	 1.000 	 0.500		 0.937		0.806
+
+
+>>> execution number: 45
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 14]
+17.073%
+[class: 1  #elements = 68]
+82.927%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.2763854
+
+When C=0.1, the MCC value is 0.2763854	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.276385399196283
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9015358
+ROC AUC 		0.5978261
+
+
+TOTAL:
+
+ FN =  7  /  23 	 (truth == 1) & (prediction < threshold)
+ TP =  16  /  23 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  3  /  4 	 (truth == 0) & (prediction >= threshold)
+ TN =  1  /  4 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      -0.042 	 0.762 	 0.630 	 0.696 	 0.250		 0.902		0.598
+
+
+>>> execution number: 46
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 13]
+15.854%
+[class: 1  #elements = 69]
+84.146%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = -0.05337605
+
+When C=0.01, the MCC value is -0.05337605	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = -0.1132277
+
+When C=0.1, the MCC value is -0.1132277	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.001, corresponding to MCC=0
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.001) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8793001
+ROC AUC 		0.8209877
+
+
+TOTAL:
+
+ FN =  0  /  18 	 (truth == 1) & (prediction < threshold)
+ TP =  18  /  18 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  9  /  9 	 (truth == 0) & (prediction >= threshold)
+ TN =  0  /  9 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.000 	 0.800 	 0.667 	 1.000 	 0.000		 0.879		0.821
+
+
+>>> execution number: 47
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 20]
+24.390%
+[class: 1  #elements = 62]
+75.610%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.3522819
+
+When C=0.1, the MCC value is 0.3522819	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.352281938371192
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9985484
+ROC AUC 		0.9615385
+
+
+TOTAL:
+
+ FN =  2  /  26 	 (truth == 1) & (prediction < threshold)
+ TP =  24  /  26 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  0  /  1 	 (truth == 0) & (prediction >= threshold)
+ TN =  1  /  1 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.555 	 0.960 	 0.926 	 0.923 	 1.000		 0.999		0.962
+
+
+>>> execution number: 48
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 14]
+17.073%
+[class: 1  #elements = 68]
+82.927%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.7565217
+
+When C=0.1, the MCC value is 0.7565217	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.756521739130435
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8460145
+ROC AUC 		0.5454545
+
+
+TOTAL:
+
+ FN =  2  /  22 	 (truth == 1) & (prediction < threshold)
+ TP =  20  /  22 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  3  /  5 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  5 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.338 	 0.889 	 0.815 	 0.909 	 0.400		 0.846		0.545
+
+
+>>> execution number: 49
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 14]
+17.073%
+[class: 1  #elements = 68]
+82.927%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.1, the MCC value is 0	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.001, corresponding to MCC=0
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.001) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9982991
+ROC AUC 		0.9861111
+
+
+TOTAL:
+
+ FN =  0  /  24 	 (truth == 1) & (prediction < threshold)
+ TP =  24  /  24 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  3  /  3 	 (truth == 0) & (prediction >= threshold)
+ TN =  0  /  3 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.000 	 0.941 	 0.889 	 1.000 	 0.000		 0.998		0.986
+
+
+>>> execution number: 50
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 16]
+19.512%
+[class: 1  #elements = 66]
+80.488%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.4166667
+
+When C=0.1, the MCC value is 0.4166667	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.416666666666667
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9421234
+ROC AUC 		0.6902174
+
+
+TOTAL:
+
+ FN =  0  /  23 	 (truth == 1) & (prediction < threshold)
+ TP =  23  /  23 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  4  /  4 	 (truth == 0) & (prediction >= threshold)
+ TN =  0  /  4 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.000 	 0.920 	 0.852 	 1.000 	 0.000		 0.942		0.690
+
+
+>>> execution number: 51
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 10]
+12.195%
+[class: 1  #elements = 72]
+87.805%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.3768673
+
+When C=0.01, the MCC value is 0.3768673	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.3768673
+
+When C=0.1, the MCC value is 0.3768673	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.376867331440716
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8047966
+ROC AUC 		0.5857143
+
+
+TOTAL:
+
+ FN =  4  /  20 	 (truth == 1) & (prediction < threshold)
+ TP =  16  /  20 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  4  /  7 	 (truth == 0) & (prediction >= threshold)
+ TN =  3  /  7 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.229 	 0.800 	 0.704 	 0.800 	 0.429		 0.805		0.586
+
+
+>>> execution number: 52
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 15]
+18.293%
+[class: 1  #elements = 67]
+81.707%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = -0.06666667
+
+When C=0.01, the MCC value is -0.06666667	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = -0.09607689
+
+When C=0.1, the MCC value is -0.09607689	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.001, corresponding to MCC=0
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.001) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8971872
+ROC AUC 		0.7301587
+
+
+TOTAL:
+
+ FN =  0  /  21 	 (truth == 1) & (prediction < threshold)
+ TP =  21  /  21 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  6  /  6 	 (truth == 0) & (prediction >= threshold)
+ TN =  0  /  6 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.000 	 0.875 	 0.778 	 1.000 	 0.000		 0.897		0.730
+
+
+>>> execution number: 53
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 18]
+21.951%
+[class: 1  #elements = 64]
+78.049%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.4714045
+
+When C=0.01, the MCC value is 0.4714045	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.4714045
+
+When C=0.1, the MCC value is 0.4714045	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.471404520791032
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9403896
+ROC AUC 		0.7681818
+
+
+TOTAL:
+
+ FN =  2  /  22 	 (truth == 1) & (prediction < threshold)
+ TP =  20  /  22 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  3  /  5 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  5 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.338 	 0.889 	 0.815 	 0.909 	 0.400		 0.940		0.768
+
+
+>>> execution number: 54
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 17]
+20.732%
+[class: 1  #elements = 65]
+79.268%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.4382863
+
+When C=0.01, the MCC value is 0.4382863	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.4382863
+
+When C=0.1, the MCC value is 0.4382863	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.438286278201907
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9050256
+ROC AUC 		0.29
+
+
+TOTAL:
+
+ FN =  2  /  25 	 (truth == 1) & (prediction < threshold)
+ TP =  23  /  25 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  2 	 (truth == 0) & (prediction >= threshold)
+ TN =  0  /  2 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      -0.080 	 0.920 	 0.852 	 0.920 	 0.000		 0.905		0.290
+
+
+>>> execution number: 55
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 16]
+19.512%
+[class: 1  #elements = 66]
+80.488%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.2842676
+
+When C=0.01, the MCC value is 0.2842676	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.5757576
+
+When C=0.1, the MCC value is 0.5757576	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.575757575757576
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9530605
+ROC AUC 		0.53
+
+
+TOTAL:
+
+ FN =  1  /  25 	 (truth == 1) & (prediction < threshold)
+ TP =  24  /  25 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  2 	 (truth == 0) & (prediction >= threshold)
+ TN =  0  /  2 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      -0.055 	 0.941 	 0.889 	 0.960 	 0.000		 0.953		0.530
+
+
+>>> execution number: 56
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 12]
+14.634%
+[class: 1  #elements = 70]
+85.366%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = -0.09607689
+
+When C=0.01, the MCC value is -0.09607689	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = -0.09607689
+
+When C=0.1, the MCC value is -0.09607689	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.001, corresponding to MCC=0
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.001) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8955498
+ROC AUC 		0.808642
+
+
+TOTAL:
+
+ FN =  0  /  18 	 (truth == 1) & (prediction < threshold)
+ TP =  18  /  18 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  9  /  9 	 (truth == 0) & (prediction >= threshold)
+ TN =  0  /  9 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.000 	 0.800 	 0.667 	 1.000 	 0.000		 0.896		0.809
+
+
+>>> execution number: 57
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 16]
+19.512%
+[class: 1  #elements = 66]
+80.488%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.518545
+
+When C=0.1, the MCC value is 0.518545	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.518544972870135
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9163784
+ROC AUC 		0.7363636
+
+
+TOTAL:
+
+ FN =  1  /  22 	 (truth == 1) & (prediction < threshold)
+ TP =  21  /  22 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  5 	 (truth == 0) & (prediction >= threshold)
+ TN =  3  /  5 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.606 	 0.933 	 0.889 	 0.955 	 0.600		 0.916		0.736
+
+
+>>> execution number: 58
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 13]
+15.854%
+[class: 1  #elements = 69]
+84.146%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.3333333
+
+When C=0.01, the MCC value is 0.3333333	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.5922201
+
+When C=0.1, the MCC value is 0.5922201	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.592220092263982
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8969013
+ROC AUC 		0.5869565
+
+
+TOTAL:
+
+ FN =  2  /  23 	 (truth == 1) & (prediction < threshold)
+ TP =  21  /  23 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  3  /  4 	 (truth == 0) & (prediction >= threshold)
+ TN =  1  /  4 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.184 	 0.894 	 0.815 	 0.913 	 0.250		 0.897		0.587
+
+
+>>> execution number: 59
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 13]
+15.854%
+[class: 1  #elements = 69]
+84.146%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.3819144
+
+When C=0.01, the MCC value is 0.3819144	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.6655458
+
+When C=0.1, the MCC value is 0.6655458	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.665545829862154
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.7135013
+ROC AUC 		0.3
+
+
+TOTAL:
+
+ FN =  4  /  22 	 (truth == 1) & (prediction < threshold)
+ TP =  18  /  22 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  4  /  5 	 (truth == 0) & (prediction >= threshold)
+ TN =  1  /  5 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.018 	 0.818 	 0.704 	 0.818 	 0.200		 0.714		0.300
+
+
+>>> execution number: 60
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 14]
+17.073%
+[class: 1  #elements = 68]
+82.927%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.663325
+
+When C=0.1, the MCC value is 0.663325	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.66332495807108
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8517381
+ROC AUC 		0.576087
+
+
+TOTAL:
+
+ FN =  2  /  23 	 (truth == 1) & (prediction < threshold)
+ TP =  21  /  23 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  4 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  4 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.413 	 0.913 	 0.852 	 0.913 	 0.500		 0.852		0.576
+
+
+>>> execution number: 61
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 18]
+21.951%
+[class: 1  #elements = 64]
+78.049%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.125
+
+When C=0.01, the MCC value is 0.125	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.125
+
+When C=0.1, the MCC value is 0.125	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.125
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9690724
+ROC AUC 		0.72
+
+
+TOTAL:
+
+ FN =  0  /  25 	 (truth == 1) & (prediction < threshold)
+ TP =  25  /  25 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  1  /  2 	 (truth == 0) & (prediction >= threshold)
+ TN =  1  /  2 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.693 	 0.980 	 0.963 	 1.000 	 0.500		 0.969		0.720
+
+
+>>> execution number: 62
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 16]
+19.512%
+[class: 1  #elements = 66]
+80.488%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.5555556
+
+When C=0.01, the MCC value is 0.5555556	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.663325
+
+When C=0.1, the MCC value is 0.663325	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.66332495807108
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8424921
+ROC AUC 		0.5181818
+
+
+TOTAL:
+
+ FN =  4  /  22 	 (truth == 1) & (prediction < threshold)
+ TP =  18  /  22 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  3  /  5 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  5 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.204 	 0.837 	 0.741 	 0.818 	 0.400		 0.842		0.518
+
+
+>>> execution number: 63
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 18]
+21.951%
+[class: 1  #elements = 64]
+78.049%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = -0.1132277
+
+When C=0.01, the MCC value is -0.1132277	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.4166667
+
+When C=0.1, the MCC value is 0.4166667	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.416666666666667
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9905774
+ROC AUC 		0.88
+
+
+TOTAL:
+
+ FN =  3  /  25 	 (truth == 1) & (prediction < threshold)
+ TP =  22  /  25 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  0  /  2 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  2 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.593 	 0.936 	 0.889 	 0.880 	 1.000		 0.991		0.880
+
+
+>>> execution number: 64
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 14]
+17.073%
+[class: 1  #elements = 68]
+82.927%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.02608696
+
+When C=0.01, the MCC value is 0.02608696	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.6091096
+
+When C=0.1, the MCC value is 0.6091096	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.609109590101505
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8840133
+ROC AUC 		0.5818182
+
+
+TOTAL:
+
+ FN =  2  /  22 	 (truth == 1) & (prediction < threshold)
+ TP =  20  /  22 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  4  /  5 	 (truth == 0) & (prediction >= threshold)
+ TN =  1  /  5 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.135 	 0.870 	 0.778 	 0.909 	 0.200		 0.884		0.582
+
+
+>>> execution number: 65
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 12]
+14.634%
+[class: 1  #elements = 70]
+85.366%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.4382863
+
+When C=0.01, the MCC value is 0.4382863	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.530791
+
+When C=0.1, the MCC value is 0.530791	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.53079104215763
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8702825
+ROC AUC 		0.7071429
+
+
+TOTAL:
+
+ FN =  2  /  20 	 (truth == 1) & (prediction < threshold)
+ TP =  18  /  20 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  4  /  7 	 (truth == 0) & (prediction >= threshold)
+ TN =  3  /  7 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.371 	 0.857 	 0.778 	 0.900 	 0.429		 0.870		0.707
+
+
+>>> execution number: 66
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 15]
+18.293%
+[class: 1  #elements = 67]
+81.707%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.2110267
+
+When C=0.1, the MCC value is 0.2110267	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.211026726541659
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9711856
+ROC AUC 		0.8194444
+
+
+TOTAL:
+
+ FN =  2  /  24 	 (truth == 1) & (prediction < threshold)
+ TP =  22  /  24 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  1  /  3 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  3 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.516 	 0.936 	 0.889 	 0.917 	 0.667		 0.971		0.819
+
+
+>>> execution number: 67
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 17]
+20.732%
+[class: 1  #elements = 65]
+79.268%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.4166667
+
+When C=0.01, the MCC value is 0.4166667	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.4166667
+
+When C=0.1, the MCC value is 0.4166667	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.416666666666667
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.972376
+ROC AUC 		0.8055556
+
+
+TOTAL:
+
+ FN =  3  /  24 	 (truth == 1) & (prediction < threshold)
+ TP =  21  /  24 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  3 	 (truth == 0) & (prediction >= threshold)
+ TN =  1  /  3 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.184 	 0.894 	 0.815 	 0.875 	 0.333		 0.972		0.806
+
+
+>>> execution number: 68
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 12]
+14.634%
+[class: 1  #elements = 70]
+85.366%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.663325
+
+When C=0.1, the MCC value is 0.663325	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.66332495807108
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9516637
+ROC AUC 		0.8452381
+
+
+TOTAL:
+
+ FN =  3  /  21 	 (truth == 1) & (prediction < threshold)
+ TP =  18  /  21 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  1  /  6 	 (truth == 0) & (prediction >= threshold)
+ TN =  5  /  6 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.629 	 0.900 	 0.852 	 0.857 	 0.833		 0.952		0.845
+
+
+>>> execution number: 69
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 16]
+19.512%
+[class: 1  #elements = 66]
+80.488%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 1
+
+When C=0.01, the MCC value is 1	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 1
+
+When C=0.1, the MCC value is 1	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=1
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.7280826
+ROC AUC 		0.4563492
+
+
+TOTAL:
+
+ FN =  2  /  21 	 (truth == 1) & (prediction < threshold)
+ TP =  19  /  21 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  4  /  6 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  6 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.279 	 0.864 	 0.778 	 0.905 	 0.333		 0.728		0.456
+
+
+>>> execution number: 70
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 16]
+19.512%
+[class: 1  #elements = 66]
+80.488%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.2327673
+
+When C=0.01, the MCC value is 0.2327673	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.3426241
+
+When C=0.1, the MCC value is 0.3426241	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.342624144432096
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9606325
+ROC AUC 		0.7430556
+
+
+TOTAL:
+
+ FN =  0  /  24 	 (truth == 1) & (prediction < threshold)
+ TP =  24  /  24 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  3 	 (truth == 0) & (prediction >= threshold)
+ TN =  1  /  3 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.555 	 0.960 	 0.926 	 1.000 	 0.333		 0.961		0.743
+
+
+>>> execution number: 71
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 12]
+14.634%
+[class: 1  #elements = 70]
+85.366%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.4382863
+
+When C=0.1, the MCC value is 0.4382863	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.438286278201907
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9198601
+ROC AUC 		0.8253968
+
+
+TOTAL:
+
+ FN =  2  /  21 	 (truth == 1) & (prediction < threshold)
+ TP =  19  /  21 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  1  /  6 	 (truth == 0) & (prediction >= threshold)
+ TN =  5  /  6 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.700 	 0.927 	 0.889 	 0.905 	 0.833		 0.920		0.825
+
+
+>>> execution number: 72
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 16]
+19.512%
+[class: 1  #elements = 66]
+80.488%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.6091096
+
+When C=0.1, the MCC value is 0.6091096	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.609109590101505
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9121877
+ROC AUC 		0.6413043
+
+
+TOTAL:
+
+ FN =  1  /  23 	 (truth == 1) & (prediction < threshold)
+ TP =  22  /  23 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  4 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  4 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.516 	 0.936 	 0.889 	 0.957 	 0.500		 0.912		0.641
+
+
+>>> execution number: 73
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 10]
+12.195%
+[class: 1  #elements = 72]
+87.805%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.3426241
+
+When C=0.01, the MCC value is 0.3426241	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.3426241
+
+When C=0.1, the MCC value is 0.3426241	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.342624144432096
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8121025
+ROC AUC 		0.7264706
+
+
+TOTAL:
+
+ FN =  2  /  17 	 (truth == 1) & (prediction < threshold)
+ TP =  15  /  17 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  5  /  10 	 (truth == 0) & (prediction >= threshold)
+ TN =  5  /  10 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.421 	 0.811 	 0.741 	 0.882 	 0.500		 0.812		0.726
+
+
+>>> execution number: 74
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 15]
+18.293%
+[class: 1  #elements = 67]
+81.707%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.0761387
+
+When C=0.01, the MCC value is 0.0761387	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.0761387
+
+When C=0.1, the MCC value is 0.0761387	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.0761386987626881
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8540587
+ROC AUC 		0.5545455
+
+
+TOTAL:
+
+ FN =  1  /  22 	 (truth == 1) & (prediction < threshold)
+ TP =  21  /  22 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  4  /  5 	 (truth == 0) & (prediction >= threshold)
+ TN =  1  /  5 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.229 	 0.894 	 0.815 	 0.955 	 0.200		 0.854		0.555
+
+
+>>> execution number: 75
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 16]
+19.512%
+[class: 1  #elements = 66]
+80.488%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.4615385
+
+When C=0.1, the MCC value is 0.4615385	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.461538461538462
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9087945
+ROC AUC 		0.7698413
+
+
+TOTAL:
+
+ FN =  1  /  21 	 (truth == 1) & (prediction < threshold)
+ TP =  20  /  21 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  6 	 (truth == 0) & (prediction >= threshold)
+ TN =  4  /  6 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.663 	 0.930 	 0.889 	 0.952 	 0.667		 0.909		0.770
+
+
+>>> execution number: 76
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 11]
+13.415%
+[class: 1  #elements = 71]
+86.585%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.3
+
+When C=0.01, the MCC value is 0.3	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.518545
+
+When C=0.1, the MCC value is 0.518545	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.518544972870135
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.7796087
+ROC AUC 		0.4409091
+
+
+TOTAL:
+
+ FN =  1  /  22 	 (truth == 1) & (prediction < threshold)
+ TP =  21  /  22 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  4  /  5 	 (truth == 0) & (prediction >= threshold)
+ TN =  1  /  5 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.229 	 0.894 	 0.815 	 0.955 	 0.200		 0.780		0.441
+
+
+>>> execution number: 77
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 13]
+15.854%
+[class: 1  #elements = 69]
+84.146%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.1936492
+
+When C=0.01, the MCC value is 0.1936492	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.65
+
+When C=0.1, the MCC value is 0.65	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.65
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8268613
+ROC AUC 		0.1805556
+
+
+TOTAL:
+
+ FN =  4  /  24 	 (truth == 1) & (prediction < threshold)
+ TP =  20  /  24 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  3  /  3 	 (truth == 0) & (prediction >= threshold)
+ TN =  0  /  3 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      -0.147 	 0.851 	 0.741 	 0.833 	 0.000		 0.827		0.181
+
+
+>>> execution number: 78
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 12]
+14.634%
+[class: 1  #elements = 70]
+85.366%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.8928054
+
+When C=0.01, the MCC value is 0.8928054	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.8928054
+
+When C=0.1, the MCC value is 0.8928054	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.892805381522402
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.874521
+ROC AUC 		0.6230159
+
+
+TOTAL:
+
+ FN =  4  /  21 	 (truth == 1) & (prediction < threshold)
+ TP =  17  /  21 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  4  /  6 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  6 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.143 	 0.810 	 0.704 	 0.810 	 0.333		 0.875		0.623
+
+
+>>> execution number: 79
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 12]
+14.634%
+[class: 1  #elements = 70]
+85.366%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.6655458
+
+When C=0.1, the MCC value is 0.6655458	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.665545829862154
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8239238
+ROC AUC 		0.5753968
+
+
+TOTAL:
+
+ FN =  4  /  21 	 (truth == 1) & (prediction < threshold)
+ TP =  17  /  21 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  4  /  6 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  6 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.143 	 0.810 	 0.704 	 0.810 	 0.333		 0.824		0.575
+
+
+>>> execution number: 80
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 17]
+20.732%
+[class: 1  #elements = 65]
+79.268%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.5330018
+
+When C=0.01, the MCC value is 0.5330018	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.5330018
+
+When C=0.1, the MCC value is 0.5330018	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.533001790889026
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9823633
+ROC AUC 		0.875
+
+
+TOTAL:
+
+ FN =  1  /  24 	 (truth == 1) & (prediction < threshold)
+ TP =  23  /  24 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  1  /  3 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  3 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.625 	 0.958 	 0.926 	 0.958 	 0.667		 0.982		0.875
+
+
+>>> execution number: 81
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 17]
+20.732%
+[class: 1  #elements = 65]
+79.268%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = -0.12
+
+When C=0.01, the MCC value is -0.12	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = -0.1414214
+
+When C=0.1, the MCC value is -0.1414214	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.001, corresponding to MCC=0
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.001) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9586708
+ROC AUC 		0.826087
+
+
+TOTAL:
+
+ FN =  0  /  23 	 (truth == 1) & (prediction < threshold)
+ TP =  23  /  23 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  4  /  4 	 (truth == 0) & (prediction >= threshold)
+ TN =  0  /  4 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.000 	 0.920 	 0.852 	 1.000 	 0.000		 0.959		0.826
+
+
+>>> execution number: 82
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 11]
+13.415%
+[class: 1  #elements = 71]
+86.585%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.1253974
+
+When C=0.1, the MCC value is 0.1253974	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.125397354143741
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9558703
+ROC AUC 		0.7826087
+
+
+TOTAL:
+
+ FN =  4  /  23 	 (truth == 1) & (prediction < threshold)
+ TP =  19  /  23 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  4 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  4 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.279 	 0.864 	 0.778 	 0.826 	 0.500		 0.956		0.783
+
+
+>>> execution number: 83
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 12]
+14.634%
+[class: 1  #elements = 70]
+85.366%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.3426241
+
+When C=0.1, the MCC value is 0.3426241	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.342624144432096
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8851588
+ROC AUC 		0.7285714
+
+
+TOTAL:
+
+ FN =  1  /  20 	 (truth == 1) & (prediction < threshold)
+ TP =  19  /  20 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  3  /  7 	 (truth == 0) & (prediction >= threshold)
+ TN =  4  /  7 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.588 	 0.905 	 0.852 	 0.950 	 0.571		 0.885		0.729
+
+
+>>> execution number: 84
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 10]
+12.195%
+[class: 1  #elements = 72]
+87.805%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.07844147
+
+When C=0.01, the MCC value is 0.07844147	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.07844147
+
+When C=0.1, the MCC value is 0.07844147	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.078441467470769
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9337459
+ROC AUC 		0.75
+
+
+TOTAL:
+
+ FN =  2  /  22 	 (truth == 1) & (prediction < threshold)
+ TP =  20  /  22 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  5 	 (truth == 0) & (prediction >= threshold)
+ TN =  3  /  5 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.509 	 0.909 	 0.852 	 0.909 	 0.600		 0.934		0.750
+
+
+>>> execution number: 85
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 13]
+15.854%
+[class: 1  #elements = 69]
+84.146%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.2842676
+
+When C=0.1, the MCC value is 0.2842676	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.284267621807481
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8744104
+ROC AUC 		0.6954545
+
+
+TOTAL:
+
+ FN =  3  /  22 	 (truth == 1) & (prediction < threshold)
+ TP =  19  /  22 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  5 	 (truth == 0) & (prediction >= threshold)
+ TN =  3  /  5 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.433 	 0.884 	 0.815 	 0.864 	 0.600		 0.874		0.695
+
+
+>>> execution number: 86
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 18]
+21.951%
+[class: 1  #elements = 64]
+78.049%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = -0.06666667
+
+When C=0.01, the MCC value is -0.06666667	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.4414732
+
+When C=0.1, the MCC value is 0.4414732	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.441473159687696
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9469598
+ROC AUC 		0.75
+
+
+TOTAL:
+
+ FN =  1  /  24 	 (truth == 1) & (prediction < threshold)
+ TP =  23  /  24 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  1  /  3 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  3 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.625 	 0.958 	 0.926 	 0.958 	 0.667		 0.947		0.750
+
+
+>>> execution number: 87
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 13]
+15.854%
+[class: 1  #elements = 69]
+84.146%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.3426241
+
+When C=0.01, the MCC value is 0.3426241	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.3426241
+
+When C=0.1, the MCC value is 0.3426241	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.342624144432096
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8333332
+ROC AUC 		0.6269841
+
+
+TOTAL:
+
+ FN =  2  /  21 	 (truth == 1) & (prediction < threshold)
+ TP =  19  /  21 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  3  /  6 	 (truth == 0) & (prediction >= threshold)
+ TN =  3  /  6 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.433 	 0.884 	 0.815 	 0.905 	 0.500		 0.833		0.627
+
+
+>>> execution number: 88
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 13]
+15.854%
+[class: 1  #elements = 69]
+84.146%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.2477168
+
+When C=0.01, the MCC value is 0.2477168	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.2477168
+
+When C=0.1, the MCC value is 0.2477168	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.247716847153431
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9194427
+ROC AUC 		0.75
+
+
+TOTAL:
+
+ FN =  1  /  22 	 (truth == 1) & (prediction < threshold)
+ TP =  21  /  22 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  5 	 (truth == 0) & (prediction >= threshold)
+ TN =  3  /  5 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.606 	 0.933 	 0.889 	 0.955 	 0.600		 0.919		0.750
+
+
+>>> execution number: 89
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 16]
+19.512%
+[class: 1  #elements = 66]
+80.488%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.4414732
+
+When C=0.1, the MCC value is 0.4414732	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.441473159687696
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9853691
+ROC AUC 		0.8888889
+
+
+TOTAL:
+
+ FN =  2  /  24 	 (truth == 1) & (prediction < threshold)
+ TP =  22  /  24 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  1  /  3 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  3 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.516 	 0.936 	 0.889 	 0.917 	 0.667		 0.985		0.889
+
+
+>>> execution number: 90
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 16]
+19.512%
+[class: 1  #elements = 66]
+80.488%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.1885618
+
+When C=0.01, the MCC value is 0.1885618	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.1885618
+
+When C=0.1, the MCC value is 0.1885618	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.188561808316413
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.7846154
+ROC AUC 		0.5772727
+
+
+TOTAL:
+
+ FN =  1  /  22 	 (truth == 1) & (prediction < threshold)
+ TP =  21  /  22 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  4  /  5 	 (truth == 0) & (prediction >= threshold)
+ TN =  1  /  5 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.229 	 0.894 	 0.815 	 0.955 	 0.200		 0.785		0.577
+
+
+>>> execution number: 91
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 17]
+20.732%
+[class: 1  #elements = 65]
+79.268%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.2842676
+
+When C=0.01, the MCC value is 0.2842676	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.2842676
+
+When C=0.1, the MCC value is 0.2842676	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.284267621807481
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9313726
+ROC AUC 		0.7083333
+
+
+TOTAL:
+
+ FN =  1  /  24 	 (truth == 1) & (prediction < threshold)
+ TP =  23  /  24 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  1  /  3 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  3 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.625 	 0.958 	 0.926 	 0.958 	 0.667		 0.931		0.708
+
+
+>>> execution number: 92
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 12]
+14.634%
+[class: 1  #elements = 70]
+85.366%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.2327673
+
+When C=0.01, the MCC value is 0.2327673	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.4414732
+
+When C=0.1, the MCC value is 0.4414732	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.441473159687696
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8584824
+ROC AUC 		0.6285714
+
+
+TOTAL:
+
+ FN =  3  /  20 	 (truth == 1) & (prediction < threshold)
+ TP =  17  /  20 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  5  /  7 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  7 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.153 	 0.810 	 0.704 	 0.850 	 0.286		 0.858		0.629
+
+
+>>> execution number: 93
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 13]
+15.854%
+[class: 1  #elements = 69]
+84.146%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.5130435
+
+When C=0.01, the MCC value is 0.5130435	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.5130435
+
+When C=0.1, the MCC value is 0.5130435	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.51304347826087
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.8778511
+ROC AUC 		0.6587302
+
+
+TOTAL:
+
+ FN =  2  /  21 	 (truth == 1) & (prediction < threshold)
+ TP =  19  /  21 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  4  /  6 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  6 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.279 	 0.864 	 0.778 	 0.905 	 0.333		 0.878		0.659
+
+
+>>> execution number: 94
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 16]
+19.512%
+[class: 1  #elements = 66]
+80.488%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.3426241
+
+When C=0.01, the MCC value is 0.3426241	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.3426241
+
+When C=0.1, the MCC value is 0.3426241	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.342624144432096
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9132741
+ROC AUC 		0.576087
+
+
+TOTAL:
+
+ FN =  3  /  23 	 (truth == 1) & (prediction < threshold)
+ TP =  20  /  23 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  4  /  4 	 (truth == 0) & (prediction >= threshold)
+ TN =  0  /  4 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      -0.147 	 0.851 	 0.741 	 0.870 	 0.000		 0.913		0.576
+
+
+>>> execution number: 95
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 14]
+17.073%
+[class: 1  #elements = 68]
+82.927%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.5025189
+
+When C=0.1, the MCC value is 0.5025189	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.502518907629606
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9023606
+ROC AUC 		0.6304348
+
+
+TOTAL:
+
+ FN =  6  /  23 	 (truth == 1) & (prediction < threshold)
+ TP =  17  /  23 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  4 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  4 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.186 	 0.810 	 0.704 	 0.739 	 0.500		 0.902		0.630
+
+
+>>> execution number: 96
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 13]
+15.854%
+[class: 1  #elements = 69]
+84.146%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = -0.1809068
+
+When C=0.01, the MCC value is -0.1809068	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.03553345
+
+When C=0.1, the MCC value is 0.03553345	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.0355334527259351
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9294892
+ROC AUC 		0.7636364
+
+
+TOTAL:
+
+ FN =  1  /  22 	 (truth == 1) & (prediction < threshold)
+ TP =  21  /  22 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  5 	 (truth == 0) & (prediction >= threshold)
+ TN =  3  /  5 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.606 	 0.933 	 0.889 	 0.955 	 0.600		 0.929		0.764
+
+
+>>> execution number: 97
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 15]
+18.293%
+[class: 1  #elements = 67]
+81.707%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.0761387
+
+When C=0.01, the MCC value is 0.0761387	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.0761387
+
+When C=0.1, the MCC value is 0.0761387	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.0761386987626881
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9948843
+ROC AUC 		0.9673913
+
+
+TOTAL:
+
+ FN =  1  /  23 	 (truth == 1) & (prediction < threshold)
+ TP =  22  /  23 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  1  /  4 	 (truth == 0) & (prediction >= threshold)
+ TN =  3  /  4 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.707 	 0.957 	 0.926 	 0.957 	 0.750		 0.995		0.967
+
+
+>>> execution number: 98
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 13]
+15.854%
+[class: 1  #elements = 69]
+84.146%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.3426241
+
+When C=0.01, the MCC value is 0.3426241	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.3426241
+
+When C=0.1, the MCC value is 0.3426241	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.342624144432096
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9239589
+ROC AUC 		0.7857143
+
+
+TOTAL:
+
+ FN =  2  /  20 	 (truth == 1) & (prediction < threshold)
+ TP =  18  /  20 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  3  /  7 	 (truth == 0) & (prediction >= threshold)
+ TN =  4  /  7 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.497 	 0.878 	 0.815 	 0.900 	 0.571		 0.924		0.786
+
+
+>>> execution number: 99
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 14]
+17.073%
+[class: 1  #elements = 68]
+82.927%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.01, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.2842676
+
+When C=0.1, the MCC value is 0.2842676	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.1, corresponding to MCC=0.284267621807481
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.1) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.9711078
+ROC AUC 		0.8423913
+
+
+TOTAL:
+
+ FN =  1  /  23 	 (truth == 1) & (prediction < threshold)
+ TP =  22  /  23 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  2  /  4 	 (truth == 0) & (prediction >= threshold)
+ TN =  2  /  4 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.516 	 0.936 	 0.889 	 0.957 	 0.500		 0.971		0.842
+
+
+>>> execution number: 100
+[Dataset size]
+number of data instances (rows) = 137 
+number of features (columns) = 4 
+
+[Imbalance of this dataset]
+[class: 0  #elements = 24]
+17.518%
+[class: 1  #elements = 113]
+82.482%
+
+training_set_perce = 60% 
+validation_set_perce = 20% 
+test_set_perce = 20% 
+[Creating the subsets]
+training set BEFORE oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 16]
+19.512%
+[class: 1  #elements = 66]
+80.488%
+
+training set AFTER oversampling:
+[Imbalance of this dataset]
+[class: 0  #elements = 40]
+48.780%
+[class: 1  #elements = 42]
+51.220%
+
+
+[Optimization of the hyper-parameter C start]
+[Training the SVM model (with C=0.001) on training set & applying the SVM model to validation set]
+
+MCC = 0
+
+When C=0.001, the MCC value is 0	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.01) on training set & applying the SVM model to validation set]
+
+MCC = 0.3522819
+
+When C=0.01, the MCC value is 0.3522819	 (worst possible: -1; best possible: +1)
+[Training the SVM model (with C=0.1) on training set & applying the SVM model to validation set]
+
+MCC = 0.1601282
+
+When C=0.1, the MCC value is 0.1601282	 (worst possible: -1; best possible: +1)
+
+The best C value is 0.01, corresponding to MCC=0.352281938371192
+[Optimization end]
+
+
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+[Training the SVM model (with the OPTIMIZED hyper-parameter C=0.01) on training set & applying the SVM to the test set]
+
+PR AUC (integral) 	0.946266
+ROC AUC 		0.8452381
+
+
+TOTAL:
+
+ FN =  0  /  21 	 (truth == 1) & (prediction < threshold)
+ TP =  21  /  21 	 (truth == 1) & (prediction >= threshold)
+
+ FP =  6  /  6 	 (truth == 0) & (prediction >= threshold)
+ TN =  0  /  6 	 (truth == 0) & (prediction < threshold)
+
+
+
+ @@@ Test set @@@ 	 MCC 	 F1_score 	 accuracy 	 TP_rate 	 TN_rate 	 PR AUC 	 ROC AUC
+@@@ Test set @@@      0.000 	 0.875 	 0.778 	 1.000 	 0.000		 0.946		0.845
+
+
+
+
+=== final results ===
+Number of executions = 100
+                 MCC F1_score accuracy TP_rate TN_rate  PR_AUC ROC_AUC
+nbr.val      100.000  100.000  100.000 100.000 100.000 100.000 100.000
+nbr.null      11.000    0.000    0.000   0.000  20.000   0.000   0.000
+nbr.na         0.000    0.000    0.000   0.000   0.000   0.000   0.000
+min           -0.229    0.649    0.519   0.571   0.000   0.673   0.181
+max            0.780    0.980    0.963   1.000   1.000   0.999   0.986
+range          1.010    0.332    0.444   0.429   1.000   0.326   0.806
+sum           30.919   88.880   81.778  91.056  38.755  89.916  67.632
+median         0.287    0.899    0.833   0.917   0.400   0.913   0.703
+mean           0.309    0.889    0.818   0.911   0.388   0.899   0.676
+SE.mean        0.026    0.006    0.008   0.008   0.026   0.007   0.017
+CI.mean.0.95   0.052    0.012    0.017   0.016   0.053   0.014   0.033
+var            0.068    0.004    0.007   0.006   0.070   0.005   0.027
+std.dev        0.261    0.059    0.084   0.080   0.265   0.071   0.165
+coef.var       0.843    0.067    0.103   0.088   0.684   0.079   0.244
+
+
+          MCC F1_score accuracy TP_rate TN_rate PR_AUC ROC_AUC
+mean    +0.309    0.889    0.818   0.911   0.388  0.899   0.676
+std.dev 0.261    0.059    0.084   0.080   0.265  0.071   0.165
+
+
+=== === === ===
+
+Total execution time: 5.398902 seconds
+0 days, 00 hours, 00 minutes, 5.40 seconds
+
