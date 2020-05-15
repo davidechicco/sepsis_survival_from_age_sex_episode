@@ -1,12 +1,26 @@
 options(stringsAsFactors = FALSE)
 
-list.of.packages <- c("easypackages", "ggplot2")
+list.of.packages <- c("easypackages", "ggplot2", "lubridate")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
 
 library("easypackages")
 libraries(list.of.packages)
 
+# let's compute time
+global_start_time <- Sys.time()
+
+
+# computeExecutionTime
+computeExecutionTime <- function(){
+
+  thisEndTime <- Sys.time()
+  totalTime <- thisEndTime - global_start_time
+  cat("\nTotal execution time: ", (totalTime)[[1]], " seconds\n", sep="")
+  
+  td <- seconds_to_period(totalTime)
+  cat(sprintf('%d days, %02d hours, %02d minutes, %02.2f seconds\n\n', day(td), td@hour, minute(td), second(td)))
+}
 
 
 
@@ -70,7 +84,7 @@ dec_three <- function(x) {
 }
 
 # function that prints two decimals of a number
-dec_two <- function(x) {
+ dec_two <- function(x) {
   return (format(round(x, 2), nsmall = 2));
 }
 
@@ -96,6 +110,29 @@ if (is.finite(x)) {
     }
 }
 
+# function that prints two decimals of a number with sign
+signed_dec_three <- function(x) {
+
+if (is.finite(x)) {
+
+                if (x>0) { 
+                    
+                        sign <- "+";   
+                        return (paste(sign, toString(format(round(x, 2), nsmall = 2)), sep=""))
+                
+                    } else {
+                    
+                            return (dec_three(x))
+                    }    
+    } else {
+    
+    
+    return ("indef")
+    
+    }
+}
+
+
 
 
 # Function that reads in a vector made of binary values and prints the imbalance rates
@@ -113,7 +150,7 @@ imbalance_retriever <- function(thisVector)
   if (lun != 2) {
   
     print("This vector is not binary. The imbalance_retriever() function will stop here");
-    return ;
+    return(FALSE);
   
   }  
 
@@ -121,15 +158,16 @@ imbalance_retriever <- function(thisVector)
   number_of_elements_of_first_class <- unname(table(thisVector)[1])
   name_of_elements_of_first_class <- names(table(thisVector)[1])
   cat("[class: ",name_of_elements_of_first_class, "  #elements = ", number_of_elements_of_first_class, "]\n", sep="")
-  cat(dec_two(unname(table(thisVector))[1]*100/length(thisVector)),"%\n", sep="")
+  cat(dec_three(unname(table(thisVector))[1]*100/length(thisVector)),"%\n", sep="")
   
   number_of_elements_of_second_class <-unname(table(thisVector)[2])
   name_of_elements_of_second_class <-names(table(thisVector)[2])
   cat("[class: ",name_of_elements_of_second_class, "  #elements = ", number_of_elements_of_second_class, "]\n", sep="")
-  cat(dec_two(unname(table(thisVector))[2]*100/length(thisVector)),"%\n", sep="")
+  cat(dec_three(unname(table(thisVector))[2]*100/length(thisVector)),"%\n", sep="")
   
   cat("\n")
 
+  return(TRUE);
 }
 
 
