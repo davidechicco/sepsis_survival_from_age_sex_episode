@@ -30,5 +30,11 @@ To perform the predictions on the study cohort, type on terminal shell:
 
 `Rscript xgboost_classification_survival.r STUDY_COHORT`
 
+### Article
+Additional information about this study is available in the following peer-reviewed published article:
+
+> Davide Chicco, Giuseppe Jurman. "[Survival prediction of patients with sepsis from age, sex, and septic episode number alone](https://doi.org/10.1038/s41598-020-73558-3)". Scientific Reports 10, 17156 (2020). 
+
+
 ### Contacts
 For any enquire, please write to [Davide Chicco](https://www.davidechicco.it) (Krembil Research Institute) at [davidechicco(AT)davidechicco.it](mailto:davidechicco@davidechicco.it)
